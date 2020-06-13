@@ -1,348 +1,378 @@
-deno	denoland/deno	https://github.com/denoland/deno	63264	3142	63264	1752	false	A secure JavaScript and TypeScript runtime
-deno	denoland/deno	https://github.com/denoland/deno	63264	3142	63264	1752	false	A secure JavaScript and TypeScript runtime
-lodash	lodash/lodash	https://github.com/lodash/lodash	45209	4962	45209	865	false	A modern JavaScript utility library delivering modularity, performance, & extras.
-ky	sindresorhus/ky	https://github.com/sindresorhus/ky	5617	198	5617	47	false	🌳 Tiny & elegant HTTP client based on window.fetch
-oak	oakserver/oak	https://github.com/oakserver/oak	1692	110	1692	33	false	A middleware framework for Deno's net server 🦕
+deno	denoland/deno	https://github.com/denoland/deno	63274	3143	63274	1754	false	A secure JavaScript and TypeScript runtime
+deno	denoland/deno	https://github.com/denoland/deno	63274	3143	63274	1754	false	A secure JavaScript and TypeScript runtime
+lodash	lodash/lodash	https://github.com/lodash/lodash	45209	4964	45209	865	false	A modern JavaScript utility library delivering modularity, performance, & extras.
+ky	sindresorhus/ky	https://github.com/sindresorhus/ky	5618	198	5618	47	false	🌳 Tiny & elegant HTTP client based on window.fetch
+oak	oakserver/oak	https://github.com/oakserver/oak	1693	110	1693	33	false	A middleware framework for Deno's net server 🦕
 omelette	f/omelette	https://github.com/f/omelette	1108	28	1108	23	false	Omelette is a simple, template based autocompletion tool for Node and Deno projects with super easy API. (For Bash, Zsh and Fish)
 deno_std	denoland/deno_std	https://github.com/denoland/deno_std	1039	123	1039	45	true	deno standard modules
-deno_webview	eliassjogreen/deno_webview	https://github.com/eliassjogreen/deno_webview	331	26	331	16	false	Deno bindings for webview, a tiny library for creating web-based desktop GUIs
+deno-lambda	hayd/deno-lambda	https://github.com/hayd/deno-lambda	351	13	351	11	false	A deno runtime for AWS Lambda. Deploy deno via SAM, serverless, or bundle it yourself.
+deno_webview	eliassjogreen/deno_webview	https://github.com/eliassjogreen/deno_webview	332	26	332	16	false	Deno bindings for webview, a tiny library for creating web-based desktop GUIs
 pagic	xcatliu/pagic	https://github.com/xcatliu/pagic	298	23	298	15	false	The easiest way to generate static html page from markdown, built with Deno! 🦕
 deno-nessie	halvardssm/deno-nessie	https://github.com/halvardssm/deno-nessie	295	11	295	6	false	A Deno modular library for PostgreSQL, MySQL, MariaDB and SQLite migrations
-pogo	sholladay/pogo	https://github.com/sholladay/pogo	237	21	237	15	false	Server framework for Deno
+pogo	sholladay/pogo	https://github.com/sholladay/pogo	238	21	238	15	false	Server framework for Deno
 deno-postgres	deno-postgres/deno-postgres	https://github.com/deno-postgres/deno-postgres	237	31	237	11	false	PostgreSQL driver for Deno
-opine	asos-craigmorten/opine	https://github.com/asos-craigmorten/opine	50	2	50	7	false	Fast, minimalist web framework for Deno ported from ExpressJS.
-otpauth	hectorm/otpauth	https://github.com/hectorm/otpauth	83	14	83	6	false	One Time Password (HOTP/TOTP) library for Node.js, Deno and browsers.
-is-docker	denorg/is-docker	https://github.com/denorg/is-docker	1	0	1	5	false	🐳 Check if the process is running inside a Docker container in Deno
-Katana	ansonfoong/Katana	https://github.com/ansonfoong/Katana	59	18	59	4	false	Deno Discord API primarily based on Discord.JS ▬▬ι═══════ﺤ 
-deno-lambda	hayd/deno-lambda	https://github.com/hayd/deno-lambda	351	13	351	11	false	A deno runtime for AWS Lambda. Deploy deno via SAM, serverless, or bundle it yourself.
+velociraptor	umbopepato/velociraptor	https://github.com/umbopepato/velociraptor	231	14	231	2	false	An alternative to npm scripts for Deno
 monads	hqoss/monads	https://github.com/hqoss/monads	165	9	165	6	false	👻 Type safe Option, Result, and Either types; inspired by Rust
-keycode-js	kabirbaidhya/keycode-js	https://github.com/kabirbaidhya/keycode-js	70	7	70	6	false	A javascript package with key code constants.
 deno_mongo	manyuanrong/deno_mongo	https://github.com/manyuanrong/deno_mongo	121	24	121	5	false	MongoDB driver for Deno
 deno_mysql	manyuanrong/deno_mysql	https://github.com/manyuanrong/deno_mysql	116	24	116	11	false	 MySQL driver for Deno
-velociraptor	umbopepato/velociraptor	https://github.com/umbopepato/velociraptor	231	14	231	2	false	An alternative to npm scripts for Deno
-deno-zip	hayd/deno-zip	https://github.com/hayd/deno-zip	8	4	8	1	false	A JSZip wrapper for handling zipfiles in deno
-mandarinets	mandarineorg/mandarinets	https://github.com/mandarineorg/mandarinets	27	2	27	4	false	Mandarine.TS is a framework that allows you to create applications. Mandarine.TS provides a range of built-in solutions such as Dependency Injection, Components, ORM and more. Under its umbrella, Mandarine.TS has 4 modules: Core, Data, Security and MVC, these modules will offer you the requirements to build a Mandarine-powered application.
-deno-wasi	caspervonb/deno-wasi	https://github.com/caspervonb/deno-wasi	33	2	33	3	false	A (WIP) WebAssembly System Interface implementation for Deno
-jurassic	oknoorap/jurassic	https://github.com/oknoorap/jurassic	25	2	25	2	false	A Straightforward REST API Framework for Deno
-deno_math	axetroy/deno_math	https://github.com/axetroy/deno_math	13	2	13	2	false	Deno module for high-precision calculations and scientific computing
-Oak-GraphQL	aaronwlee/Oak-GraphQL	https://github.com/aaronwlee/Oak-GraphQL	17	1	17	2	false	A simple graphql middleware for oak deno framework.
+otpauth	hectorm/otpauth	https://github.com/hectorm/otpauth	83	14	83	6	false	One Time Password (HOTP/TOTP) library for Node.js, Deno and browsers.
+keycode-js	kabirbaidhya/keycode-js	https://github.com/kabirbaidhya/keycode-js	70	7	70	6	false	A javascript package with key code constants.
+Katana	ansonfoong/Katana	https://github.com/ansonfoong/Katana	59	18	59	4	false	Deno Discord API primarily based on Discord.JS ▬▬ι═══════ﺤ 
+opine	asos-craigmorten/opine	https://github.com/asos-craigmorten/opine	50	2	50	7	false	Fast, minimalist web framework for Deno ported from ExpressJS.
+nexo	nexojs/nexo	https://github.com/nexojs/nexo	46	2	46	1	false	Preact apps with Deno
 deno-watch	jinjor/deno-watch	https://github.com/jinjor/deno-watch	38	5	38	1	false	A pure deno file watcher.
+deno-wasi	caspervonb/deno-wasi	https://github.com/caspervonb/deno-wasi	33	2	33	3	false	A (WIP) WebAssembly System Interface implementation for Deno
+parseargs	bartlomieju/parseargs	https://github.com/bartlomieju/parseargs	29	1	29	0	false	Migrated to https://github.com/denoland/deno_std
+nanoid	ianfabs/nanoid	https://github.com/ianfabs/nanoid	28	2	28	1	false	A NanoID implementation for Deno
+mandarinets	mandarineorg/mandarinets	https://github.com/mandarineorg/mandarinets	27	2	27	4	false	Mandarine.TS is a framework that allows you to create applications. Mandarine.TS provides a range of built-in solutions such as Dependency Injection, Components, ORM and more. Under its umbrella, Mandarine.TS has 4 modules: Core, Data, Security and MVC, these modules will offer you the requirements to build a Mandarine-powered application.
+deno-pretty-assert	bokuweb/deno-pretty-assert	https://github.com/bokuweb/deno-pretty-assert	26	1	26	0	true	🦕A colorful assertEqual for deno
+jurassic	oknoorap/jurassic	https://github.com/oknoorap/jurassic	25	2	25	2	false	A Straightforward REST API Framework for Deno
+deno-plugin-prepare	manyuanrong/deno-plugin-prepare	https://github.com/manyuanrong/deno-plugin-prepare	20	7	20	1	false	A library for managing deno native plugin dependencies
+Oak-GraphQL	aaronwlee/Oak-GraphQL	https://github.com/aaronwlee/Oak-GraphQL	17	1	17	2	false	A simple graphql middleware for oak deno framework.
+deno_math	axetroy/deno_math	https://github.com/axetroy/deno_math	13	2	13	2	false	Deno module for high-precision calculations and scientific computing
+lazy	luvies/lazy	https://github.com/luvies/lazy	13	1	13	1	false	A linq-like lazy-evaluation enumerable/iteration library that aims to support deno, node & browser
+deno_mod	motss/deno_mod	https://github.com/motss/deno_mod	12	0	12	2	false	Deno modules
+ms	denolib/ms	https://github.com/denolib/ms	11	2	11	8	false	Tiny milisecond conversion utility. Ported from https://npmjs.com/ms
+MQTT.ts	jdiamond/MQTT.ts	https://github.com/jdiamond/MQTT.ts	11	1	11	1	false	MQTT in TypeScript for Deno, Node.js, and browsers
+deno_vscode_languageserver	denodev/deno_vscode_languageserver	https://github.com/denodev/deno_vscode_languageserver	11	0	11	1	false	Language server protocol implementation for VSCode. This allows implementing language services in JS/TS running on Deno.
+deno_vscode_languageserver	denodev/deno_vscode_languageserver	https://github.com/denodev/deno_vscode_languageserver	11	0	11	1	false	Language server protocol implementation for VSCode. This allows implementing language services in JS/TS running on Deno.
+deno_vscode_languageserver	denodev/deno_vscode_languageserver	https://github.com/denodev/deno_vscode_languageserver	11	0	11	1	false	Language server protocol implementation for VSCode. This allows implementing language services in JS/TS running on Deno.
+pgc4d	jakajancar/pgc4d	https://github.com/jakajancar/pgc4d	11	0	11	1	false	A full-featured PostgreSQL Client for Deno
+yolk	denjucks/yolk	https://github.com/denjucks/yolk	10	0	10	1	false	Yolk CLI - An Oak-based, batteries included CLI tool for the Oak framework, used to quickly create, structure, and run Oak applications.
+middleware	oakserver/middleware	https://github.com/oakserver/middleware	9	3	9	1	false	A collection of middleware to use with oak. 🦕
+deno-websocket	ryo-ma/deno-websocket	https://github.com/ryo-ma/deno-websocket	9	1	9	1	false	🦕A simple WebSocket library like ws of node.js library for deno
+deno-zip	hayd/deno-zip	https://github.com/hayd/deno-zip	8	4	8	1	false	A JSZip wrapper for handling zipfiles in deno
+wasm_gzip	manyuanrong/wasm_gzip	https://github.com/manyuanrong/wasm_gzip	8	0	8	1	false	Gzip encryption and decryption wasm implementation, support Deno
+ts-prove	Pingid/ts-prove	https://github.com/Pingid/ts-prove	7	0	7	2	false	A lightweight composable decoding and validation library
+rad	cdaringe/rad	https://github.com/cdaringe/rad	7	0	7	1	false	general purpose build tool. statically typed, batteries included. command, function, and make-style tasks supported
+deno-notify	divy-work/deno-notify	https://github.com/divy-work/deno-notify	7	0	7	1	false	Cross-platform system notification with Deno :rocket:
+deno_lz4	denosaurs/deno_lz4	https://github.com/denosaurs/deno_lz4	6	0	6	2	false	🗜 lz4 wasm module for deno
+mock	udibo/mock	https://github.com/udibo/mock	6	0	6	1	false	This module provides utilities to help mock behavior and spy on function calls for tests.
+jpeg.ts	fakoua/jpeg.ts	https://github.com/fakoua/jpeg.ts	6	0	6	1	false	A pure TypeScript JPEG encoder and decoder for deno
+media_types	oakserver/media_types	https://github.com/oakserver/media_types	5	2	5	1	false	A module that assists in resolving media types and extensions.
+view-engine	deligenius/view-engine	https://github.com/deligenius/view-engine	5	1	5	1	false	🚀A Template View Engine for Deno frameworks
+deno-minimatch	chrisdothtml/deno-minimatch	https://github.com/chrisdothtml/deno-minimatch	5	1	5	1	false	A deno port of minimatch
+youtube-deno	akshgpt7/youtube-deno	https://github.com/akshgpt7/youtube-deno	5	0	5	1	false	A Deno client library of the YouTube Data API.
+parry	denosaurs/parry	https://github.com/denosaurs/parry	5	0	5	1	false	👷🏽‍♂️ Run deno functions in WebWorkers
+deno_license_checker	kt3k/deno_license_checker	https://github.com/kt3k/deno_license_checker	4	4	4	2	false	:page_facing_up: CLI tool for checking license headers in files
+deno_machine_id	axetroy/deno_machine_id	https://github.com/axetroy/deno_machine_id	4	1	4	1	false	Get the unique ID of the current machine
+q	phil-r/q	https://github.com/phil-r/q	4	0	4	1	false	Simple queue task runner written in typescript
+deno_process	axetroy/deno_process	https://github.com/axetroy/deno_process	4	0	4	1	false	process module for Deno
+deno-prettystring	OnikurYH/deno-prettystring	https://github.com/OnikurYH/deno-prettystring	4	0	4	1	false	A deno module for format, trim and remove extra white spaces between characters. Make paragraph looks organised.
+deno-pretty-bytes	BrunnerLivio/deno-pretty-bytes	https://github.com/BrunnerLivio/deno-pretty-bytes	4	0	4	1	false	The Deno implementation of @sindresorhus pretty-bytes package
+deno-observable	bsunderhus/deno-observable	https://github.com/bsunderhus/deno-observable	4	0	4	1	false	
+multiparser	deligenius/multiparser	https://github.com/deligenius/multiparser	4	0	4	1	false	multipart/form-data parser for Deno servers
+mith	JWebCoder/mith	https://github.com/JWebCoder/mith	4	0	4	1	false	A middleware framework for Deno's http/s server.
+deno-wrapper-novelcovid	Joralmo/deno-wrapper-novelcovid	https://github.com/Joralmo/deno-wrapper-novelcovid	3	2	3	1	false	Wrapper de NovelCOVID/API para Deno.land
+x-name	denorg/x-name	https://github.com/denorg/x-name	3	1	3	5	false	🏷️ Check if a package name is available on deno.land/x
+deno-progress	fuxingZhang/deno-progress	https://github.com/fuxingZhang/deno-progress	3	1	3	2	false	ProgressBar in terminal for deno
+mutevents	hazae41/mutevents	https://github.com/hazae41/mutevents	3	1	3	2	false	Typed, mutable, async events for deno and nodejs
+PerlinNoise-Deno	hamptonmoore/PerlinNoise-Deno	https://github.com/hamptonmoore/PerlinNoise-Deno	3	1	3	1	false	A Perlin Noise library
+kia	HarryPeach/kia	https://github.com/HarryPeach/kia	3	1	3	1	false	Simple terminal spinners for Deno 🦕
+qrcode	denorg/qrcode	https://github.com/denorg/qrcode	3	0	3	5	false	📇 Generate QR code images in Deno
+deno-lib	brandonkal/deno-lib	https://github.com/brandonkal/deno-lib	3	0	3	2	false	A large collection of useful Typescript libraries for Deno
+pubsub	zorbyte/pubsub	https://github.com/zorbyte/pubsub	3	0	3	1	false	A simple PubSub module for Deno.
+panoptes	TokenChingy/panoptes	https://github.com/TokenChingy/panoptes	3	0	3	1	false	A simple array and object watcher function for Deno. Written in TypeScript.
+prettyBenching	littletof/prettyBenching	https://github.com/littletof/prettyBenching	3	0	3	0	false	🦕 A small lib to make your Deno benchmarking progress and results look pretty
+prettier	denolib/prettier	https://github.com/denolib/prettier	2	3	2	2	false	Prettier. Migrated from Deno standard modules
+permission-guard	asos-craigmorten/permission-guard	https://github.com/asos-craigmorten/permission-guard	2	2	2	2	false	A zero-dependency, minimal permission guard for Deno.
+lodash_require	TokenChingy/lodash_require	https://github.com/TokenChingy/lodash_require	2	2	2	1	false	Lodash for the Deno runtime.
+deno-progressbar	jakobhellermann/deno-progressbar	https://github.com/jakobhellermann/deno-progressbar	2	1	2	1	false	a terminal progressbar for deno
+deno-open	skoshx/deno-open	https://github.com/skoshx/deno-open	2	1	2	1	false	Open is a package for opening URLs, files and executables with Deno. Inspired by sindresorhus' open.
+json-server	magnattic/json-server	https://github.com/magnattic/json-server	2	1	2	1	false	Zero code fake backend for development
+online	denorg/online	https://github.com/denorg/online	2	0	2	5	false	🕸️ Check if you're currently online in Deno
+meteorite	AhmedAlYousif/meteorite	https://github.com/AhmedAlYousif/meteorite	2	0	2	2	false	a framework to build REST APIs in Deno runtime.
+deno-zstd	xpyxel/deno-zstd	https://github.com/xpyxel/deno-zstd	2	0	2	1	false	Zstd bindings for the Deno TypeScript/JavaScript runtime
+yaml-wasm	KSXGitHub/yaml-wasm	https://github.com/KSXGitHub/yaml-wasm	2	0	2	1	false	WebAssembly module to parse YAML
 								
 								
-TypeScript	microsoft/TypeScript	https://github.com/microsoft/TypeScript	61312	8230	61312	2121	false	TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+TypeScript	microsoft/TypeScript	https://github.com/microsoft/TypeScript	61314	8230	61314	2122	false	TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
 								
-servest	keroxp/servest	https://github.com/keroxp/servest	479	26	479	12	false	🌾A progressive http server for Deno🌾
-deno-sqlite	dyedgreen/deno-sqlite	https://github.com/dyedgreen/deno-sqlite	97	9	97	8	false	Deno SQLite module
+servest	keroxp/servest	https://github.com/keroxp/servest	481	27	481	12	false	🌾A progressive http server for Deno🌾
 								
 date-fns	date-fns/date-fns	https://github.com/date-fns/date-fns	22580	1012	22580	228	false	⏳ Modern JavaScript date utility library ⌛️
 Fuse	krisk/Fuse	https://github.com/krisk/Fuse	10668	571	10668	139	false	Lightweight fuzzy-search, in JavaScript
 i18next	i18next/i18next	https://github.com/i18next/i18next	5024	502	5024	84	false	 i18next: learn once - translate everywhere
 effector	zerobias/effector	https://github.com/zerobias/effector	2540	96	2540	38	false	The state manager ☄️
 deno_install	denoland/deno_install	https://github.com/denoland/deno_install	626	81	626	36	false	Deno Binary Installer
+deno-drash	drashland/deno-drash	https://github.com/drashland/deno-drash	423	13	423	17	false	A REST microframework for Deno with zero dependencies.
 abc	zhmushan/abc	https://github.com/zhmushan/abc	364	42	364	18	false	A better Deno framework to create web application.
 alosaur	alosaur/alosaur	https://github.com/alosaur/alosaur	345	33	345	16	false	Alosaur - Deno web framework with many decorators
 denon	denosaurs/denon	https://github.com/denosaurs/denon	323	19	323	6	false	👀 Monitor any changes in your Deno application and automatically restart.
-deno-drash	drashland/deno-drash	https://github.com/drashland/deno-drash	423	13	423	17	false	A REST microframework for Deno with zero dependencies.
 autopilot-deno	divy-work/autopilot-deno	https://github.com/divy-work/autopilot-deno	236	4	236	5	false	Cross-platform desktop automation library for Deno.
 deno-redis	keroxp/deno-redis	https://github.com/keroxp/deno-redis	180	14	180	5	false	🦕 Redis client for Deno 🍕
-type-detect	chaijs/type-detect	https://github.com/chaijs/type-detect	90	30	90	13	false	Improved typeof detection for node.js and the browser.
-coward	fox-cat/coward	https://github.com/fox-cat/coward	62	7	62	9	false	🐔 Coward is a Deno module for easy interaction with the Discord API.
-easy-soap-request	circa10a/easy-soap-request	https://github.com/circa10a/easy-soap-request	61	30	61	5	false	Small Node.js library to make SOAP requests easier
 enum	adrai/enum	https://github.com/adrai/enum	160	29	160	8	false	Enum is a javascript module that introduces the Enum Type. It works for node.js, in the browser and for deno.
-dataformsjs	dataformsjs/dataformsjs	https://github.com/dataformsjs/dataformsjs	59	9	59	5	false	🌟 DataFormsJS 🌟 A minimal JavaScript Framework and standalone components for rapid development of high quality websites and single page applications.
-denodb	eveningkid/denodb	https://github.com/eveningkid/denodb	64	6	64	3	false	MySQL, SQLite, PostgreSQL and MongoDB ORM for Deno
-denovel	fauzan121002/denovel	https://github.com/fauzan121002/denovel	58	13	58	7	false	A Deno Framework For Web Artisan - Inspired by Laravel
-denofun	galkowskit/denofun	https://github.com/galkowskit/denofun	57	9	57	4	false	Small utility library containing functions, monads and other fun stuff.
-azure-functions-deno-worker	anthonychu/azure-functions-deno-worker	https://github.com/anthonychu/azure-functions-deno-worker	48	5	48	1	false	Run Deno 🦕 on Azure Functions ⚡️
-noble-bls12-381	paulmillr/noble-bls12-381	https://github.com/paulmillr/noble-bls12-381	42	9	42	3	false	Noble BLS12-381 pairing-friendly curve in JS. High-security, easily auditable, 0-dep aggregated signatures & pubkey
-computed-types	neuledge/computed-types	https://github.com/neuledge/computed-types	50	3	50	3	false	🦩 Joi like validation for TypeScript
-denomander	siokas/denomander	https://github.com/siokas/denomander	36	2	36	4	false	Deno command-line interfaces made easy
-denotrain	Caesar2011/denotrain	https://github.com/Caesar2011/denotrain	54	9	54	3	false	Web framework for Deno with often-used functions included
-i18next-http-backend	i18next/i18next-http-backend	https://github.com/i18next/i18next-http-backend	33	11	33	4	false	i18next-http-backend is a backend layer for i18next using in Node.js, in the browser and for Deno.
-aqua	l2ig/aqua	https://github.com/l2ig/aqua	32	1	32	1	false	A minimal and fast web framework for Deno
-deno_brotli	denosaurs/deno_brotli	https://github.com/denosaurs/deno_brotli	29	3	29	3	false	🗜 Brotli wasm module for deno
-Denocord	Denocord/Denocord	https://github.com/Denocord/Denocord	23	1	23	2	false	A fast, strongly typed and versatile Discord API wrapper for the Deno runtime.
-denova	viandwi24/denova	https://github.com/viandwi24/denova	13	2	13	4	false	a Typescript Framework For Deno - Framework Looks Like Laravel
-deno-argon2	fdionisi/deno-argon2	https://github.com/fdionisi/deno-argon2	10	1	10	2	false	Argon2 encryption library for Deno
-cordeno	cordeno/cordeno	https://github.com/cordeno/cordeno	14	5	14	1	false	🦕 A Discord API wrapper for developing discord bots using the Deno runtime.
-cotton	rahmanfadhil/cotton	https://github.com/rahmanfadhil/cotton	23	3	23	5	false	SQL Database Toolkit for Deno
-denox	BentoumiTech/denox	https://github.com/BentoumiTech/denox	67	4	67	1	false	Script runner and workspace configuration for Deno
-Discordeno	Skillz4Killz/Discordeno	https://github.com/Skillz4Killz/Discordeno	57	10	57	5	false	Discord API library wrapper in Deno https://discordeno.js.org
-dso	manyuanrong/dso	https://github.com/manyuanrong/dso	55	11	55	4	false	Simple Orm library for Deno based on deno_mysql
-dactyl	liamtan28/dactyl	https://github.com/liamtan28/dactyl	17	4	17	1	false	Web framework for Deno, built on top of Oak 🦇
-deku	yisar/deku	https://github.com/yisar/deku	29	3	29	2	false	⛄️ No-bundle Dev Server for ES modules with deno.
-djwt	timonson/djwt	https://github.com/timonson/djwt	35	2	35	4	false	the absolute minimum to make JSON Web Tokens in deno. Based on JWT and JWS specifications.
-deno-dotenv	pietvanzoen/deno-dotenv	https://github.com/pietvanzoen/deno-dotenv	49	6	49	3	false	Dotenv file handling for deno.
-destr	nuxt-contrib/destr	https://github.com/nuxt-contrib/destr	26	1	26	2	false	Faster, secure and convenient alternative for JSON.parse
-dinocord	sunsetkookaburra/dinocord	https://github.com/sunsetkookaburra/dinocord	24	4	24	3	false	A Discord API Library for Deno 🦕
-espresso	disizali/espresso	https://github.com/disizali/espresso	22	5	22	3	false	Minimal web framework for Deno
 evt	garronej/evt	https://github.com/garronej/evt	156	3	156	7	false	💧EventEmitter's typesafe replacement
-dev_server	zhmushan/dev_server	https://github.com/zhmushan/dev_server	16	1	16	2	false	Feel free to import TypeScript files in the script tag!
-dexecutor	denjucks/dexecutor	https://github.com/denjucks/dexecutor	14	1	14	1	false	Deno SQL Executor
-deno-amqp	lenkan/deno-amqp	https://github.com/lenkan/deno-amqp	10	1	10	1	false	
-event_emitter	denolibs/event_emitter	https://github.com/denolibs/event_emitter	9	3	9	3	false	A NodeJS-like EventEmitter for Deno in Typescript.
-ask	jozsefsallai/ask	https://github.com/jozsefsallai/ask	9	2	9	2	false	interactive command-line prompts for deno
-bwt	chiefbiiko/bwt	https://github.com/chiefbiiko/bwt	9	1	9	3	false	Better Web Token - an iteration of web tokens with a bunch of improvements
-cli-spinners	ameerthehacker/cli-spinners	https://github.com/ameerthehacker/cli-spinners	32	3	32	2	false	Awesome deno terminal spinners :art:
-expect	allain/expect	https://github.com/allain/expect	19	6	19	1	false	helpers for writing jest like expect tests in deno
-cors	tajpouria/cors	https://github.com/tajpouria/cors	8	3	8	1	false	Deno.js module for providing a middleware that can be used to enable CORS with various options
+deno-sqlite	dyedgreen/deno-sqlite	https://github.com/dyedgreen/deno-sqlite	97	9	97	8	false	Deno SQLite module
+type-detect	chaijs/type-detect	https://github.com/chaijs/type-detect	90	30	90	13	false	Improved typeof detection for node.js and the browser.
 deno-fen	fen-land/deno-fen	https://github.com/fen-land/deno-fen	69	2	69	9	false	a simple web framework for deno
 dejs	syumai/dejs	https://github.com/syumai/dejs	69	2	69	6	false	ejs template engine for deno.
-cursornext	clitetailor/cursornext	https://github.com/clitetailor/cursornext	8	2	8	1	false	A minimalist library for parsing :cactus:
+denox	BentoumiTech/denox	https://github.com/BentoumiTech/denox	67	4	67	1	false	Script runner and workspace configuration for Deno
+text-clipper	arendjr/text-clipper	https://github.com/arendjr/text-clipper	66	8	66	3	false	Fast and correct clip functions for HTML and plain text
+denodb	eveningkid/denodb	https://github.com/eveningkid/denodb	64	6	64	3	false	MySQL, SQLite, PostgreSQL and MongoDB ORM for Deno
+coward	fox-cat/coward	https://github.com/fox-cat/coward	62	7	62	9	false	🐔 Coward is a Deno module for easy interaction with the Discord API.
+easy-soap-request	circa10a/easy-soap-request	https://github.com/circa10a/easy-soap-request	61	30	61	5	false	Small Node.js library to make SOAP requests easier
+dataformsjs	dataformsjs/dataformsjs	https://github.com/dataformsjs/dataformsjs	59	9	59	5	false	🌟 DataFormsJS 🌟 A minimal JavaScript Framework and standalone components for rapid development of high quality websites and single page applications.
+denovel	fauzan121002/denovel	https://github.com/fauzan121002/denovel	58	13	58	7	false	A Deno Framework For Web Artisan - Inspired by Laravel
+Discordeno	Skillz4Killz/Discordeno	https://github.com/Skillz4Killz/Discordeno	57	10	57	5	false	Discord API library wrapper in Deno https://discordeno.js.org
+denofun	galkowskit/denofun	https://github.com/galkowskit/denofun	57	9	57	4	false	Small utility library containing functions, monads and other fun stuff.
+graphql-projects	CreatCodeBuild/graphql-projects	https://github.com/CreatCodeBuild/graphql-projects	56	2	56	4	false	Deno + GraphQL === Make API Great Again 
+dso	manyuanrong/dso	https://github.com/manyuanrong/dso	55	11	55	4	false	Simple Orm library for Deno based on deno_mysql
+denotrain	Caesar2011/denotrain	https://github.com/Caesar2011/denotrain	54	9	54	3	false	Web framework for Deno with often-used functions included
+deno-udd	hayd/deno-udd	https://github.com/hayd/deno-udd	54	3	54	4	false	Update Deno Dependencies - update dependency urls to their latest published versions
+computed-types	neuledge/computed-types	https://github.com/neuledge/computed-types	50	3	50	3	false	🦩 Joi like validation for TypeScript
+deno-dotenv	pietvanzoen/deno-dotenv	https://github.com/pietvanzoen/deno-dotenv	49	6	49	3	false	Dotenv file handling for deno.
+drake	srackham/drake	https://github.com/srackham/drake	49	1	49	1	false	Drake is a make-like task runner for Deno.
+azure-functions-deno-worker	anthonychu/azure-functions-deno-worker	https://github.com/anthonychu/azure-functions-deno-worker	48	5	48	1	false	Run Deno 🦕 on Azure Functions ⚡️
+noble-ed25519	paulmillr/noble-ed25519	https://github.com/paulmillr/noble-ed25519	43	5	43	1	false	Noble ed25519 + ristretto255. Fast, high-security, easily auditable, 0-dep, 1-file pubkey, scalarmult & EDDSA
+noble-bls12-381	paulmillr/noble-bls12-381	https://github.com/paulmillr/noble-bls12-381	42	9	42	3	false	Noble BLS12-381 pairing-friendly curve in JS. High-security, easily auditable, 0-dep aggregated signatures & pubkey
+dem	syumai/dem	https://github.com/syumai/dem	40	1	40	2	false	A module version manager for Deno.
+denomander	siokas/denomander	https://github.com/siokas/denomander	36	2	36	4	false	Deno command-line interfaces made easy
+denomon	remy/denomon	https://github.com/remy/denomon	36	0	36	6	false	Port of nodemon to deno
+noble-secp256k1	paulmillr/noble-secp256k1	https://github.com/paulmillr/noble-secp256k1	35	3	35	1	false	Noble secp256k1. Fast, high-security, easily auditable, 0-dep, 1-file pubkey & ECDSA signature scheme
+djwt	timonson/djwt	https://github.com/timonson/djwt	35	2	35	4	false	the absolute minimum to make JSON Web Tokens in deno. Based on JWT and JWS specifications.
+i18next-http-backend	i18next/i18next-http-backend	https://github.com/i18next/i18next-http-backend	33	11	33	4	false	i18next-http-backend is a backend layer for i18next using in Node.js, in the browser and for Deno.
+reno	reno-router/reno	https://github.com/reno-router/reno	33	3	33	2	false	A thin, testable routing library designed to sit on top of Deno's standard HTTP module
+i18next-locize-backend	locize/i18next-locize-backend	https://github.com/locize/i18next-locize-backend	32	16	32	2	false	A simple i18next backend for locize.com which can be used in Node.js, in the browser and for Deno.
+cli-spinners	ameerthehacker/cli-spinners	https://github.com/ameerthehacker/cli-spinners	32	3	32	2	false	Awesome deno terminal spinners :art:
+aqua	l2ig/aqua	https://github.com/l2ig/aqua	32	1	32	1	false	A minimal and fast web framework for Deno
+rimu	srackham/rimu	https://github.com/srackham/rimu	31	4	31	6	false	Readable text to HTML markup language
+deno_brotli	denosaurs/deno_brotli	https://github.com/denosaurs/deno_brotli	29	3	29	3	false	🗜 Brotli wasm module for deno
+deku	yisar/deku	https://github.com/yisar/deku	29	3	29	2	false	⛄️ No-bundle Dev Server for ES modules with deno.
+deno-imagemagick	leonelv/deno-imagemagick	https://github.com/leonelv/deno-imagemagick	28	2	28	1	false	Deno port of the WASM library for ImageMagick
+dex	denjucks/dex	https://github.com/denjucks/dex	27	1	27	1	false	Dex: An SQL query builder port of Knex for Deno
+destr	nuxt-contrib/destr	https://github.com/nuxt-contrib/destr	26	1	26	2	false	Faster, secure and convenient alternative for JSON.parse
+denoliver	joakimunge/denoliver	https://github.com/joakimunge/denoliver	26	0	26	1	false	A simple, dependency free static file server for Deno with possibly the worst name ever.
+dinocord	sunsetkookaburra/dinocord	https://github.com/sunsetkookaburra/dinocord	24	4	24	3	false	A Discord API Library for Deno 🦕
+deno-task-runner	jinjor/deno-task-runner	https://github.com/jinjor/deno-task-runner	24	4	24	1	false	Task runner for deno
+rubico	a-synchronous/rubico	https://github.com/a-synchronous/rubico	24	1	24	2	false	🏞 [a]synchronous functional syntax
+sql-builder	manyuanrong/sql-builder	https://github.com/manyuanrong/sql-builder	23	5	23	2	false	SQL query builder for Deno
+cotton	rahmanfadhil/cotton	https://github.com/rahmanfadhil/cotton	23	3	23	5	false	SQL Database Toolkit for Deno
+Denocord	Denocord/Denocord	https://github.com/Denocord/Denocord	23	1	23	2	false	A fast, strongly typed and versatile Discord API wrapper for the Deno runtime.
+espresso	disizali/espresso	https://github.com/disizali/espresso	22	5	22	3	false	Minimal web framework for Deno
+rhinoder	Caesar2011/rhinoder	https://github.com/Caesar2011/rhinoder	21	5	21	1	false	Reloads a deno application on file change
+Attain	aaronwlee/Attain	https://github.com/aaronwlee/Attain	21	1	21	1	false	Deno API middleware Server
+run_exclusive	garronej/run_exclusive	https://github.com/garronej/run_exclusive	21	0	21	1	false	⚡🔒 Generate functions that do not allow parallel executions 🔒 ⚡
+deno_cron	rbrahul/deno_cron	https://github.com/rbrahul/deno_cron	20	0	20	1	false	A cron Job scheduler for Deno that allows you to write human readable cron syntax with tons of flexibility
+expect	allain/expect	https://github.com/allain/expect	19	6	19	1	false	helpers for writing jest like expect tests in deno
+deno-smtp	manyuanrong/deno-smtp	https://github.com/manyuanrong/deno-smtp	19	5	19	1	false	SMTP implements for deno
+router	zhmushan/router	https://github.com/zhmushan/router	19	0	19	1	false	A high-performance basic router works anywhere.
+deno-is	justjavac/deno-is	https://github.com/justjavac/deno-is	19	0	19	1	false	Detect the running environment and context of the current script
+dactyl	liamtan28/dactyl	https://github.com/liamtan28/dactyl	17	4	17	1	false	Web framework for Deno, built on top of Oak 🦇
+deno-cliffy	c4spar/deno-cliffy	https://github.com/c4spar/deno-cliffy	17	3	17	2	false	Command line framework for deno.
+dev_server	zhmushan/dev_server	https://github.com/zhmushan/dev_server	16	1	16	2	false	Feel free to import TypeScript files in the script tag!
+denjucks	denjucks/denjucks	https://github.com/denjucks/denjucks	16	0	16	1	false	Deno templating engine
+soxa	fakoua/soxa	https://github.com/fakoua/soxa	15	4	15	2	false	Promise based HTTP client for the deno
+deno_types	Soremwar/deno_types	https://github.com/Soremwar/deno_types	15	2	15	2	false	A curated list for compatible NPM libraries and their definition files for its use with Deno
+saur	tubbo/saur	https://github.com/tubbo/saur	15	0	15	2	false	a rapid web development framework for deno
+dep	denodep/dep	https://github.com/denodep/dep	15	0	15	2	false	Deno dependency management tool.
+cordeno	cordeno/cordeno	https://github.com/cordeno/cordeno	14	5	14	1	false	🦕 A Discord API wrapper for developing discord bots using the Deno runtime.
+dexecutor	denjucks/dexecutor	https://github.com/denjucks/dexecutor	14	1	14	1	false	Deno SQL Executor
+denova	viandwi24/denova	https://github.com/viandwi24/denova	13	2	13	4	false	a Typescript Framework For Deno - Framework Looks Like Laravel
+i18next-http-middleware	i18next/i18next-http-middleware	https://github.com/i18next/i18next-http-middleware	12	4	12	3	false	i18next-http-middleware is a middleware to be used with Node.js web frameworks like express or Fastify and also for Deno.
+deno_sqlite_plugin	crabmusket/deno_sqlite_plugin	https://github.com/crabmusket/deno_sqlite_plugin	12	1	12	1	false	Bindings to rusqlite for Deno
+graphql_abc	danielrearden/graphql_abc	https://github.com/danielrearden/graphql_abc	12	0	12	2	false	GraphQL ABC - a GraphQL middleware for the abc web framework
+deno_slugify	jcardama/deno_slugify	https://github.com/jcardama/deno_slugify	11	2	11	1	false	A string slugifier
+drun	MarcHanin/drun	https://github.com/MarcHanin/drun	11	2	11	1	false	
+deno-argon2	fdionisi/deno-argon2	https://github.com/fdionisi/deno-argon2	10	1	10	2	false	Argon2 encryption library for Deno
+deno-uuid	lucascaro/deno-uuid	https://github.com/lucascaro/deno-uuid	10	1	10	1	false	Deprecated! UUID is part of the deno standard library
+deno-amqp	lenkan/deno-amqp	https://github.com/lenkan/deno-amqp	10	1	10	1	false	
+snowlight	trylix/snowlight	https://github.com/trylix/snowlight	10	0	10	3	false	Snowlight is a web application server framework for Deno 🦕
+dynamodb	chiefbiiko/dynamodb	https://github.com/chiefbiiko/dynamodb	9	6	9	1	false	deno <3 dynamodb
+event_emitter	denolibs/event_emitter	https://github.com/denolibs/event_emitter	9	3	9	3	false	A NodeJS-like EventEmitter for Deno in Typescript.
+ask	jozsefsallai/ask	https://github.com/jozsefsallai/ask	9	2	9	2	false	interactive command-line prompts for deno
+Upload-middleware-for-Oak-Deno-framework	hviana/Upload-middleware-for-Oak-Deno-framework	https://github.com/hviana/Upload-middleware-for-Oak-Deno-framework	9	2	9	1	false	This middleware automatically organizes uploads to avoid file system problems and create dirs if not exists, perform validations and optimizes ram usage when uploading big files using Deno standard libraries!
+bwt	chiefbiiko/bwt	https://github.com/chiefbiiko/bwt	9	1	9	3	false	Better Web Token - an iteration of web tokens with a bunch of improvements
 denoget	syumai/denoget	https://github.com/syumai/denoget	9	1	9	1	false	A tool to install executable deno script.
-denv	crowlKats/denv	https://github.com/crowlKats/denv	8	3	8	2	false	A module similar to dotEnv, but for Deno
+flowed	danielduarte/flowed	https://github.com/danielduarte/flowed	9	0	9	6	false	A fast and reliable flow engine for orchestration in Node.js, Deno and the browser
+casualdb	campvanilla/casualdb	https://github.com/campvanilla/casualdb	9	0	9	3	false	Simple JSON "database" for Deno with type-safety! ⚡️
+sockets	drashland/sockets	https://github.com/drashland/sockets	9	0	9	2	false	A WebSocket library for Deno.
+graphql-deno	adelsz/graphql-deno	https://github.com/adelsz/graphql-deno	9	0	9	2	false	GraphQL-JS ported to Deno
+dinja	denjucks/dinja	https://github.com/denjucks/dinja	9	0	9	2	false	Deno web framework
+sf	txthinking/sf	https://github.com/txthinking/sf	9	0	9	1	false	 A stupid javascript web framework for deno
+noble-ripemd160	paulmillr/noble-ripemd160	https://github.com/paulmillr/noble-ripemd160	9	0	9	1	false	Noble RIPEMD160. High-security, easily auditable, 0-dep, 1-file hash function
+iam-policies	roggervalf/iam-policies	https://github.com/roggervalf/iam-policies	8	4	8	1	false	Iam policies implementation for create roles and manage permissions
+cors	tajpouria/cors	https://github.com/tajpouria/cors	8	3	8	1	false	Deno.js module for providing a middleware that can be used to enable CORS with various options
+cursornext	clitetailor/cursornext	https://github.com/clitetailor/cursornext	8	2	8	1	false	A minimalist library for parsing :cactus:
+deno-args	KSXGitHub/deno-args	https://github.com/KSXGitHub/deno-args	8	2	8	1	false	Extensible CLI arguments parser for Deno with intelligent TypeScript inference
+i18next-fs-backend	i18next/i18next-fs-backend	https://github.com/i18next/i18next-fs-backend	8	1	8	3	false	i18next-fs-backend is a backend layer for i18next using in Node.js and for Deno to load translations from the filesystem.
+gardens	partheseas/gardens	https://github.com/partheseas/gardens	8	0	8	2	false	A useful logging utility for JavaScript everywhere. 🎉
+deno-ci	justjavac/deno-ci	https://github.com/justjavac/deno-ci	8	0	8	1	false	Get environment variables exposed by CI services
 deno-bcrypt	JamesBroadberry/deno-bcrypt	https://github.com/JamesBroadberry/deno-bcrypt	8	0	8	1	false	A port of jBCrypt to TypeScript for use as a Deno module
+deno-clipboard	rsp/deno-clipboard	https://github.com/rsp/deno-clipboard	7	4	7	1	false	The clipboard copy/paste API for Deno
+denv	crowlKats/denv	https://github.com/crowlKats/denv	7	3	7	2	false	A module similar to dotEnv, but for Deno
+deno_gui	fakoua/deno_gui	https://github.com/fakoua/deno_gui	7	2	7	2	false	Deno Web GUI
+deno-semver	justjavac/deno-semver	https://github.com/justjavac/deno-semver	7	2	7	1	false	The semver parser for Deno (a fork of node-semver using TypeScript) 
+deno-debug	rista404/deno-debug	https://github.com/rista404/deno-debug	7	2	7	1	false	Debugging utility for deno. Ported from https://npmjs.com/debug
+denogram	denogram/denogram	https://github.com/denogram/denogram	7	1	7	2	false	A Telegram Bot framework for Deno 🦕
 Fae	Jozty/Fae	https://github.com/Jozty/Fae	7	1	7	2	false	A functional module for Deno inspired from Ramda.
+dpm-cli	dpmland/dpm-cli	https://github.com/dpmland/dpm-cli	7	1	7	2	false	Deno Package Manager CLI
+superdeno	asos-craigmorten/superdeno	https://github.com/asos-craigmorten/superdeno	7	1	7	1	false	Super-agent driven library for testing Deno HTTP servers.
 deno-emacs	rclarey/deno-emacs	https://github.com/rclarey/deno-emacs	7	1	7	1	false	A collection of utilities to allow for development with deno in emacs!
+Trex	crewdevio/Trex	https://github.com/crewdevio/Trex	7	0	7	2	false	package management like npm for deno 🐱‍🐉
+supreme_api	desire/supreme_api	https://github.com/desire/supreme_api	7	0	7	1	false	Unofficial Supreme API wrapper for monitoring products.
+Houston	MartonDev/Houston	https://github.com/MartonDev/Houston	7	0	7	1	false	An advanced Deno logger, like Winston for Nodejs, with no dependencies
+deno_di	luvies/deno_di	https://github.com/luvies/deno_di	7	0	7	1	false	A dependency injection (IoC) module for deno
+deno-structured-logging	Yamboy1/deno-structured-logging	https://github.com/Yamboy1/deno-structured-logging	7	0	7	0	false	A structured logging module for Deno
+CatYou-Deno	SuperC03/CatYou-Deno	https://github.com/SuperC03/CatYou-Deno	6	3	6	1	false	Every Framework Needs a Cat API
+session	denjucks/session	https://github.com/denjucks/session	6	2	6	1	false	Sessions for deno web frameworks
+deno_graphql	cvng/deno_graphql	https://github.com/cvng/deno_graphql	6	2	6	1	false	GraphQL HTTP middlewares for Deno server frameworks.
+statistics	ergenekonyigit/statistics	https://github.com/ergenekonyigit/statistics	6	1	6	2	false	Deno basic statistics module.
+snelm	denjucks/snelm	https://github.com/denjucks/snelm	6	1	6	1	false	Snelm: improved security middleware for deno web frameworks, derived from helmet for Node.
+dpx	denorg/dpx	https://github.com/denorg/dpx	6	0	6	5	false	📦 CLI to run a Deno package without installing it (like npx for Deno)
+fastro	fastrodev/fastro	https://github.com/fastrodev/fastro	6	0	6	2	false	Fast & simple web framework for deno
+deno-correiobr	rafaelferres/deno-correiobr	https://github.com/rafaelferres/deno-correiobr	6	0	6	1	false	Complete module to consult information about the zip code, calculate the price and delivery times of orders and also perform their tracking
 berror	baptistemarchand/berror	https://github.com/baptistemarchand/berror	6	0	6	1	false	Rich Errors including chain of causes, metadata, easy logging and TypeScript definitions.
 actdb	searchableguy/actdb	https://github.com/searchableguy/actdb	6	0	6	1	true	Act is a simple nosql reactive database.
+deno_easypath	zekth/deno_easypath	https://github.com/zekth/deno_easypath	5	3	5	1	false	Filesystem helper for Deno
+deno-checksum	manyuanrong/deno-checksum	https://github.com/manyuanrong/deno-checksum	5	3	5	1	false	Sha1、MD5 algorithms for Deno
+up	denorg/up	https://github.com/denorg/up	5	2	5	5	false	🔌 Check if a website is up with Deno
 descord	TheDrone7/descord	https://github.com/TheDrone7/descord	5	1	5	2	false	A discord API wrapper written using TypeScript for deno.
+transport	SASNOVACAT08/transport	https://github.com/SASNOVACAT08/transport	5	1	5	1	false	🦕 WebSocket for Deno 🦕
+rute	jabernardo/rute	https://github.com/jabernardo/rute	5	1	5	1	false	A Simple Router for Deno
+rsocket-deno	linux-china/rsocket-deno	https://github.com/linux-china/rsocket-deno	5	1	5	1	false	🦕RSocket Deno module
+ink	fakoua/ink	https://github.com/fakoua/ink	5	1	5	1	false	Terminal string color for Deno
+csp	CreatCodeBuild/csp	https://github.com/CreatCodeBuild/csp	5	1	5	1	false	Communicating Sequential Process in JavaScript that runs in Browser, Node and Deno
+deno-tar	divy-work/deno-tar	https://github.com/divy-work/deno-tar	5	0	5	2	false	TAR archive management in Deno :package:
+Commands	buttercubz/Commands	https://github.com/buttercubz/Commands	5	0	5	2	false	🌈 Create commands shortcuts for node js and deno
 async-ray-deno	rpgeeganage/async-ray-deno	https://github.com/rpgeeganage/async-ray-deno	5	0	5	2	false	Provide async/await callbacks for every, find, findIndex, filter, forEach, map, reduce, reduceRight and some methods in Array.
 ako	ako-deno/ako	https://github.com/ako-deno/ako	5	0	5	2	false	Expressive HTTP middleware framework for deno using async functions. Aiming to port Koa to Deno.
 airtable-deno	grikomsn/airtable-deno	https://github.com/grikomsn/airtable-deno	5	0	5	2	false	Unofficial Airtable Client for Deno 🦕
-deno-args	KSXGitHub/deno-args	https://github.com/KSXGitHub/deno-args	8	2	8	1	false	Extensible CLI arguments parser for Deno with intelligent TypeScript inference
-dex	denjucks/dex	https://github.com/denjucks/dex	27	1	27	1	false	Dex: An SQL query builder port of Knex for Deno
-Attain	aaronwlee/Attain	https://github.com/aaronwlee/Attain	21	1	21	1	false	Deno API middleware Server
-csp	CreatCodeBuild/csp	https://github.com/CreatCodeBuild/csp	5	1	5	1	false	Communicating Sequential Process in JavaScript that runs in Browser, Node and Deno
+deno-using	hayd/deno-using	https://github.com/hayd/deno-using	5	0	5	1	false	python-style with statements for deno
+superoak	asos-craigmorten/superoak	https://github.com/asos-craigmorten/superoak	5	0	5	1	false	HTTP assertions for Oak made easy via SuperDeno.
+status	denosaurs/status	https://github.com/denosaurs/status	5	0	5	1	false	🗿 HTTP status utility for Deno. Based on Java Apache HttpStatus
+gentleRpc	timonson/gentleRpc	https://github.com/timonson/gentleRpc	5	0	5	1	false	JSON-RPC 2.0 TypeScript library for deno and browser
+deno_free_port	axetroy/deno_free_port	https://github.com/axetroy/deno_free_port	5	0	5	1	false	Get free port for Deno
+fiona	billymoon/fiona	https://github.com/billymoon/fiona	5	0	5	1	false	
+due	lemueldls/due	https://github.com/lemueldls/due	5	0	5	1	false	A framework built for Deno, using Vue.js
+denoversion	lucascaro/denoversion	https://github.com/lucascaro/denoversion	5	0	5	1	false	Deno cli to manage and bump release versions.
+deno-riot	rafaelferres/deno-riot	https://github.com/rafaelferres/deno-riot	5	0	5	1	false	League of legends api wrapper
+deno-hoarders	searchableguy/deno-hoarders	https://github.com/searchableguy/deno-hoarders	5	0	5	1	false	A module for deno that imports every external module from deno's website.
+validasaur	emsifa/validasaur	https://github.com/emsifa/validasaur	4	2	4	1	false	Deno validation library
 create-deno-plugin	chiefbiiko/create-deno-plugin	https://github.com/chiefbiiko/create-deno-plugin	4	1	4	1	false	0-thought deno plugin skeletons
 framework	arkoren/framework	https://github.com/arkoren/framework	4	1	4	1	false	Framework - The core of the arkoren web framework.
+deno-change-case	justjavac/deno-change-case	https://github.com/justjavac/deno-change-case	4	1	4	0	false	Convert strings between camelCase, PascalCase, Title Case, snake_case and more 
+deno-sendgrid	gpasq/deno-sendgrid	https://github.com/gpasq/deno-sendgrid	4	0	4	2	false	
+datetoken.js	sonirico/datetoken.js	https://github.com/sonirico/datetoken.js	4	0	4	2	false	Parse strings into relative date time objects, ideal for pickers and preventing premature cache invalidation
+deno-sparkpost	hayd/deno-sparkpost	https://github.com/hayd/deno-sparkpost	4	0	4	1	false	Send emails from deno via the SparkPost API
+deno_twitter_api	stefanuros/deno_twitter_api	https://github.com/stefanuros/deno_twitter_api	4	0	4	1	false	A Deno Module to make accessing the Twitter API from Deno a bit easier. 
+deno-check-updates	Fzwael/deno-check-updates	https://github.com/Fzwael/deno-check-updates	4	0	4	1	false	:mag: Automatically checks deno dependencies versions from import maps file
+deno-deamon	manyuanrong/deno-deamon	https://github.com/manyuanrong/deno-deamon	4	0	4	1	false	Make the Deno program run in the background
+color	maheshkareeya/color	https://github.com/maheshkareeya/color	4	0	4	1	false	Write Colourful Messages  In console. Styling Console. It's easy to learn and use.
+carol	uki00a/carol	https://github.com/uki00a/carol	4	0	4	1	false	Build cross-platform desktop apps with Deno and HTML
 behin	lolivei/behin	https://github.com/lolivei/behin	4	0	4	1	false	One-time password lib for Deno 🦕⏱ (TOTP/HOTP)
 axiod	roonie007/axiod	https://github.com/roonie007/axiod	4	0	4	1	false	Promise based HTTP client for Deno
 adka	apiel/adka	https://github.com/apiel/adka	4	0	4	1	false	SSG & SSR: Static site generator and server side rendering using JSX.
+take-five	toddself/take-five	https://github.com/toddself/take-five	4	0	4	0	false	JSON REST server
+gusano	krthr/gusano	https://github.com/krthr/gusano	4	0	4	0	false	A minimal workflows lib for Deno 🦖
 bytes_formater	manyuanrong/bytes_formater	https://github.com/manyuanrong/bytes_formater	3	3	3	1	false	Formatting bytes(Uint8Array、Uint16Array、Uint32Array、ArrayBufferView..) output, is very useful when debugging IO functions
-casualdb	campvanilla/casualdb	https://github.com/campvanilla/casualdb	9	0	9	3	false	Simple JSON "database" for Deno with type-safety! ⚡️
-deno-cliffy	c4spar/deno-cliffy	https://github.com/c4spar/deno-cliffy	17	3	17	2	false	Command line framework for deno.
-deno-clipboard	rsp/deno-clipboard	https://github.com/rsp/deno-clipboard	7	4	7	1	false	The clipboard copy/paste API for Deno
-CatYou-Deno	SuperC03/CatYou-Deno	https://github.com/SuperC03/CatYou-Deno	6	3	6	1	false	Every Framework Needs a Cat API
-deno-checksum	manyuanrong/deno-checksum	https://github.com/manyuanrong/deno-checksum	5	3	5	1	false	Sha1、MD5 algorithms for Deno
-color	maheshkareeya/color	https://github.com/maheshkareeya/color	4	0	4	1	false	Write Colourful Messages  In console. Styling Console. It's easy to learn and use.
-carol	uki00a/carol	https://github.com/uki00a/carol	4	0	4	1	false	Build cross-platform desktop apps with Deno and HTML
 deno-collections	hayd/deno-collections	https://github.com/hayd/deno-collections	3	2	3	1	false	
-bump	iAmNathanJ/bump	https://github.com/iAmNathanJ/bump	3	0	3	1	false	Project versioning tool for Deno
-centroid	themost-framework/centroid	https://github.com/themost-framework/centroid	2	1	2	1	false	MOST Web Framework for deno.js
-census	being-curious/census	https://github.com/being-curious/census	2	1	2	1	false	Count modules in https://deno.land/x
-deno-ci	justjavac/deno-ci	https://github.com/justjavac/deno-ci	8	0	8	1	false	Get environment variables exposed by CI services
-Commands	buttercubz/Commands	https://github.com/buttercubz/Commands	5	0	5	2	false	🌈 Create commands shortcuts for node js and deno
+http-server	skoshx/http-server	https://github.com/skoshx/http-server	3	1	3	1	false	http-server is a tiny and zero-configuration HTTP server to serve static files with Deno
+deno_modules	davidjamesstone/deno_modules	https://github.com/davidjamesstone/deno_modules	3	1	3	1	false	Deno modules
+docopt.js	Eyal-Shalev/docopt.js	https://github.com/Eyal-Shalev/docopt.js	3	1	3	1	false	command line option parser, that will make you smile
+deno_init	maxuuell/deno_init	https://github.com/maxuuell/deno_init	3	1	3	1	false	executable to create a deno project
 cursor	iAmNathanJ/cursor	https://github.com/iAmNathanJ/cursor	3	1	3	1	false	ANSI control sequences for your terminal cursor
-denjucks	denjucks/denjucks	https://github.com/denjucks/denjucks	16	0	16	1	false	Deno templating engine
+rxjs	DenoBRComunitty/rxjs	https://github.com/DenoBRComunitty/rxjs	3	1	3	0	false	Uma biblioteca de programação reativa para JavaScript, agora disponível para Deno! https://rxjs.dev
+deno_notify	PandawanFr/deno_notify	https://github.com/PandawanFr/deno_notify	3	0	3	2	false	Send desktop notifications on all platforms in Deno
+serialize-xml	olaven/serialize-xml	https://github.com/olaven/serialize-xml	3	0	3	1	false	Serialize (i.e. stringify) an object into xml string. 
+deno-sass	divy-work/deno-sass	https://github.com/divy-work/deno-sass	3	0	3	1	false	WASM bindings to Grass SASS compiler for Deno.
+reactive-js	bordoley/reactive-js	https://github.com/bordoley/reactive-js	3	0	3	1	false	Fast modern reactive Javascript programming library
+funky	ful-stackz/funky	https://github.com/ful-stackz/funky	3	0	3	1	false	Getting funky with Deno!
+emoji	s1mpson/emoji	https://github.com/s1mpson/emoji	3	0	3	1	false	😂 Simple emoji support for Deno 🦕 (validate, detect, trim, extract)
+deno_search	etopiei/deno_search	https://github.com/etopiei/deno_search	3	0	3	1	false	A quick CLI utility to search available third party deno modules.
 crony	uchm4n/crony	https://github.com/uchm4n/crony	3	0	3	1	false	Manage all your cron jobs in one file
 deno-cron	wrzonki/deno-cron	https://github.com/wrzonki/deno-cron	3	0	3	1	false	
 country-list	yonas-g/country-list	https://github.com/yonas-g/country-list	3	0	3	1	false	Get world countries list
-curve25519	chiefbiiko/curve25519	https://github.com/chiefbiiko/curve25519	2	1	2	1	false	djb's Curve25519 in TypeScript
-datetoken.js	sonirico/datetoken.js	https://github.com/sonirico/datetoken.js	4	0	4	2	false	Parse strings into relative date time objects, ideal for pickers and preventing premature cache invalidation
-deno-debug	rista404/deno-debug	https://github.com/rista404/deno-debug	7	2	7	1	false	Debugging utility for deno. Ported from https://npmjs.com/debug
-dem	syumai/dem	https://github.com/syumai/dem	40	1	40	2	false	A module version manager for Deno.
-deno-deamon	manyuanrong/deno-deamon	https://github.com/manyuanrong/deno-deamon	4	0	4	1	false	Make the Deno program run in the background
-deno_app_setuper	alreadyExisted/deno_app_setuper	https://github.com/alreadyExisted/deno_app_setuper	2	0	2	2	false	A CLI to setup apps like a Create React App
-deno-databatcher	allain/deno-databatcher	https://github.com/allain/deno-databatcher	2	0	2	1	false	DataBatcher implementation in deno
-dash	xpyxel/dash	https://github.com/xpyxel/dash	2	0	2	1	false	Simple, fast, and efficient cache library for Deno 
-cute	llbarbosas/cute	https://github.com/llbarbosas/cute	2	0	2	1	false	Tokenizer/lexer generator for Deno like moo
-deno-aws-sign-v4	silver-xu/deno-aws-sign-v4	https://github.com/silver-xu/deno-aws-sign-v4	1	1	1	1	false	Generates AWS Signature V4 for AWS low-level REST APIs
-deno_cron	rbrahul/deno_cron	https://github.com/rbrahul/deno_cron	20	0	20	1	false	A cron Job scheduler for Deno that allows you to write human readable cron syntax with tons of flexibility
-deno_gui	fakoua/deno_gui	https://github.com/fakoua/deno_gui	7	2	7	2	false	Deno Web GUI
-deno-imagemagick	leonelv/deno-imagemagick	https://github.com/leonelv/deno-imagemagick	28	2	28	1	false	Deno port of the WASM library for ImageMagick
-deno_graphql	cvng/deno_graphql	https://github.com/cvng/deno_graphql	6	2	6	1	false	GraphQL HTTP middlewares for Deno server frameworks.
-deno-correiobr	rafaelferres/deno-correiobr	https://github.com/rafaelferres/deno-correiobr	6	0	6	1	false	Complete module to consult information about the zip code, calculate the price and delivery times of orders and also perform their tracking
-deno-check-updates	Fzwael/deno-check-updates	https://github.com/Fzwael/deno-check-updates	4	0	4	1	false	:mag: Automatically checks deno dependencies versions from import maps file
-deno_init	maxuuell/deno_init	https://github.com/maxuuell/deno_init	3	1	3	1	false	executable to create a deno project
+bump	iAmNathanJ/bump	https://github.com/iAmNathanJ/bump	3	0	3	1	false	Project versioning tool for Deno
 sdk-for-deno	appwrite/sdk-for-deno	https://github.com/appwrite/sdk-for-deno	3	0	3	1	false	[READ-ONLY] Official Appwrite Deno SDK
-deno-matrix	anirudhgiri/deno-matrix	https://github.com/anirudhgiri/deno-matrix	2	1	2	1	false	🦕 Lightweight Deno Library To Handle Matrices 🦖
-deno-log	rafaelferres/deno-log	https://github.com/rafaelferres/deno-log	2	1	2	1	false	Lightweight logger with an extensible configuration 🦕
-deno-hidefile	rafaelferres/deno-hidefile	https://github.com/rafaelferres/deno-hidefile	2	1	2	1	false	Create hidden file or folder in Deno 🦕
-deno_notify	PandawanFr/deno_notify	https://github.com/PandawanFr/deno_notify	3	0	3	2	false	Send desktop notifications on all platforms in Deno
-deno-riot	rafaelferres/deno-riot	https://github.com/rafaelferres/deno-riot	4	0	4	1	false	League of legends api wrapper
-deno_search	etopiei/deno_search	https://github.com/etopiei/deno_search	3	0	3	1	false	A quick CLI utility to search available third party deno modules.
-deno-deblong	nusendra/deno-deblong	https://github.com/nusendra/deno-deblong	2	0	2	1	false	another simple rest api with deno
-deno-giphy-api	yeukfei02/deno-giphy-api	https://github.com/yeukfei02/deno-giphy-api	1	1	1	1	false	giphy api in deno
-deno-hoarders	searchableguy/deno-hoarders	https://github.com/searchableguy/deno-hoarders	5	0	5	1	false	A module for deno that imports every external module from deno's website.
-deno_twitter_api	stefanuros/deno_twitter_api	https://github.com/stefanuros/deno_twitter_api	4	0	4	1	false	A Deno Module to make accessing the Twitter API from Deno a bit easier. 
+deno-dirname	rsp/deno-dirname	https://github.com/rsp/deno-dirname	3	0	3	0	false	Node-style __dirname and __filename polyfill for Deno
+dexr	AkifumiSato/dexr	https://github.com/AkifumiSato/dexr	3	0	3	0	false	
+deno_tiny_templates	zekth/deno_tiny_templates	https://github.com/zekth/deno_tiny_templates	2	2	2	2	false	A template parser for deno
+dmm	drashland/dmm	https://github.com/drashland/dmm	2	1	2	3	false	
+deno-username	justjavac/deno-username	https://github.com/justjavac/deno-username	2	1	2	1	false	Get the username of the current user
+deno_servicr	astanciu/deno_servicr	https://github.com/astanciu/deno_servicr	2	1	2	1	false	Deno application/service manager
 denock	SachaCR/denock	https://github.com/SachaCR/denock	2	1	2	1	false	Denock intercepts HTTP calls to allow mocking response from third parties
 deno-windows	rafaelferres/deno-windows	https://github.com/rafaelferres/deno-windows	2	1	2	1	false	Windows Service controller for Deno
 deno-weather	yeukfei02/deno-weather	https://github.com/yeukfei02/deno-weather	2	1	2	1	false	get current weather by city name, state and country code
-deno-validator	parasg1999/deno-validator	https://github.com/parasg1999/deno-validator	0	1	0	1	false	String validation for deno inspired by validator.js
-denomon	remy/denomon	https://github.com/remy/denomon	35	0	35	6	false	Port of nodemon to deno
-denoliver	joakimunge/denoliver	https://github.com/joakimunge/denoliver	26	0	26	1	false	A simple, dependency free static file server for Deno with possibly the worst name ever.
-dinja	denjucks/dinja	https://github.com/denjucks/dinja	9	0	9	2	false	Deno web framework
-gardens	partheseas/gardens	https://github.com/partheseas/gardens	8	0	8	2	false	A useful logging utility for JavaScript everywhere. 🎉
-fastro	fastrodev/fastro	https://github.com/fastrodev/fastro	6	0	6	2	false	Fast & simple web framework for deno
-denoversion	lucascaro/denoversion	https://github.com/lucascaro/denoversion	5	0	5	1	false	Deno cli to manage and bump release versions.
-deno_modules	davidjamesstone/deno_modules	https://github.com/davidjamesstone/deno_modules	3	1	3	1	false	Deno modules
-flowed	danielduarte/flowed	https://github.com/danielduarte/flowed	9	0	9	6	false	A fast and reliable flow engine for orchestration in Node.js, Deno and the browser
-deno-is	justjavac/deno-is	https://github.com/justjavac/deno-is	19	0	19	1	false	Detect the running environment and context of the current script
-deno_free_port	axetroy/deno_free_port	https://github.com/axetroy/deno_free_port	5	0	5	1	false	Get free port for Deno
-fiona	billymoon/fiona	https://github.com/billymoon/fiona	5	0	5	1	false	
-funky	ful-stackz/funky	https://github.com/ful-stackz/funky	3	0	3	1	false	Getting funky with Deno!
+deno-matrix	anirudhgiri/deno-matrix	https://github.com/anirudhgiri/deno-matrix	2	1	2	1	false	🦕 Lightweight Deno Library To Handle Matrices 🦖
+deno-log	rafaelferres/deno-log	https://github.com/rafaelferres/deno-log	2	1	2	1	false	Lightweight logger with an extensible configuration 🦕
+deno-hidefile	rafaelferres/deno-hidefile	https://github.com/rafaelferres/deno-hidefile	2	1	2	1	false	Create hidden file or folder in Deno 🦕
+curve25519	chiefbiiko/curve25519	https://github.com/chiefbiiko/curve25519	2	1	2	1	false	djb's Curve25519 in TypeScript
+centroid	themost-framework/centroid	https://github.com/themost-framework/centroid	2	1	2	1	false	MOST Web Framework for deno.js
+census	being-curious/census	https://github.com/being-curious/census	2	1	2	1	false	Count modules in https://deno.land/x
+clone	ekaragodin/clone	https://github.com/ekaragodin/clone	2	1	2	0	false	A simple utility for the convenient clone
+recursive-readdir	denorg/recursive-readdir	https://github.com/denorg/recursive-readdir	2	0	2	5	false	📁 Recursively read directories in Deno
+invert-kv	denorg/invert-kv	https://github.com/denorg/invert-kv	2	0	2	5	false	🙃 Invert key-value pairs in an object, e.g., { foo: "bar" } → { bar: "foo" }
+deno_app_setuper	alreadyExisted/deno_app_setuper	https://github.com/alreadyExisted/deno_app_setuper	2	0	2	2	false	A CLI to setup apps like a Create React App
+deno_tokenizer	eliassjogreen/deno_tokenizer	https://github.com/eliassjogreen/deno_tokenizer	2	0	2	1	false	⚙️ A simple tokenizer for deno
+teddytags	teddytags/teddytags	https://github.com/teddytags/teddytags	2	0	2	1	false	:bear: The superfast way to custom elements.
+deno-rsync-parser	daniel-araujo/deno-rsync-parser	https://github.com/daniel-araujo/deno-rsync-parser	2	0	2	1	false	Parses the output of rsync when called with the `--itemize-changes` option. This allows you to programmatically identify files that got created, updated and deleted. Output can be in the form of strings and streams.
+deno-remove-forever	oganexon/deno-remove-forever	https://github.com/oganexon/deno-remove-forever	2	0	2	1	false	Data erasure solution for files on deno 🦕
+deno-pipeline	Focinfi/deno-pipeline	https://github.com/Focinfi/deno-pipeline	2	0	2	1	false	Configurable data pipeline in Deno
+deno-local-ip	joakimunge/deno-local-ip	https://github.com/joakimunge/deno-local-ip	2	0	2	1	false	Tiny module for Deno to get local network interface address.
+core	levo-framework/core	https://github.com/levo-framework/core	2	0	2	1	false	Server side rendering with The Elm Architecture in Deno
+levenshtein	aosync/levenshtein	https://github.com/aosync/levenshtein	2	0	2	1	false	Deno module to compute the Levenshtein distance between two strings
+indigobird	ralusek/indigobird	https://github.com/ralusek/indigobird	2	0	2	1	false	An alternative to bluebird which is also probably slightly better.
+imt	iosamuel/imt	https://github.com/iosamuel/imt	2	0	2	1	false	TMI.JS implementation for Deno
+deno_html	denomod/deno_html	https://github.com/denomod/deno_html	2	0	2	1	false	Useful template literal tag for create html strings in ES2015+
 fanfou-sdk-deno	LitoMore/fanfou-sdk-deno	https://github.com/LitoMore/fanfou-sdk-deno	2	0	2	1	false	🦕 Fanfou SDK for Deno
+deno_dog	marc2332/deno_dog	https://github.com/marc2332/deno_dog	2	0	2	1	false	🐶  A https://dog.ceo/dog-api/ wrapper for Deno
+denovamon	viandwi24/denovamon	https://github.com/viandwi24/denovamon	2	0	2	1	false	A Module for detech any change file and automatically restart your server. Inspirated by Nodemon.
 denologger	wuperguy/denologger	https://github.com/wuperguy/denologger	2	0	2	1	false	
 denof	r37r0m0d3l/denof	https://github.com/r37r0m0d3l/denof	2	0	2	1	false	Syntactic sugar for asynchronous functions, promises, generators and synchronous functions.
 deno-swagger-doc	singhcool/deno-swagger-doc	https://github.com/singhcool/deno-swagger-doc	2	0	2	1	false	
+deno-deblong	nusendra/deno-deblong	https://github.com/nusendra/deno-deblong	2	0	2	1	false	another simple rest api with deno
+deno-databatcher	allain/deno-databatcher	https://github.com/allain/deno-databatcher	2	0	2	1	false	DataBatcher implementation in deno
+dash	xpyxel/dash	https://github.com/xpyxel/dash	2	0	2	1	false	Simple, fast, and efficient cache library for Deno 
+cute	llbarbosas/cute	https://github.com/llbarbosas/cute	2	0	2	1	false	Tokenizer/lexer generator for Deno like moo
 colors	maheshkareeya/colors	https://github.com/maheshkareeya/colors	2	0	2	1	false	Material Design Colors.
 deno-ciphers	divy-work/deno-ciphers	https://github.com/divy-work/deno-ciphers	2	0	2	1	false	WASM module for Ciphers in Deno.
+betalander	genemators/betalander	https://github.com/genemators/betalander	2	0	2	1	false	The minecraft server manager
 async-call-rpc	Jack-Works/async-call-rpc	https://github.com/Jack-Works/async-call-rpc	2	0	2	1	false	A lightweight JSON RPC client & server
 a1	maheshkareeya/a1	https://github.com/maheshkareeya/a1	2	0	2	1	false	A1 Is Javascript Micro framework for rapid API Development
-Arangeno	HarryET/Arangeno	https://github.com/HarryET/Arangeno	1	1	1	2	false	Arangeno is bassed on ArangoJS and has been ported for use on Deno
-fossil	matteocrippa/fossil	https://github.com/matteocrippa/fossil	1	1	1	1	false	A typescript validation suite for deno projects
-bb64	denjucks/bb64	https://github.com/denjucks/bb64	1	1	1	1	false	Easy to use Deno Base64 Encoder and Decoder for JavaScript and TypeScript
-betalander	genemators/betalander	https://github.com/genemators/betalander	2	0	2	1	false	The minecraft server manager
-deno_util	deepakshrma/deno_util	https://github.com/deepakshrma/deno_util	1	0	1	1	false	A collection of util libraries for Deno like logger [supports color, format, level], prompts [password]
-deno-markdown	JasonHughes94/deno-markdown	https://github.com/JasonHughes94/deno-markdown	1	0	1	1	false	Generate markdown files with ease 🦕
-deno_lodash	alirealasad/deno_lodash	https://github.com/alirealasad/deno_lodash	1	0	1	1	false	Lodash for the Deno via import statement. on https://deno.land/x/deno_lodash
-deno-http-server	pandres95/deno-http-server	https://github.com/pandres95/deno-http-server	1	0	1	1	false	Minimal HTTP Server for Deno
-denet	Ryaangu/denet	https://github.com/Ryaangu/denet	1	0	1	1	false	Easy Game Networking module for Deno.
-den	apiel/den	https://github.com/apiel/den	1	0	1	1	false	A better deno cli :p A wrapper of deno cli to give some extra features.
-deno-csv	vslinko/deno-csv	https://github.com/vslinko/deno-csv	1	0	1	1	false	Streaming API for reading and writing CSV for https://deno.land/
-deno_cross_env	axetroy/deno_cross_env	https://github.com/axetroy/deno_cross_env	1	0	1	1	false	A cli tool for setting environment variables across platforms
-deno-context	Code-Hex/deno-context	https://github.com/Code-Hex/deno-context	1	0	1	1	false	🦕【Deno】Propagate deadlines, a cancellation and other request-scoped values to multiple promise.
-bzfquery.js	The-Noah/bzfquery.js	https://github.com/The-Noah/bzfquery.js	1	0	1	1	false	JavaScript/TypeScript version of bzfquery for Deno
-buffer	socket-deno/buffer	https://github.com/socket-deno/buffer	1	0	1	1	false	Extreme buffer module for deno
-blake2b	chiefbiiko/blake2b	https://github.com/chiefbiiko/blake2b	1	0	1	1	false	BLAKE2b implemented in WebAssembly
-awaitable_mutex	Matthew-Smith/awaitable_mutex	https://github.com/Matthew-Smith/awaitable_mutex	1	0	1	1	false	Deno module for blocking execution of a section of code to one at a time
-Attain-GraphQL	aaronwlee/Attain-GraphQL	https://github.com/aaronwlee/Attain-GraphQL	1	0	1	1	false	A simple GraphQL middleware for the Attain deno
-ascii_table	eeve/ascii_table	https://github.com/eeve/ascii_table	1	0	1	1	false	Easy table output for deno debugging, but you could probably do more with it,  since its just a string.
-api	maheshkareeya/api	https://github.com/maheshkareeya/api	1	0	1	1	false	Promise based HTTP client for the Deno.
-adka_server	apiel/adka_server	https://github.com/apiel/adka_server	1	0	1	1	false	
-accepts	ako-deno/accepts	https://github.com/ako-deno/accepts	1	0	1	1	false	Higher level content negotiation for Deno.
-denotrodon	jabernardo/denotrodon	https://github.com/jabernardo/denotrodon	0	1	0	1	false	Bare Minimum Command-Line (CLI) Application Skeleton
-deno-conf	lemarier/deno-conf	https://github.com/lemarier/deno-conf	0	1	0	1	false	Simple config handling for your app or module with Deno.
-deno_case_style	zekth/deno_case_style	https://github.com/zekth/deno_case_style	0	1	0	1	false	A string validator and formater for case Style
-dep	denodep/dep	https://github.com/denodep/dep	15	0	15	2	false	Deno dependency management tool.
-gentleRpc	timonson/gentleRpc	https://github.com/timonson/gentleRpc	5	0	5	1	false	JSON-RPC 2.0 TypeScript library for deno and browser
-denovamon	viandwi24/denovamon	https://github.com/viandwi24/denovamon	2	0	2	1	false	A Module for detech any change file and automatically restart your server. Inspirated by Nodemon.
-get-ip	denorg/get-ip	https://github.com/denorg/get-ip	1	0	1	5	false	🌐 Get your public IP address in Deno
-graphql-projects	CreatCodeBuild/graphql-projects	https://github.com/CreatCodeBuild/graphql-projects	56	2	56	4	false	Deno + GraphQL === Make API Great Again 
-graphql_abc	danielrearden/graphql_abc	https://github.com/danielrearden/graphql_abc	12	0	12	2	false	GraphQL ABC - a GraphQL middleware for the abc web framework
-graphql-deno	adelsz/graphql-deno	https://github.com/adelsz/graphql-deno	9	0	9	2	false	GraphQL-JS ported to Deno
-deps	denosaurs/deps	https://github.com/denosaurs/deps	1	0	1	2	false	🕴deps.ts manager for Deno (highly WIP)
-deno_di	luvies/deno_di	https://github.com/luvies/deno_di	7	0	7	1	false	A dependency injection (IoC) module for deno
-fs_cli	franckLdx/fs_cli	https://github.com/franckLdx/fs_cli	1	0	1	1	false	A deno tool to clean a bundle: delete, some directories, some files ...
-fox	eankeen/fox	https://github.com/eankeen/fox	1	0	1	1	false	Fox is a little utility that helps you bootstrap Deno applications
-explicitly	RobDWaller/explicitly	https://github.com/RobDWaller/explicitly	1	0	1	1	false	Additional assertions for Deno so developers can write more explicit unit tests.
-escape_html	ako-deno/escape_html	https://github.com/ako-deno/escape_html	1	0	1	1	false	Escape string for use in HTML for Deno
-deno-compose	KSXGitHub/deno-compose	https://github.com/KSXGitHub/deno-compose	1	0	1	1	false	pipe, pipeline, and compose functions with 64 overloads per function.
-cmd	acathur/cmd	https://github.com/acathur/cmd	1	0	1	1	false	Commander.js (command-line interfaces) for Deno.
-deno-string-validator	okwudav/deno-string-validator	https://github.com/okwudav/deno-string-validator	0	1	0	1	false	String validation for Deno, inspired by Validator.js =>
-cowsay	fakoua/cowsay	https://github.com/fakoua/cowsay	0	1	0	1	false	Configurable talking cow for Deno
-greet_user	guptamohit004/greet_user	https://github.com/guptamohit004/greet_user	0	0	0	1	false	Greet a user according to the TimeZone  using DENO
-graphql-tag-deno	davidmwhynot/graphql-tag-deno	https://github.com/davidmwhynot/graphql-tag-deno	0	0	0	1	false	
-geosearch-deno	bartholomej/geosearch-deno	https://github.com/bartholomej/geosearch-deno	0	0	0	1	false	Simple Deno CLI library to find places all around the world
-annotated-csv-parser	tiagostutz/annotated-csv-parser	https://github.com/tiagostutz/annotated-csv-parser	0	0	0	1	false	Parser for Flux annotated CSV data https://v2.docs.influxdata.com/v2.0/reference/syntax/annotated-csv/
-deno-fireflix	AlfieriChou/deno-fireflix	https://github.com/AlfieriChou/deno-fireflix	0	0	0	1	false	
-UniqueIDGenerator	ajimae/UniqueIDGenerator	https://github.com/ajimae/UniqueIDGenerator	0	0	0	1	false	Firebase Push ID Generator
-deno-file-chunk	ClementD64/deno-file-chunk	https://github.com/ClementD64/deno-file-chunk	0	0	0	1	false	Read a chunk of file
-favQuote-cli	yeukfei02/favQuote-cli	https://github.com/yeukfei02/favQuote-cli	0	0	0	1	false	Get favourite or random quote cli
-deno_fastlist	MarkTiedemann/deno_fastlist	https://github.com/MarkTiedemann/deno_fastlist	0	0	0	1	false	List all running processes on Windows.
-exec	acathur/exec	https://github.com/acathur/exec	0	0	0	1	false	Execute and get the output of a shell or bash command in Deno.
-deno-exec	gpasq/deno-exec	https://github.com/gpasq/deno-exec	0	0	0	1	false	
-deno-EventEmitter	fuxingZhang/deno-EventEmitter	https://github.com/fuxingZhang/deno-EventEmitter	0	0	0	1	false	EventEmitter for deno, API is same to Nodejs
-deno-event-kit	lemarier/deno-event-kit	https://github.com/lemarier/deno-event-kit	0	0	0	1	false	Simple module for implementing event subscription APIs with Deno.
-escape_string_regexp	Sab94/escape_string_regexp	https://github.com/Sab94/escape_string_regexp	0	0	0	1	false	Escape RegExp special characters
-gusano	krthr/gusano	https://github.com/krthr/gusano	4	0	4	0	false	A minimal workflows lib for Deno 🦖
+deno-purify	aynik/deno-purify	https://github.com/aynik/deno-purify	2	0	2	0	false	Functional programming library for TypeScript, Ported to Deno - https://gigobyte.github.io/purify/
+lavadeno	Lavaclient/lavadeno	https://github.com/Lavaclient/lavadeno	2	0	2	0	false	lavadeno is a simple, easy-to-use, and flexible lavalink client built on the Deno Runtime.
 graphql-ts	simwipado/graphql-ts	https://github.com/simwipado/graphql-ts	2	0	2	0	false	A reference implementation of GraphQL for JavaScript
 handlebars	alosaur/handlebars	https://github.com/alosaur/handlebars	1	3	1	1	false	Handlebars template engine for Deno
-http-server	skoshx/http-server	https://github.com/skoshx/http-server	3	1	3	1	false	http-server is a tiny and zero-configuration HTTP server to serve static files with Deno
-hchacha20	chiefbiiko/hchacha20	https://github.com/chiefbiiko/hchacha20	0	1	0	1	false	HChaCha20
-Houston	MartonDev/Houston	https://github.com/MartonDev/Houston	7	0	7	1	false	An advanced Deno logger, like Winston for Nodejs, with no dependencies
-deno_html	denomod/deno_html	https://github.com/denomod/deno_html	2	0	2	1	false	Useful template literal tag for create html strings in ES2015+
-http-wrapper	lindsaykwardell/http-wrapper	https://github.com/lindsaykwardell/http-wrapper	1	1	1	1	false	Simple Server/Router wrapper around Deno's HTTP module
-humanize-url	denorg/humanize-url	https://github.com/denorg/humanize-url	1	0	1	5	false	🔗 Humanize a URL in Deno https://yogi.codes → yogi.codes
-i18next-http-middleware	i18next/i18next-http-middleware	https://github.com/i18next/i18next-http-middleware	12	4	12	3	false	i18next-http-middleware is a middleware to be used with Node.js web frameworks like express or Fastify and also for Deno.
-i18next-fs-backend	i18next/i18next-fs-backend	https://github.com/i18next/i18next-fs-backend	8	1	8	3	false	i18next-fs-backend is a backend layer for i18next using in Node.js and for Deno to load translations from the filesystem.
-i18next-locize-backend	locize/i18next-locize-backend	https://github.com/locize/i18next-locize-backend	32	16	32	2	false	A simple i18next backend for locize.com which can be used in Node.js, in the browser and for Deno.
-iam-policies	roggervalf/iam-policies	https://github.com/roggervalf/iam-policies	8	4	8	1	false	Iam policies implementation for create roles and manage permissions
-ink	fakoua/ink	https://github.com/fakoua/ink	5	1	5	1	false	Terminal string color for Deno
-Humanizer.ts	fakoua/Humanizer.ts	https://github.com/fakoua/Humanizer.ts	1	1	1	1	false	Humanizer meets all your TypeScript needs for manipulating and displaying strings, dates, times, timespans, numbers and quantities.
-indigobird	ralusek/indigobird	https://github.com/ralusek/indigobird	2	0	2	1	false	An alternative to bluebird which is also probably slightly better.
-imt	iosamuel/imt	https://github.com/iosamuel/imt	2	0	2	1	false	TMI.JS implementation for Deno
-input-deno	keegandonley/input-deno	https://github.com/keegandonley/input-deno	1	1	1	1	false	CLI user input handler for Deno
-invert-kv	denorg/invert-kv	https://github.com/denorg/invert-kv	2	0	2	5	false	🙃 Invert key-value pairs in an object, e.g., { foo: "bar" } → { bar: "foo" }
-ipapi	often/ipapi	https://github.com/often/ipapi	1	0	1	1	false	Simple ip-api.com API wrapper for Deno.
-ip_details	guptamohit004/ip_details	https://github.com/guptamohit004/ip_details	1	0	1	1	false	Get your public IP address Details in Deno.
-Interpreter	lynellf/Interpreter	https://github.com/lynellf/Interpreter	1	0	1	1	false	Interprets a description of your application
-dn-i18next-mongo-backend	lamualfa/dn-i18next-mongo-backend	https://github.com/lamualfa/dn-i18next-mongo-backend	1	0	1	1	false	i18next mongodb backend https://www.i18next.com/ - Only for Deno 🦖
-heap	gobengo/heap	https://github.com/gobengo/heap	1	0	1	1	false	Heap data structure written in TypeScript/Deno
-iro	jozsefsallai/iro	https://github.com/jozsefsallai/iro	0	0	0	1	false	Fast and clean terminal coloring and styling utility for Deno and Node.js.
-deno-ip	damianperera/deno-ip	https://github.com/damianperera/deno-ip	0	0	0	1	false	A Deno module which provides access to ipify.org APIs allowing the ability to detect your IP address or lookup geolocation data on a provided IP address, domain or email.
-deno-ifttt	0xVesion/deno-ifttt	https://github.com/0xVesion/deno-ifttt	0	0	0	1	false	This library makes triggering IFTTT webhook events with deno easy.
-idea	NotSyntax/idea	https://github.com/NotSyntax/idea	0	0	0	1	false	Generate ideas.
-http_errors	ako-deno/http_errors	https://github.com/ako-deno/http_errors	0	0	0	1	false	Create HTTP Error for Deno
-deno_html_entities	matschik/deno_html_entities	https://github.com/matschik/deno_html_entities	0	0	0	1	false	Fast html entities decode & encode library for Deno.
-hk-stock-cli	yeukfei02/hk-stock-cli	https://github.com/yeukfei02/hk-stock-cli	0	0	0	1	false	Get hk stock information cli
-hk-stock-api	yeukfei02/hk-stock-api	https://github.com/yeukfei02/hk-stock-api	0	0	0	1	false	get hk stock information in deno
-deno-hctk	miZyind/deno-hctk	https://github.com/miZyind/deno-hctk	0	0	0	1	false	Deno HantChar to Keyboard 漢字轉鍵盤配置
-dinoblox	fracturx/dinoblox	https://github.com/fracturx/dinoblox	0	0	0	1	false	A Deno wrapper for interacting with the Roblox Web API.
-deno-trie	silver-xu/deno-trie	https://github.com/silver-xu/deno-trie	0	0	0	1	false	Quick trie implementation for Deno
-denosaur	ClementD64/denosaur	https://github.com/ClementD64/denosaur	0	0	0	1	false	Yet another web framework
-denoforge	denjucks/denoforge	https://github.com/denjucks/denoforge	0	0	0	1	false	Deno data science library similar to Python's Pandas. Port of the NodeJS library data-forge
-deno-env	rubiin/deno-env	https://github.com/rubiin/deno-env	0	0	0	1	false	DotEnv but for deno
-denodate	t-heu/denodate	https://github.com/t-heu/denodate	0	0	0	1	false	generate date
-dexr	AkifumiSato/dexr	https://github.com/AkifumiSato/dexr	3	0	3	0	false	
-dmm	drashland/dmm	https://github.com/drashland/dmm	2	1	2	3	false	
-dpm-cli	dpmland/dpm-cli	https://github.com/dpmland/dpm-cli	7	1	7	2	false	Deno Package Manager CLI
-docopt.js	Eyal-Shalev/docopt.js	https://github.com/Eyal-Shalev/docopt.js	3	1	3	1	false	command line option parser, that will make you smile
-diosaur	ovesco/diosaur	https://github.com/ovesco/diosaur	0	1	0	1	false	A dependency injection library for Deno
-dpx	denorg/dpx	https://github.com/denorg/dpx	6	0	6	5	false	📦 CLI to run a Deno package without installing it (like npx for Deno)
-text-clipper	arendjr/text-clipper	https://github.com/arendjr/text-clipper	66	8	66	3	false	Fast and correct clip functions for HTML and plain text
-drake	srackham/drake	https://github.com/srackham/drake	49	1	49	1	false	Drake is a make-like task runner for Deno.
-drun	MarcHanin/drun	https://github.com/MarcHanin/drun	11	2	11	1	false	
-dynamodb	chiefbiiko/dynamodb	https://github.com/chiefbiiko/dynamodb	9	6	9	1	false	deno <3 dynamodb
-noble-ed25519	paulmillr/noble-ed25519	https://github.com/paulmillr/noble-ed25519	43	5	43	1	false	Noble ed25519 + ristretto255. Fast, high-security, easily auditable, 0-dep, 1-file pubkey, scalarmult & EDDSA
-reno	reno-router/reno	https://github.com/reno-router/reno	33	3	33	2	false	A thin, testable routing library designed to sit on top of Deno's standard HTTP module
-deno_easypath	zekth/deno_easypath	https://github.com/zekth/deno_easypath	5	3	5	1	false	Filesystem helper for Deno
-rubico	a-synchronous/rubico	https://github.com/a-synchronous/rubico	24	1	24	2	false	🏞 [a]synchronous functional syntax
-lazy	luvies/lazy	https://github.com/luvies/lazy	13	1	13	1	false	A linq-like lazy-evaluation enumerable/iteration library that aims to support deno, node & browser
-ms	denolib/ms	https://github.com/denolib/ms	11	2	11	8	false	Tiny milisecond conversion utility. Ported from https://npmjs.com/ms
-deno_lz4	denosaurs/deno_lz4	https://github.com/denosaurs/deno_lz4	6	0	6	2	false	🗜 lz4 wasm module for deno
-jpeg.ts	fakoua/jpeg.ts	https://github.com/fakoua/jpeg.ts	6	0	6	1	false	A pure TypeScript JPEG encoder and decoder for deno
-deno_license_checker	kt3k/deno_license_checker	https://github.com/kt3k/deno_license_checker	4	4	4	2	false	:page_facing_up: CLI tool for checking license headers in files
-media_types	oakserver/media_types	https://github.com/oakserver/media_types	5	2	5	1	false	A module that assists in resolving media types and extensions.
-MQTT.ts	jdiamond/MQTT.ts	https://github.com/jdiamond/MQTT.ts	11	1	11	1	false	MQTT in TypeScript for Deno, Node.js, and browsers
-deno_machine_id	axetroy/deno_machine_id	https://github.com/axetroy/deno_machine_id	4	1	4	1	false	Get the unique ID of the current machine
-meteorite	AhmedAlYousif/meteorite	https://github.com/AhmedAlYousif/meteorite	2	0	2	2	false	a framework to build REST APIs in Deno runtime.
-nanoid	ianfabs/nanoid	https://github.com/ianfabs/nanoid	28	2	28	1	false	A NanoID implementation for Deno
-deno-minimatch	chrisdothtml/deno-minimatch	https://github.com/chrisdothtml/deno-minimatch	5	1	5	1	false	A deno port of minimatch
-mock	udibo/mock	https://github.com/udibo/mock	6	0	6	1	false	This module provides utilities to help mock behavior and spy on function calls for tests.
-mith	JWebCoder/mith	https://github.com/JWebCoder/mith	4	0	4	1	false	A middleware framework for Deno's http/s server.
-mutevents	hazae41/mutevents	https://github.com/hazae41/mutevents	3	1	3	2	false	Typed, mutable, async events for deno and nodejs
-kia	HarryPeach/kia	https://github.com/HarryPeach/kia	3	1	3	1	false	Simple terminal spinners for Deno 🦕
-lodash_require	TokenChingy/lodash_require	https://github.com/TokenChingy/lodash_require	2	2	2	1	false	Lodash for the Deno runtime.
-json-server	magnattic/json-server	https://github.com/magnattic/json-server	2	1	2	1	false	Zero code fake backend for development
-deno-lib	brandonkal/deno-lib	https://github.com/brandonkal/deno-lib	3	0	3	2	false	A large collection of useful Typescript libraries for Deno
-deno-local-ip	joakimunge/deno-local-ip	https://github.com/joakimunge/deno-local-ip	2	0	2	1	false	Tiny module for Deno to get local network interface address.
-levenshtein	aosync/levenshtein	https://github.com/aosync/levenshtein	2	0	2	1	false	Deno module to compute the Levenshtein distance between two strings
-deno_moment	lisniuse/deno_moment	https://github.com/lisniuse/deno_moment	1	1	1	1	false	This moment.ts was ported from moment.js@2.24.0.
-multiparser	deligenius/multiparser	https://github.com/deligenius/multiparser	4	0	4	1	false	multipart/form-data parser for Deno servers
-negotiator	ako-deno/negotiator	https://github.com/ako-deno/negotiator	1	0	1	2	false	An HTTP content negotiator for Deno.
-nexo	nexojs/nexo	https://github.com/nexojs/nexo	42	2	42	1	false	Preact apps with Deno
-deno-plugin-prepare	manyuanrong/deno-plugin-prepare	https://github.com/manyuanrong/deno-plugin-prepare	20	7	20	1	false	A library for managing deno native plugin dependencies
-next	mtwzim/next	https://github.com/mtwzim/next	1	1	1	1	false	Next is a coming soon reactive framework for deno
-deno_mod	motss/deno_mod	https://github.com/motss/deno_mod	12	0	12	2	false	Deno modules
-middleware	oakserver/middleware	https://github.com/oakserver/middleware	9	3	9	1	false	A collection of middleware to use with oak. 🦕
-pgc4d	jakajancar/pgc4d	https://github.com/jakajancar/pgc4d	11	0	11	1	false	A full-featured PostgreSQL Client for Deno
-deno-notify	divy-work/deno-notify	https://github.com/divy-work/deno-notify	7	0	7	1	false	Cross-platform system notification with Deno :rocket:
-deno-wrapper-novelcovid	Joralmo/deno-wrapper-novelcovid	https://github.com/Joralmo/deno-wrapper-novelcovid	3	2	3	1	false	Wrapper de NovelCOVID/API para Deno.land
-deno_process	axetroy/deno_process	https://github.com/axetroy/deno_process	4	0	4	1	false	process module for Deno
-deno-prettystring	OnikurYH/deno-prettystring	https://github.com/OnikurYH/deno-prettystring	4	0	4	1	false	A deno module for format, trim and remove extra white spaces between characters. Make paragraph looks organised.
-deno-observable	bsunderhus/deno-observable	https://github.com/bsunderhus/deno-observable	4	0	4	1	false	
-online	denorg/online	https://github.com/denorg/online	2	0	2	5	false	🕸️ Check if you're currently online in Deno
-deno-open	skoshx/deno-open	https://github.com/skoshx/deno-open	2	1	2	1	false	Open is a package for opening URLs, files and executables with Deno. Inspired by sindresorhus' open.
-organ	denjucks/organ	https://github.com/denjucks/organ	1	1	1	1	false	Organ - Logging middleware for the Oak framework based on the Morgan library for ExpressJS from Node.
-parry	denosaurs/parry	https://github.com/denosaurs/parry	5	0	5	1	false	👷🏽‍♂️ Run deno functions in WebWorkers
-PerlinNoise-Deno	hamptonmoore/PerlinNoise-Deno	https://github.com/hamptonmoore/PerlinNoise-Deno	3	1	3	1	false	A Perlin Noise library
-panoptes	TokenChingy/panoptes	https://github.com/TokenChingy/panoptes	3	0	3	1	false	A simple array and object watcher function for Deno. Written in TypeScript.
-permission-guard	asos-craigmorten/permission-guard	https://github.com/asos-craigmorten/permission-guard	2	2	2	2	false	A zero-dependency, minimal permission guard for Deno.
-deno-pipeline	Focinfi/deno-pipeline	https://github.com/Focinfi/deno-pipeline	2	0	2	1	false	Configurable data pipeline in Deno
-plugin-use	chaijs/plugin-use	https://github.com/chaijs/plugin-use	1	0	1	4	false	A simple Event Emitter, tuned to be used as a plugin driver.
-prettier	denolib/prettier	https://github.com/denolib/prettier	2	3	2	2	false	Prettier. Migrated from Deno standard modules
-deno-progress	fuxingZhang/deno-progress	https://github.com/fuxingZhang/deno-progress	3	1	3	2	false	ProgressBar in terminal for deno
-deno_pool	axetroy/deno_pool	https://github.com/axetroy/deno_pool	1	0	1	2	false	Generic pool for Deno
-q	phil-r/q	https://github.com/phil-r/q	4	0	4	1	false	Simple queue task runner written in typescript
-deno-pretty-bytes	BrunnerLivio/deno-pretty-bytes	https://github.com/BrunnerLivio/deno-pretty-bytes	4	0	4	1	false	The Deno implementation of @sindresorhus pretty-bytes package
-deno-progressbar	jakobhellermann/deno-progressbar	https://github.com/jakobhellermann/deno-progressbar	2	1	2	1	false	a terminal progressbar for deno
+validator-deno	validatorjs/validator-deno	https://github.com/validatorjs/validator-deno	1	3	1	0	false	Official Port of validatorjs to deno
+hmac	chiefbiiko/hmac	https://github.com/chiefbiiko/hmac	1	2	1	0	false	hash-based message authentication code
 deno-protobuf	seishun/deno-protobuf	https://github.com/seishun/deno-protobuf	1	1	1	2	false	
-ts-prove	Pingid/ts-prove	https://github.com/Pingid/ts-prove	7	0	7	2	false	A lightweight composable decoding and validation library
-qrcode	denorg/qrcode	https://github.com/denorg/qrcode	3	0	3	5	false	📇 Generate QR code images in Deno
-rad	cdaringe/rad	https://github.com/cdaringe/rad	7	0	7	1	false	general purpose build tool. statically typed, batteries included. command, function, and make-style tasks supported
+Arangeno	HarryET/Arangeno	https://github.com/HarryET/Arangeno	1	1	1	2	false	Arangeno is bassed on ArangoJS and has been ported for use on Deno
+tbl	jozsefsallai/tbl	https://github.com/jozsefsallai/tbl	1	1	1	1	false	tiny and versatile command-line table generator for deno
 random-int	yg/random-int	https://github.com/yg/random-int	1	1	1	1	false	Generate a random integer in deno
+organ	denjucks/organ	https://github.com/denjucks/organ	1	1	1	1	false	Organ - Logging middleware for the Oak framework based on the Morgan library for ExpressJS from Node.
+next	mtwzim/next	https://github.com/mtwzim/next	1	1	1	1	false	Next is a coming soon reactive framework for deno
+deno_moment	lisniuse/deno_moment	https://github.com/lisniuse/deno_moment	1	1	1	1	false	This moment.ts was ported from moment.js@2.24.0.
+input-deno	keegandonley/input-deno	https://github.com/keegandonley/input-deno	1	1	1	1	false	CLI user input handler for Deno
+Humanizer.ts	fakoua/Humanizer.ts	https://github.com/fakoua/Humanizer.ts	1	1	1	1	false	Humanizer meets all your TypeScript needs for manipulating and displaying strings, dates, times, timespans, numbers and quantities.
+http-wrapper	lindsaykwardell/http-wrapper	https://github.com/lindsaykwardell/http-wrapper	1	1	1	1	false	Simple Server/Router wrapper around Deno's HTTP module
+fossil	matteocrippa/fossil	https://github.com/matteocrippa/fossil	1	1	1	1	false	A typescript validation suite for deno projects
+deno-giphy-api	yeukfei02/deno-giphy-api	https://github.com/yeukfei02/deno-giphy-api	1	1	1	1	false	giphy api in deno
+deno-aws-sign-v4	silver-xu/deno-aws-sign-v4	https://github.com/silver-xu/deno-aws-sign-v4	1	1	1	1	false	Generates AWS Signature V4 for AWS low-level REST APIs
+bb64	denjucks/bb64	https://github.com/denjucks/bb64	1	1	1	1	false	Easy to use Deno Base64 Encoder and Decoder for JavaScript and TypeScript
+sha256	chiefbiiko/sha256	https://github.com/chiefbiiko/sha256	1	1	1	0	false	SHA2-256 4 Deno
+cobalt	CIDARO/cobalt	https://github.com/CIDARO/cobalt	1	1	1	0	false	Cobalt is an Open Source LRU Cache written for Deno.
+scrypt	denorg/scrypt	https://github.com/denorg/scrypt	1	0	1	6	false	🔑 Deno library for hashing passwords using scrypt
+is-docker	denorg/is-docker	https://github.com/denorg/is-docker	1	0	1	5	false	🐳 Check if the process is running inside a Docker container in Deno
+humanize-url	denorg/humanize-url	https://github.com/denorg/humanize-url	1	0	1	5	false	🔗 Humanize a URL in Deno https://yogi.codes → yogi.codes
+get-ip	denorg/get-ip	https://github.com/denorg/get-ip	1	0	1	5	false	🌐 Get your public IP address in Deno
+plugin-use	chaijs/plugin-use	https://github.com/chaijs/plugin-use	1	0	1	4	false	A simple Event Emitter, tuned to be used as a plugin driver.
+deno-validator	ryo-ma/deno-validator	https://github.com/ryo-ma/deno-validator	1	0	1	2	false	🦕 A simple string validation for deno
+deno_pool	axetroy/deno_pool	https://github.com/axetroy/deno_pool	1	0	1	2	false	Generic pool for Deno
+negotiator	ako-deno/negotiator	https://github.com/ako-deno/negotiator	1	0	1	2	false	An HTTP content negotiator for Deno.
+deps	denosaurs/deps	https://github.com/denosaurs/deps	1	0	1	2	false	🕴deps.ts manager for Deno (highly WIP)
+websocket_server	JohanWinther/websocket_server	https://github.com/JohanWinther/websocket_server	1	0	1	1	false	A WebSocket server library for Deno 🔌
+vuniq	vasuvanka/vuniq	https://github.com/vasuvanka/vuniq	1	0	1	1	false	tiny lib for uniq id generation in javascript
+type_is	ako-deno/type_is	https://github.com/ako-deno/type_is	1	0	1	1	false	Infer the content-type of a HTTP Header for Deno
+deno-type-check	zemse/deno-type-check	https://github.com/zemse/deno-type-check	1	0	1	1	false	Runtime type check library for Deno
+deno-tree	KSXGitHub/deno-tree	https://github.com/KSXGitHub/deno-tree	1	0	1	1	false	Deno's library to traverse filesystem tree.
+time_ago	satty1987/time_ago	https://github.com/satty1987/time_ago	1	0	1	1	false	
+time.ts	burhanahmeed/time.ts	https://github.com/burhanahmeed/time.ts	1	0	1	1	false	Time.ts - A straightforward Deno timezone manipulation
+thai-baht-text-deno	pthongtaem/thai-baht-text-deno	https://github.com/pthongtaem/thai-baht-text-deno	1	0	1	1	false	Convert number to Thai Baht as Text
+deno-sql	yourtion/deno-sql	https://github.com/yourtion/deno-sql	1	0	1	1	false	Powerful and Easy use SQL Query Builder on Deno From @leizm/sql
+shodan_deno	aldinp16/shodan_deno	https://github.com/aldinp16/shodan_deno	1	0	1	1	false	Simple Shodan API Wrapper For Deno
+sha2	glatan/sha2	https://github.com/glatan/sha2	1	0	1	1	false	SHA-2 family for Deno.
+secure-compare	hkatzdev/secure-compare	https://github.com/hkatzdev/secure-compare	1	0	1	1	false	Constant-time comparison algorithm to prevent timing attacks (Deno edition)
 deno_random_interval	zekth/deno_random_interval	https://github.com/zekth/deno_random_interval	1	0	1	1	false	Generates random interval
 random-float	yg/random-float	https://github.com/yg/random-float	1	0	1	1	false	Generate a random float in deno
 postjs	postui/postjs	https://github.com/postui/postjs	1	0	1	1	false	The radical new Front-End Framework in deno.
@@ -359,41 +389,110 @@ Maybe	iMarv/Maybe	https://github.com/iMarv/Maybe	1	0	1	1	false	A deno module for
 logol	apiel/logol	https://github.com/apiel/logol	1	0	1	1	false	
 log4deno	klimentru1986/log4deno	https://github.com/klimentru1986/log4deno	1	0	1	1	false	Log4deno
 deno-libhydrogen	chiefbiiko/deno-libhydrogen	https://github.com/chiefbiiko/deno-libhydrogen	1	0	1	1	false	deno plugin 2 libhydrogen
-core	levo-framework/core	https://github.com/levo-framework/core	1	0	1	1	false	Server side rendering with The Elm Architecture in Deno
 jsx-html	apiel/jsx-html	https://github.com/apiel/jsx-html	1	0	1	1	false	
 json_tree	satty1987/json_tree	https://github.com/satty1987/json_tree	1	0	1	1	false	
 simple-js-yaml-port-for-deno	KSXGitHub/simple-js-yaml-port-for-deno	https://github.com/KSXGitHub/simple-js-yaml-port-for-deno	1	0	1	1	false	This is a simple and crude port of JS-YAML for Deno.
+ipapi	often/ipapi	https://github.com/often/ipapi	1	0	1	1	false	Simple ip-api.com API wrapper for Deno.
+ip_details	guptamohit004/ip_details	https://github.com/guptamohit004/ip_details	1	0	1	1	false	Get your public IP address Details in Deno.
+Interpreter	lynellf/Interpreter	https://github.com/lynellf/Interpreter	1	0	1	1	false	Interprets a description of your application
+dn-i18next-mongo-backend	lamualfa/dn-i18next-mongo-backend	https://github.com/lamualfa/dn-i18next-mongo-backend	1	0	1	1	false	i18next mongodb backend https://www.i18next.com/ - Only for Deno 🦖
+heap	gobengo/heap	https://github.com/gobengo/heap	1	0	1	1	false	Heap data structure written in TypeScript/Deno
+fs_cli	franckLdx/fs_cli	https://github.com/franckLdx/fs_cli	1	0	1	1	false	A deno tool to clean a bundle: delete, some directories, some files ...
+fox	eankeen/fox	https://github.com/eankeen/fox	1	0	1	1	false	Fox is a little utility that helps you bootstrap Deno applications
+explicitly	RobDWaller/explicitly	https://github.com/RobDWaller/explicitly	1	0	1	1	false	Additional assertions for Deno so developers can write more explicit unit tests.
+escape_html	ako-deno/escape_html	https://github.com/ako-deno/escape_html	1	0	1	1	false	Escape string for use in HTML for Deno
+dpng	MartonDev/dpng	https://github.com/MartonDev/dpng	1	0	1	1	false	Easily create image files with Deno
+docable	drashland/docable	https://github.com/drashland/docable	1	0	1	1	false	An open-source doc block parser for generating documenation as JSON.
+dislocator	abhi11210646/dislocator	https://github.com/abhi11210646/dislocator	1	0	1	1	false	Service Locator pattern module for deno
+deno_util	deepakshrma/deno_util	https://github.com/deepakshrma/deno_util	1	0	1	1	false	A collection of util libraries for Deno like logger [supports color, format, level], prompts [password]
+deno-markdown	JasonHughes94/deno-markdown	https://github.com/JasonHughes94/deno-markdown	1	0	1	1	false	Generate markdown files with ease 🦕
+deno_lodash	alirealasad/deno_lodash	https://github.com/alirealasad/deno_lodash	1	0	1	1	false	Lodash for the Deno via import statement. on https://deno.land/x/deno_lodash
+deno-http-server	pandres95/deno-http-server	https://github.com/pandres95/deno-http-server	1	0	1	1	false	Minimal HTTP Server for Deno
+denet	Ryaangu/denet	https://github.com/Ryaangu/denet	1	0	1	1	false	Easy Game Networking module for Deno.
+den	apiel/den	https://github.com/apiel/den	1	0	1	1	false	A better deno cli :p A wrapper of deno cli to give some extra features.
+deno-csv	vslinko/deno-csv	https://github.com/vslinko/deno-csv	1	0	1	1	false	Streaming API for reading and writing CSV for https://deno.land/
+deno_cross_env	axetroy/deno_cross_env	https://github.com/axetroy/deno_cross_env	1	0	1	1	false	A cli tool for setting environment variables across platforms
+deno-context	Code-Hex/deno-context	https://github.com/Code-Hex/deno-context	1	0	1	1	false	🦕【Deno】Propagate deadlines, a cancellation and other request-scoped values to multiple promise.
+deno-compose	KSXGitHub/deno-compose	https://github.com/KSXGitHub/deno-compose	1	0	1	1	false	pipe, pipeline, and compose functions with 64 overloads per function.
+cmd	acathur/cmd	https://github.com/acathur/cmd	1	0	1	1	false	Commander.js (command-line interfaces) for Deno.
+bzfquery.js	The-Noah/bzfquery.js	https://github.com/The-Noah/bzfquery.js	1	0	1	1	false	JavaScript/TypeScript version of bzfquery for Deno
+buffer	socket-deno/buffer	https://github.com/socket-deno/buffer	1	0	1	1	false	Extreme buffer module for deno
+blake2b	chiefbiiko/blake2b	https://github.com/chiefbiiko/blake2b	1	0	1	1	false	BLAKE2b implemented in WebAssembly
+awaitable_mutex	Matthew-Smith/awaitable_mutex	https://github.com/Matthew-Smith/awaitable_mutex	1	0	1	1	false	Deno module for blocking execution of a section of code to one at a time
+Attain-GraphQL	aaronwlee/Attain-GraphQL	https://github.com/aaronwlee/Attain-GraphQL	1	0	1	1	false	A simple GraphQL middleware for the Attain deno
+ascii_table	eeve/ascii_table	https://github.com/eeve/ascii_table	1	0	1	1	false	Easy table output for deno debugging, but you could probably do more with it,  since its just a string.
+api	maheshkareeya/api	https://github.com/maheshkareeya/api	1	0	1	1	false	Promise based HTTP client for the Deno.
+adka_server	apiel/adka_server	https://github.com/apiel/adka_server	1	0	1	1	false	
+accepts	ako-deno/accepts	https://github.com/ako-deno/accepts	1	0	1	1	false	Higher level content negotiation for Deno.
+web-name	letskhabar/web-name	https://github.com/letskhabar/web-name	1	0	1	0	false	
+DenoVerbalExpressions	evosland/DenoVerbalExpressions	https://github.com/evosland/DenoVerbalExpressions	1	0	1	0	false	
+proxy-bind	imcotton/proxy-bind	https://github.com/imcotton/proxy-bind	1	0	1	0	false	foobar.fn.bind(foobar) -> bind(foobar).fn
+deno-pg-format	grantcarthew/deno-pg-format	https://github.com/grantcarthew/deno-pg-format	1	0	1	0	false	Deno implementation of PostgreSQL's format() to safely create dynamic SQL queries.
+pbkdf2	chiefbiiko/pbkdf2	https://github.com/chiefbiiko/pbkdf2	1	0	1	0	false	
+nonstd	deno-nonstd/nonstd	https://github.com/deno-nonstd/nonstd	1	0	1	0	false	A library for useful features that aren't currently in the std library.
+jbq	krnik/jbq	https://github.com/krnik/jbq	1	0	1	0	false	Customizable JS Validator
+ini	chances/ini	https://github.com/chances/ini	1	0	1	0	false	An ini parser/serializer in TypeScript for the Deno runtime
+EaiserColors	hamptonmoore/EaiserColors	https://github.com/hamptonmoore/EaiserColors	1	0	1	0	false	
+dubartesql	namadnuno/dubartesql	https://github.com/namadnuno/dubartesql	1	0	1	0	false	Deno + Mysql + QueryBuilder
+dom-serializer	DenoBRComunitty/dom-serializer	https://github.com/DenoBRComunitty/dom-serializer	1	0	1	0	false	🦕 render dom nodes
+domelementtype	DenoBRComunitty/domelementtype	https://github.com/DenoBRComunitty/domelementtype	1	0	1	0	false	all the types of nodes in htmlparser2's dom
+deno-cuid	grantcarthew/deno-cuid	https://github.com/grantcarthew/deno-cuid	1	0	1	0	false	Collision-resistant ids optimized for horizontal scaling and performance.
+deno-chunked	aynik/deno-chunked	https://github.com/aynik/deno-chunked	1	0	1	0	false	A set of functions to read `ArrayBuffer` chunk by chunk or buffered until eof.
+chacha20-poly1305	chiefbiiko/chacha20-poly1305	https://github.com/chiefbiiko/chacha20-poly1305	1	0	1	0	false	Authenticated Encryption with Associated Data
+base64	chiefbiiko/base64	https://github.com/chiefbiiko/base64	1	0	1	0	false	base64 strings from/to Uint8Arrays
+validator	rubiin/validator	https://github.com/rubiin/validator	0	4	0	1	false	Port of validatorjs to deno
+Uwuifier	Schotsl/Uwuifier	https://github.com/Schotsl/Uwuifier	0	1	0	1	false	This very lightweight package allows you to uwuify any sentence or word (excluding URL's) with many configurable parameters while giving you access to many vewy kawaii sentences and faces
+deno-task-runner-v2	ebebbington/deno-task-runner-v2	https://github.com/ebebbington/deno-task-runner-v2	0	1	0	1	false	Version 2 of deno-task-runner to fix issues
+SwissKnife	fakoua/SwissKnife	https://github.com/fakoua/SwissKnife	0	1	0	1	false	Deno Swiss Knife tools
+deno-prompts	caspervonb/deno-prompts	https://github.com/caspervonb/deno-prompts	0	1	0	1	false	Command line prompts for Deno
+hchacha20	chiefbiiko/hchacha20	https://github.com/chiefbiiko/hchacha20	0	1	0	1	false	HChaCha20
+download	deno-module/download	https://github.com/deno-module/download	0	1	0	1	false	Deno fetch api based module to download file from a URL.
+diosaur	ovesco/diosaur	https://github.com/ovesco/diosaur	0	1	0	1	false	A dependency injection library for Deno
+denotrodon	jabernardo/denotrodon	https://github.com/jabernardo/denotrodon	0	1	0	1	false	Bare Minimum Command-Line (CLI) Application Skeleton
+deno-validator	parasg1999/deno-validator	https://github.com/parasg1999/deno-validator	0	1	0	1	false	String validation for deno inspired by validator.js
+deno-string-validator	okwudav/deno-string-validator	https://github.com/okwudav/deno-string-validator	0	1	0	1	false	String validation for Deno, inspired by Validator.js =>
+cowsay	fakoua/cowsay	https://github.com/fakoua/cowsay	0	1	0	1	false	Configurable talking cow for Deno
+deno-conf	lemarier/deno-conf	https://github.com/lemarier/deno-conf	0	1	0	1	false	Simple config handling for your app or module with Deno.
+deno_case_style	zekth/deno_case_style	https://github.com/zekth/deno_case_style	0	1	0	1	false	A string validator and formater for case Style
+sha512	chiefbiiko/sha512	https://github.com/chiefbiiko/sha512	0	1	0	0	false	
+sha1	chiefbiiko/sha1	https://github.com/chiefbiiko/sha1	0	1	0	0	false	
+short_uuid	jeanlescure/short_uuid	https://github.com/jeanlescure/short_uuid	0	0	0	2	false	Deno module used for generating random or sequential UUID of any length
 rcon-deno	RisingStack/rcon-deno	https://github.com/RisingStack/rcon-deno	0	0	0	2	false	
 deno-qs	adrijere/deno-qs	https://github.com/adrijere/deno-qs	0	0	0	2	false	A querystring parser with Deno
 deno-queueing	Sourcico/deno-queueing	https://github.com/Sourcico/deno-queueing	0	0	0	2	false	deno-queueing
-run_exclusive	garronej/run_exclusive	https://github.com/garronej/run_exclusive	21	0	21	1	false	⚡🔒 Generate functions that do not allow parallel executions 🔒 ⚡
-reactive-js	bordoley/reactive-js	https://github.com/bordoley/reactive-js	3	0	3	1	false	Fast modern reactive Javascript programming library
-pubsub	zorbyte/pubsub	https://github.com/zorbyte/pubsub	3	0	3	1	false	A simple PubSub module for Deno.
-recursive-readdir	denorg/recursive-readdir	https://github.com/denorg/recursive-readdir	2	0	2	5	false	📁 Recursively read directories in Deno
-rhinoder	Caesar2011/rhinoder	https://github.com/Caesar2011/rhinoder	21	5	21	1	false	Reloads a deno application on file change
-rimu	srackham/rimu	https://github.com/srackham/rimu	31	4	31	6	false	Readable text to HTML markup language
-router	zhmushan/router	https://github.com/zhmushan/router	19	0	19	1	false	A high-performance basic router works anywhere.
-noble-ripemd160	paulmillr/noble-ripemd160	https://github.com/paulmillr/noble-ripemd160	9	0	9	1	false	Noble RIPEMD160. High-security, easily auditable, 0-dep, 1-file hash function
-session	denjucks/session	https://github.com/denjucks/session	6	2	6	1	false	Sessions for deno web frameworks
-rute	jabernardo/rute	https://github.com/jabernardo/rute	5	1	5	1	false	A Simple Router for Deno
-rsocket-deno	linux-china/rsocket-deno	https://github.com/linux-china/rsocket-deno	5	1	5	1	false	🦕RSocket Deno module
-saur	tubbo/saur	https://github.com/tubbo/saur	15	0	15	2	false	a rapid web development framework for deno
-deno-sendgrid	gpasq/deno-sendgrid	https://github.com/gpasq/deno-sendgrid	4	0	4	2	false	
-deno-sass	divy-work/deno-sass	https://github.com/divy-work/deno-sass	3	0	3	1	false	WASM bindings to Grass SASS compiler for Deno.
-deno-rsync-parser	daniel-araujo/deno-rsync-parser	https://github.com/daniel-araujo/deno-rsync-parser	2	0	2	1	false	Parses the output of rsync when called with the `--itemize-changes` option. This allows you to programmatically identify files that got created, updated and deleted. Output can be in the form of strings and streams.
-deno-remove-forever	oganexon/deno-remove-forever	https://github.com/oganexon/deno-remove-forever	2	0	2	1	false	Data erasure solution for files on deno 🦕
-scrypt	denorg/scrypt	https://github.com/denorg/scrypt	1	0	1	6	false	🔑 Deno library for hashing passwords using scrypt
-noble-secp256k1	paulmillr/noble-secp256k1	https://github.com/paulmillr/noble-secp256k1	35	3	35	1	false	Noble secp256k1. Fast, high-security, easily auditable, 0-dep, 1-file pubkey & ECDSA signature scheme
-sql-builder	manyuanrong/sql-builder	https://github.com/manyuanrong/sql-builder	23	5	23	2	false	SQL query builder for Deno
-deno-smtp	manyuanrong/deno-smtp	https://github.com/manyuanrong/deno-smtp	19	5	19	1	false	SMTP implements for deno
-deno-task-runner	jinjor/deno-task-runner	https://github.com/jinjor/deno-task-runner	24	4	24	1	false	Task runner for deno
-deno_slugify	jcardama/deno_slugify	https://github.com/jcardama/deno_slugify	11	2	11	1	false	A string slugifier
-deno-semver	justjavac/deno-semver	https://github.com/justjavac/deno-semver	7	2	7	1	false	The semver parser for Deno (a fork of node-semver using TypeScript) 
-serialize-xml	olaven/serialize-xml	https://github.com/olaven/serialize-xml	3	0	3	1	false	Serialize (i.e. stringify) an object into xml string. 
-deno_servicr	astanciu/deno_servicr	https://github.com/astanciu/deno_servicr	2	1	2	1	false	Deno application/service manager
-sf	txthinking/sf	https://github.com/txthinking/sf	9	0	9	1	false	 A stupid javascript web framework for deno
-sha2	glatan/sha2	https://github.com/glatan/sha2	1	0	1	1	false	SHA-2 family for Deno.
-secure-compare	hkatzdev/secure-compare	https://github.com/hkatzdev/secure-compare	1	0	1	1	false	Constant-time comparison algorithm to prevent timing attacks (Deno edition)
+xchacha20-poly1305	chiefbiiko/xchacha20-poly1305	https://github.com/chiefbiiko/xchacha20-poly1305	0	0	0	1	false	XChaCha20-Poly1305
+xchacha20	chiefbiiko/xchacha20	https://github.com/chiefbiiko/xchacha20	0	0	0	1	false	XChaCha20
+win_taskkill	rjoydip/win_taskkill	https://github.com/rjoydip/win_taskkill	0	0	0	1	false	Wrapper for the Windows `taskkill` command. Ends one or more tasks or processes.
+wasm-imports	AliBasicCoder/wasm-imports	https://github.com/AliBasicCoder/wasm-imports	0	0	0	1	false	
+vary	ako-deno/vary	https://github.com/ako-deno/vary	0	0	0	1	false	Manipulate the HTTP Vary header for Deno
+valideno	Caesar2011/valideno	https://github.com/Caesar2011/valideno	0	0	0	1	false	Validate your values and schemes with this extendable validator
+url_validator	r-kgy/url_validator	https://github.com/r-kgy/url_validator	0	0	0	1	false	simple url validator for deno
+url-parse	roonie007/url-parse	https://github.com/roonie007/url-parse	0	0	0	1	false	A simple url builder based on the URL object for Deno with typescript
+url-join	roonie007/url-join	https://github.com/roonie007/url-join	0	0	0	1	false	A simple port of the NodeJS module url-join to Deno with typescript
+deno-unrar	fuxingZhang/deno-unrar	https://github.com/fuxingZhang/deno-unrar	0	0	0	1	false	uncompress rar file for deno
+uapi	shynome/uapi	https://github.com/shynome/uapi	0	0	0	1	false	your api serverless framework with deno
+typed_numeric_deno	glatan/typed_numeric_deno	https://github.com/glatan/typed_numeric_deno	0	0	0	1	false	Typed numeric for Deno.
+twitter	iosamuel/twitter	https://github.com/iosamuel/twitter	0	0	0	1	false	Twitter's library in Deno
+troodon	shandysiswandi/troodon	https://github.com/shandysiswandi/troodon	0	0	0	1	false	🦖 Troodon is a Library for Deno to Handle Algorithms
+toolbelt	gokayokyay/toolbelt	https://github.com/gokayokyay/toolbelt	0	0	0	1	false	Toolbelt for Deno
+deno-title	satyarohith/deno-title	https://github.com/satyarohith/deno-title	0	0	0	1	false	Capitalize your titles as per The Chicago Manual of Style.
+deno-timezone	wrzonki/deno-timezone	https://github.com/wrzonki/deno-timezone	0	0	0	1	false	
+deno_run_tests_on_localhost	KSXGitHub/deno_run_tests_on_localhost	https://github.com/KSXGitHub/deno_run_tests_on_localhost	0	0	0	1	false	Create a localhost server and run tests
+deno-term-color	jahzielv/deno-term-color	https://github.com/jahzielv/deno-term-color	0	0	0	1	false	Terminal colorizer for TS and Deno
+tcr	AlexVagrant/tcr	https://github.com/AlexVagrant/tcr	0	0	0	1	false	tcr will complie and run with deno when typescript file change, you can direct run typescript file
+tckimlik	serkanalgur/tckimlik	https://github.com/serkanalgur/tckimlik	0	0	0	1	false	A tool for validate Turkish Identification Number. Deno version
+talk-lib	JipFr/talk-lib	https://github.com/JipFr/talk-lib	0	0	0	1	false	Deno library to work with Nextcloud Talk
+suzhou-numerals	weakish/suzhou-numerals	https://github.com/weakish/suzhou-numerals	0	0	0	1	false	Encoding and decoding Suzhou numerals.
+supports-color	frunkad/supports-color	https://github.com/frunkad/supports-color	0	0	0	1	false	Detect whether a terminal supports color in Deno 🦕
+deno-string-builder	bqio/deno-string-builder	https://github.com/bqio/deno-string-builder	0	0	0	1	false	Simple string builder.
+strcolors.ts	jabernardo/strcolors.ts	https://github.com/jabernardo/strcolors.ts	0	0	0	1	false	FMT String Extensions for Deno
+store	acathur/store	https://github.com/acathur/store	0	0	0	1	false	A key-value store that persists on disk for Deno.
+ssr	maheshkareeya/ssr	https://github.com/maheshkareeya/ssr	0	0	0	1	false	Server Side HTML Functions for rapid development in Node and Deno.
+Specosaur	SachaCR/Specosaur	https://github.com/SachaCR/Specosaur	0	0	0	1	false	Specification pattern library for Deno.
+deno-slash	justjavac/deno-slash	https://github.com/justjavac/deno-slash	0	0	0	1	false	Convert Windows backslash paths to slash paths
+skimming	petruki/skimming	https://github.com/petruki/skimming	0	0	0	1	false	Skimming is a search engine module for Deno
+deno_simple_type_assert	KSXGitHub/deno_simple_type_assert	https://github.com/KSXGitHub/deno_simple_type_assert	0	0	0	1	false	Simple type assertion library for Deno
+deno-shell-escape	KSXGitHub/deno-shell-escape	https://github.com/KSXGitHub/deno-shell-escape	0	0	0	1	false	Escape and stringify an array of arguments to be executed on the shell
 rupiah_ts	andriawan/rupiah_ts	https://github.com/andriawan/rupiah_ts	0	0	0	1	false	Simple and lightweight rupiah currency format written in typescript
 run_with_limit	alextes/run_with_limit	https://github.com/alextes/run_with_limit	0	0	0	1	false	Run promise-returning & async functions with limited concurrency
 rug	Naktrem/rug	https://github.com/Naktrem/rug	0	0	0	1	false	Simple username generator for deno.
@@ -407,10 +506,15 @@ deno-rand	rsp/deno-rand	https://github.com/rsp/deno-rand	0	0	0	1	false	Random ut
 quarrel	fatalcenturion/quarrel	https://github.com/fatalcenturion/quarrel	0	0	0	1	false	A Deno command line argument parser, highly configurable, and fast (well, not yet)
 punycode.ts	ClementD64/punycode.ts	https://github.com/ClementD64/punycode.ts	0	0	0	1	false	A robust Punycode converter that fully complies to RFC 3492 and RFC 5891.
 proxyScrape	often/proxyScrape	https://github.com/often/proxyScrape	0	0	0	1	false	Lightweight proxy scraper for Deno.
-deno-prompts	caspervonb/deno-prompts	https://github.com/caspervonb/deno-prompts	0	0	0	1	false	Command line prompts for Deno
 portl	FalkZ/portl	https://github.com/FalkZ/portl	0	0	0	1	false	0 configuration backend, for serving js functions and generators
 poly1305	chiefbiiko/poly1305	https://github.com/chiefbiiko/poly1305	0	0	0	1	false	Poly1305
+deno-path-to-regexp	namelos/deno-path-to-regexp	https://github.com/namelos/deno-path-to-regexp	0	0	0	1	false	path-to-regexp for Deno.
+password-generator	satty1987/password-generator	https://github.com/satty1987/password-generator	0	0	0	1	false	
+opener	denjucks/opener	https://github.com/denjucks/opener	0	0	0	1	false	Opener - A Simple Cross-Platform Browser Opener for Deno
+deno-once	KSXGitHub/deno-once	https://github.com/KSXGitHub/deno-once	0	0	0	1	false	Create a function that calls and cache a function once
+oak_middlewares	deepakshrma/oak_middlewares	https://github.com/deepakshrma/oak_middlewares	0	0	0	1	false	A collection of middleware for the oak framework. https://github.com/oakserver/
 number_to_words	guptamohit004/number_to_words	https://github.com/guptamohit004/number_to_words	0	0	0	1	false	Convert a Number to Words
+deno-number-formatter	nusendra/deno-number-formatter	https://github.com/nusendra/deno-number-formatter	0	0	0	1	false	Number formatter in deno
 node-buffer	AliBasicCoder/node-buffer	https://github.com/AliBasicCoder/node-buffer	0	0	0	1	false	
 njalla	finder/njalla	https://github.com/finder/njalla	0	0	0	1	false	Njalla API wrapper for Deno.
 deno-ndjson	FaberVitale/deno-ndjson	https://github.com/FaberVitale/deno-ndjson	0	0	0	1	false	Read, write, parse and serialize new line delimited JSON in deno: http://ndjson.org/
@@ -440,109 +544,43 @@ deno-json-rpc	ondras/deno-json-rpc	https://github.com/ondras/deno-json-rpc	0	0	0
 is_url	rubiin/is_url	https://github.com/rubiin/is_url	0	0	0	1	false	check if a url is aboulte or relative
 is_exe	eankeen/is_exe	https://github.com/eankeen/is_exe	0	0	0	1	false	test if a file is executable
 isIP	ako-deno/isIP	https://github.com/ako-deno/isIP	0	0	0	1	false	IP address detector for Deno.
-deno-pretty-assert	bokuweb/deno-pretty-assert	https://github.com/bokuweb/deno-pretty-assert	26	1	26	0	true	🦕A colorful assertEqual for deno
-prettyBenching	littletof/prettyBenching	https://github.com/littletof/prettyBenching	3	0	3	0	false	🦕 A small lib to make your Deno benchmarking progress and results look pretty
-deno-purify	aynik/deno-purify	https://github.com/aynik/deno-purify	2	0	2	0	false	Functional programming library for TypeScript, Ported to Deno - https://gigobyte.github.io/purify/
-lavadeno	Lavaclient/lavadeno	https://github.com/Lavaclient/lavadeno	2	0	2	0	false	lavadeno is a simple, easy-to-use, and flexible lavalink client built on the Deno Runtime.
-proxy-bind	imcotton/proxy-bind	https://github.com/imcotton/proxy-bind	1	0	1	0	false	foobar.fn.bind(foobar) -> bind(foobar).fn
-nonstd	deno-nonstd/nonstd	https://github.com/deno-nonstd/nonstd	1	0	1	0	false	A library for useful features that aren't currently in the std library.
-jbq	krnik/jbq	https://github.com/krnik/jbq	1	0	1	0	false	Customizable JS Validator
-deno-path-to-regexp	namelos/deno-path-to-regexp	https://github.com/namelos/deno-path-to-regexp	0	0	0	1	false	path-to-regexp for Deno.
-password-generator	satty1987/password-generator	https://github.com/satty1987/password-generator	0	0	0	1	false	
-opener	denjucks/opener	https://github.com/denjucks/opener	0	0	0	1	false	Opener - A Simple Cross-Platform Browser Opener for Deno
-deno-once	KSXGitHub/deno-once	https://github.com/KSXGitHub/deno-once	0	0	0	1	false	Create a function that calls and cache a function once
-oak_middlewares	deepakshrma/oak_middlewares	https://github.com/deepakshrma/oak_middlewares	0	0	0	1	false	A collection of middleware for the oak framework. https://github.com/oakserver/
-deno-number-formatter	nusendra/deno-number-formatter	https://github.com/nusendra/deno-number-formatter	0	0	0	1	false	Number formatter in deno
-parseargs	bartlomieju/parseargs	https://github.com/bartlomieju/parseargs	29	1	29	0	false	Migrated to https://github.com/denoland/deno_std
-rxjs	DenoBRComunitty/rxjs	https://github.com/DenoBRComunitty/rxjs	3	1	3	0	false	Uma biblioteca de programação reativa para JavaScript, agora disponível para Deno! https://rxjs.dev
-sha256	chiefbiiko/sha256	https://github.com/chiefbiiko/sha256	1	1	1	0	false	SHA2-256 4 Deno
-deno-pg-format	grantcarthew/deno-pg-format	https://github.com/grantcarthew/deno-pg-format	1	0	1	0	false	Deno implementation of PostgreSQL's format() to safely create dynamic SQL queries.
-pbkdf2	chiefbiiko/pbkdf2	https://github.com/chiefbiiko/pbkdf2	1	0	1	0	false	
-sha512	chiefbiiko/sha512	https://github.com/chiefbiiko/sha512	0	1	0	0	false	
-deno-tar	divy-work/deno-tar	https://github.com/divy-work/deno-tar	5	0	5	2	false	TAR archive management in Deno :package:
-shodan_deno	aldinp16/shodan_deno	https://github.com/aldinp16/shodan_deno	1	0	1	1	false	Simple Shodan API Wrapper For Deno
-short_uuid	jeanlescure/short_uuid	https://github.com/jeanlescure/short_uuid	0	0	0	2	false	Deno module used for generating random or sequential UUID of any length
-snelm	denjucks/snelm	https://github.com/denjucks/snelm	6	1	6	1	false	Snelm: improved security middleware for deno web frameworks, derived from helmet for Node.
-snowlight	trylix/snowlight	https://github.com/trylix/snowlight	10	0	10	3	false	Snowlight is a web application server framework for Deno 🦕
-soxa	fakoua/soxa	https://github.com/fakoua/soxa	15	4	15	2	false	Promise based HTTP client for the deno
-deno-udd	hayd/deno-udd	https://github.com/hayd/deno-udd	54	3	54	4	false	Update Deno Dependencies - update dependency urls to their latest published versions
-deno_types	Soremwar/deno_types	https://github.com/Soremwar/deno_types	15	2	15	2	false	A curated list for compatible NPM libraries and their definition files for its use with Deno
-sockets	drashland/sockets	https://github.com/drashland/sockets	9	0	9	2	false	A WebSocket library for Deno.
-deno_sqlite_plugin	crabmusket/deno_sqlite_plugin	https://github.com/crabmusket/deno_sqlite_plugin	12	1	12	1	false	Bindings to rusqlite for Deno
-denogram	denogram/denogram	https://github.com/denogram/denogram	7	1	7	2	false	A Telegram Bot framework for Deno 🦕
-statistics	ergenekonyigit/statistics	https://github.com/ergenekonyigit/statistics	6	1	6	2	false	Deno basic statistics module.
-up	denorg/up	https://github.com/denorg/up	5	2	5	5	false	🔌 Check if a website is up with Deno
-deno_tiny_templates	zekth/deno_tiny_templates	https://github.com/zekth/deno_tiny_templates	2	2	2	2	false	A template parser for deno
-Upload-middleware-for-Oak-Deno-framework	hviana/Upload-middleware-for-Oak-Deno-framework	https://github.com/hviana/Upload-middleware-for-Oak-Deno-framework	9	2	9	1	false	This middleware automatically organizes uploads to avoid file system problems and create dirs if not exists, perform validations and optimizes ram usage when uploading big files using Deno standard libraries!
-transport	SASNOVACAT08/transport	https://github.com/SASNOVACAT08/transport	5	1	5	1	false	🦕 WebSocket for Deno 🦕
-tbl	jozsefsallai/tbl	https://github.com/jozsefsallai/tbl	1	1	1	1	false	tiny and versatile command-line table generator for deno
-Trex	crewdevio/Trex	https://github.com/crewdevio/Trex	7	0	7	2	false	package management like npm for deno 🐱‍🐉
-deno-uuid	lucascaro/deno-uuid	https://github.com/lucascaro/deno-uuid	10	1	10	1	false	Deprecated! UUID is part of the deno standard library
-validasaur	emsifa/validasaur	https://github.com/emsifa/validasaur	4	2	4	1	false	Deno validation library
-Uwuifier	Schotsl/Uwuifier	https://github.com/Schotsl/Uwuifier	0	1	0	1	false	This very lightweight package allows you to uwuify any sentence or word (excluding URL's) with many configurable parameters while giving you access to many vewy kawaii sentences and faces
-deno-validator	ryo-ma/deno-validator	https://github.com/ryo-ma/deno-validator	1	0	1	2	false	🦕 A simple string validation for deno
-validator	rubiin/validator	https://github.com/rubiin/validator	0	4	0	1	false	Port of validatorjs to deno
-validator-deno	validatorjs/validator-deno	https://github.com/validatorjs/validator-deno	0	3	0	0	false	Official Port of validatorjs to deno
-view-engine	deligenius/view-engine	https://github.com/deligenius/view-engine	5	1	5	1	false	🚀A Template View Engine for Deno frameworks
-deno_vscode_languageserver	denodev/deno_vscode_languageserver	https://github.com/denodev/deno_vscode_languageserver	11	0	11	1	false	Language server protocol implementation for VSCode. This allows implementing language services in JS/TS running on Deno.
-deno_vscode_languageserver	denodev/deno_vscode_languageserver	https://github.com/denodev/deno_vscode_languageserver	11	0	11	1	false	Language server protocol implementation for VSCode. This allows implementing language services in JS/TS running on Deno.
-deno_vscode_languageserver	denodev/deno_vscode_languageserver	https://github.com/denodev/deno_vscode_languageserver	11	0	11	1	false	Language server protocol implementation for VSCode. This allows implementing language services in JS/TS running on Deno.
-deno-websocket	ryo-ma/deno-websocket	https://github.com/ryo-ma/deno-websocket	9	1	9	1	false	🦕A simple WebSocket library like ws of node.js library for deno
-superdeno	asos-craigmorten/superdeno	https://github.com/asos-craigmorten/superdeno	7	1	7	1	false	Super-agent driven library for testing Deno HTTP servers.
-wasm_gzip	manyuanrong/wasm_gzip	https://github.com/manyuanrong/wasm_gzip	8	0	8	1	false	Gzip encryption and decryption wasm implementation, support Deno
-x-name	denorg/x-name	https://github.com/denorg/x-name	3	1	3	5	false	🏷️ Check if a package name is available on deno.land/x
-deno-username	justjavac/deno-username	https://github.com/justjavac/deno-username	2	1	2	1	false	Get the username of the current user
-yolk	denjucks/yolk	https://github.com/denjucks/yolk	10	0	10	1	false	Yolk CLI - An Oak-based, batteries included CLI tool for the Oak framework, used to quickly create, structure, and run Oak applications.
-supreme_api	desire/supreme_api	https://github.com/desire/supreme_api	7	0	7	1	false	Unofficial Supreme API wrapper for monitoring products.
-youtube-deno	akshgpt7/youtube-deno	https://github.com/akshgpt7/youtube-deno	5	0	5	1	false	A Deno client library of the YouTube Data API.
-deno-using	hayd/deno-using	https://github.com/hayd/deno-using	5	0	5	1	false	python-style with statements for deno
-superoak	asos-craigmorten/superoak	https://github.com/asos-craigmorten/superoak	5	0	5	1	false	HTTP assertions for Oak made easy via SuperDeno.
-status	denosaurs/status	https://github.com/denosaurs/status	5	0	5	1	false	🗿 HTTP status utility for Deno. Based on Java Apache HttpStatus
-due	lemueldls/due	https://github.com/lemueldls/due	5	0	5	1	false	A framework built for Deno, using Vue.js
-deno-sparkpost	hayd/deno-sparkpost	https://github.com/hayd/deno-sparkpost	4	0	4	1	false	Send emails from deno via the SparkPost API
-emoji	s1mpson/emoji	https://github.com/s1mpson/emoji	3	0	3	1	false	😂 Simple emoji support for Deno 🦕 (validate, detect, trim, extract)
-deno-sql	yourtion/deno-sql	https://github.com/yourtion/deno-sql	1	0	1	1	false	Powerful and Easy use SQL Query Builder on Deno From @leizm/sql
-deno-task-runner-v2	ebebbington/deno-task-runner-v2	https://github.com/ebebbington/deno-task-runner-v2	0	1	0	1	false	Version 2 of deno-task-runner to fix issues
-SwissKnife	fakoua/SwissKnife	https://github.com/fakoua/SwissKnife	0	1	0	1	false	Deno Swiss Knife tools
-sha1	chiefbiiko/sha1	https://github.com/chiefbiiko/sha1	0	1	0	0	false	
-talk-lib	JipFr/talk-lib	https://github.com/JipFr/talk-lib	0	0	0	1	false	Deno library to work with Nextcloud Talk
-suzhou-numerals	weakish/suzhou-numerals	https://github.com/weakish/suzhou-numerals	0	0	0	1	false	Encoding and decoding Suzhou numerals.
-supports-color	frunkad/supports-color	https://github.com/frunkad/supports-color	0	0	0	1	false	Detect whether a terminal supports color in Deno 🦕
-deno-string-builder	bqio/deno-string-builder	https://github.com/bqio/deno-string-builder	0	0	0	1	false	Simple string builder.
-strcolors.ts	jabernardo/strcolors.ts	https://github.com/jabernardo/strcolors.ts	0	0	0	1	false	FMT String Extensions for Deno
-store	acathur/store	https://github.com/acathur/store	0	0	0	1	false	A key-value store that persists on disk for Deno.
-ssr	maheshkareeya/ssr	https://github.com/maheshkareeya/ssr	0	0	0	1	false	Server Side HTML Functions for rapid development in Node and Deno.
-Specosaur	SachaCR/Specosaur	https://github.com/SachaCR/Specosaur	0	0	0	1	false	Specification pattern library for Deno.
-deno-slash	justjavac/deno-slash	https://github.com/justjavac/deno-slash	0	0	0	1	false	Convert Windows backslash paths to slash paths
-skimming	petruki/skimming	https://github.com/petruki/skimming	0	0	0	1	false	Skimming is a search engine module for Deno
-deno_simple_type_assert	KSXGitHub/deno_simple_type_assert	https://github.com/KSXGitHub/deno_simple_type_assert	0	0	0	1	false	Simple type assertion library for Deno
-deno-shell-escape	KSXGitHub/deno-shell-escape	https://github.com/KSXGitHub/deno-shell-escape	0	0	0	1	false	Escape and stringify an array of arguments to be executed on the shell
-take-five	toddself/take-five	https://github.com/toddself/take-five	4	0	4	0	false	JSON REST server
-deno-dirname	rsp/deno-dirname	https://github.com/rsp/deno-dirname	3	0	3	0	false	Node-style __dirname and __filename polyfill for Deno
-deno-zstd	xpyxel/deno-zstd	https://github.com/xpyxel/deno-zstd	2	0	2	1	false	Zstd bindings for the Deno TypeScript/JavaScript runtime
-yaml-wasm	KSXGitHub/yaml-wasm	https://github.com/KSXGitHub/yaml-wasm	2	0	2	1	false	WebAssembly module to parse YAML
-deno_tokenizer	eliassjogreen/deno_tokenizer	https://github.com/eliassjogreen/deno_tokenizer	2	0	2	1	false	⚙️ A simple tokenizer for deno
-teddytags	teddytags/teddytags	https://github.com/teddytags/teddytags	2	0	2	1	false	:bear: The superfast way to custom elements.
-deno_dog	marc2332/deno_dog	https://github.com/marc2332/deno_dog	2	0	2	1	false	🐶  A https://dog.ceo/dog-api/ wrapper for Deno
-websocket_server	JohanWinther/websocket_server	https://github.com/JohanWinther/websocket_server	1	0	1	1	false	A WebSocket server library for Deno 🔌
-vuniq	vasuvanka/vuniq	https://github.com/vasuvanka/vuniq	1	0	1	1	false	tiny lib for uniq id generation in javascript
-type_is	ako-deno/type_is	https://github.com/ako-deno/type_is	1	0	1	1	false	Infer the content-type of a HTTP Header for Deno
-deno-type-check	zemse/deno-type-check	https://github.com/zemse/deno-type-check	1	0	1	1	false	Runtime type check library for Deno
-deno-tree	KSXGitHub/deno-tree	https://github.com/KSXGitHub/deno-tree	1	0	1	1	false	Deno's library to traverse filesystem tree.
-time_ago	satty1987/time_ago	https://github.com/satty1987/time_ago	1	0	1	1	false	
-time.ts	burhanahmeed/time.ts	https://github.com/burhanahmeed/time.ts	1	0	1	1	false	Time.ts - A straightforward Deno timezone manipulation
-thai-baht-text-deno	pthongtaem/thai-baht-text-deno	https://github.com/pthongtaem/thai-baht-text-deno	1	0	1	1	false	Convert number to Thai Baht as Text
-docable	drashland/docable	https://github.com/drashland/docable	1	0	1	1	false	An open-source doc block parser for generating documenation as JSON.
-dislocator	abhi11210646/dislocator	https://github.com/abhi11210646/dislocator	1	0	1	1	false	Service Locator pattern module for deno
-download	deno-module/download	https://github.com/deno-module/download	0	1	0	1	false	Deno fetch api based module to download file from a URL.
-dpng	MartonDev/dpng	https://github.com/MartonDev/dpng	1	0	1	1	false	Easily create image files with Deno
+iro	jozsefsallai/iro	https://github.com/jozsefsallai/iro	0	0	0	1	false	Fast and clean terminal coloring and styling utility for Deno and Node.js.
+deno-ip	damianperera/deno-ip	https://github.com/damianperera/deno-ip	0	0	0	1	false	A Deno module which provides access to ipify.org APIs allowing the ability to detect your IP address or lookup geolocation data on a provided IP address, domain or email.
+deno-ifttt	0xVesion/deno-ifttt	https://github.com/0xVesion/deno-ifttt	0	0	0	1	false	This library makes triggering IFTTT webhook events with deno easy.
+idea	NotSyntax/idea	https://github.com/NotSyntax/idea	0	0	0	1	false	Generate ideas.
+http_errors	ako-deno/http_errors	https://github.com/ako-deno/http_errors	0	0	0	1	false	Create HTTP Error for Deno
+deno_html_entities	matschik/deno_html_entities	https://github.com/matschik/deno_html_entities	0	0	0	1	false	Fast html entities decode & encode library for Deno.
+hk-stock-cli	yeukfei02/hk-stock-cli	https://github.com/yeukfei02/hk-stock-cli	0	0	0	1	false	Get hk stock information cli
+hk-stock-api	yeukfei02/hk-stock-api	https://github.com/yeukfei02/hk-stock-api	0	0	0	1	false	get hk stock information in deno
+deno-hctk	miZyind/deno-hctk	https://github.com/miZyind/deno-hctk	0	0	0	1	false	Deno HantChar to Keyboard 漢字轉鍵盤配置
+greet_user	guptamohit004/greet_user	https://github.com/guptamohit004/greet_user	0	0	0	1	false	Greet a user according to the TimeZone  using DENO
+graphql-tag-deno	davidmwhynot/graphql-tag-deno	https://github.com/davidmwhynot/graphql-tag-deno	0	0	0	1	false	
+geosearch-deno	bartholomej/geosearch-deno	https://github.com/bartholomej/geosearch-deno	0	0	0	1	false	Simple Deno CLI library to find places all around the world
+annotated-csv-parser	tiagostutz/annotated-csv-parser	https://github.com/tiagostutz/annotated-csv-parser	0	0	0	1	false	Parser for Flux annotated CSV data https://v2.docs.influxdata.com/v2.0/reference/syntax/annotated-csv/
+deno-fireflix	AlfieriChou/deno-fireflix	https://github.com/AlfieriChou/deno-fireflix	0	0	0	1	false	
+UniqueIDGenerator	ajimae/UniqueIDGenerator	https://github.com/ajimae/UniqueIDGenerator	0	0	0	1	false	Firebase Push ID Generator
+deno-file-chunk	ClementD64/deno-file-chunk	https://github.com/ClementD64/deno-file-chunk	0	0	0	1	false	Read a chunk of file
+favQuote-cli	yeukfei02/favQuote-cli	https://github.com/yeukfei02/favQuote-cli	0	0	0	1	false	Get favourite or random quote cli
+deno_fastlist	MarkTiedemann/deno_fastlist	https://github.com/MarkTiedemann/deno_fastlist	0	0	0	1	false	List all running processes on Windows.
+exec	acathur/exec	https://github.com/acathur/exec	0	0	0	1	false	Execute and get the output of a shell or bash command in Deno.
+deno-exec	gpasq/deno-exec	https://github.com/gpasq/deno-exec	0	0	0	1	false	
+deno-EventEmitter	fuxingZhang/deno-EventEmitter	https://github.com/fuxingZhang/deno-EventEmitter	0	0	0	1	false	EventEmitter for deno, API is same to Nodejs
+deno-event-kit	lemarier/deno-event-kit	https://github.com/lemarier/deno-event-kit	0	0	0	1	false	Simple module for implementing event subscription APIs with Deno.
+escape_string_regexp	Sab94/escape_string_regexp	https://github.com/Sab94/escape_string_regexp	0	0	0	1	false	Escape RegExp special characters
 deno-env-paths	lemarier/deno-env-paths	https://github.com/lemarier/deno-env-paths	0	0	0	1	false	Get paths for storing things like data, config, cache, etc with Deno.
 ensure	eankeen/ensure	https://github.com/eankeen/ensure	0	0	0	1	false	Ensure you are running a minimum version of Deno, Typescript, or V8
 endianness	denolibs/endianness	https://github.com/denolibs/endianness	0	0	0	1	false	A simple module to determine the endianness of the host
 deno-ende	rsp/deno-ende	https://github.com/rsp/deno-ende	0	0	0	1	false	Text encoder and decoder exported as simple functions
 encodeurl	ako-deno/encodeurl	https://github.com/ako-deno/encodeurl	0	0	0	1	false	Encode a URL to a percent-encoded form, excluding already-encoded sequences. Build for Deno
+ejs-deno	femiruby/ejs-deno	https://github.com/femiruby/ejs-deno	0	0	0	1	false	EJS in Deno
 domdom-deno	eirikb/domdom-deno	https://github.com/eirikb/domdom-deno	0	0	0	1	false	The proactive web framework for the unprofessional - Deno build
 dodecasaurus	mikeStr8s/dodecasaurus	https://github.com/mikeStr8s/dodecasaurus	0	0	0	1	false	A deno dice rolling utility
+dinoblox	fracturx/dinoblox	https://github.com/fracturx/dinoblox	0	0	0	1	false	A Deno wrapper for interacting with the Roblox Web API.
+deno-trie	silver-xu/deno-trie	https://github.com/silver-xu/deno-trie	0	0	0	1	false	Quick trie implementation for Deno
+denosaur	ClementD64/denosaur	https://github.com/ClementD64/denosaur	0	0	0	1	false	Yet another web framework
+denoforge	denjucks/denoforge	https://github.com/denjucks/denoforge	0	0	0	1	false	Deno data science library similar to Python's Pandas. Port of the NodeJS library data-forge
+deno-env	rubiin/deno-env	https://github.com/rubiin/deno-env	0	0	0	1	false	DotEnv but for deno
+denodate	t-heu/denodate	https://github.com/t-heu/denodate	0	0	0	1	false	generate date
 deno_scripts	PabloSzx/deno_scripts	https://github.com/PabloSzx/deno_scripts	0	0	0	1	false	Type-safe fully-featured centralized Deno project scripts 🦕
 deno-pixabay	yeukfei02/deno-pixabay	https://github.com/yeukfei02/deno-pixabay	0	0	0	1	false	search image and video from pixabay in deno
 deno_minimist	FaberVitale/deno_minimist	https://github.com/FaberVitale/deno_minimist	0	0	0	1	false	💾 Parses command line arguments. Port & rewrite of the node library minimist
@@ -570,44 +608,6 @@ bandwidth-throttle-stream	patrickkunka/bandwidth-throttle-stream	https://github.
 audit	maximousblk/audit	https://github.com/maximousblk/audit	0	0	0	1	false	Add an audit notification for insecure versions of your modules
 ts-arrays	damianperera/ts-arrays	https://github.com/damianperera/ts-arrays	0	0	0	1	false	Provides utility methods for common Array operations
 a0	being-curious/a0	https://github.com/being-curious/a0	0	0	0	1	false	a0 - A command line utility to manage text/number/email/password/address/note with Alias to easy recall & copy to clipboard.
-deno-change-case	justjavac/deno-change-case	https://github.com/justjavac/deno-change-case	4	1	4	0	false	Convert strings between camelCase, PascalCase, Title Case, snake_case and more 
-clone	ekaragodin/clone	https://github.com/ekaragodin/clone	2	1	2	0	false	A simple utility for the convenient clone
-cobalt	CIDARO/cobalt	https://github.com/CIDARO/cobalt	1	1	1	0	false	Cobalt is an Open Source LRU Cache written for Deno.
-deno-structured-logging	Yamboy1/deno-structured-logging	https://github.com/Yamboy1/deno-structured-logging	7	0	7	0	false	A structured logging module for Deno
-hmac	chiefbiiko/hmac	https://github.com/chiefbiiko/hmac	1	2	1	0	false	hash-based message authentication code
-ini	chances/ini	https://github.com/chances/ini	1	0	1	0	false	An ini parser/serializer in TypeScript for the Deno runtime
-EaiserColors	hamptonmoore/EaiserColors	https://github.com/hamptonmoore/EaiserColors	1	0	1	0	false	
-dubartesql	namadnuno/dubartesql	https://github.com/namadnuno/dubartesql	1	0	1	0	false	Deno + Mysql + QueryBuilder
-dom-serializer	DenoBRComunitty/dom-serializer	https://github.com/DenoBRComunitty/dom-serializer	1	0	1	0	false	🦕 render dom nodes
-domelementtype	DenoBRComunitty/domelementtype	https://github.com/DenoBRComunitty/domelementtype	1	0	1	0	false	all the types of nodes in htmlparser2's dom
-deno-cuid	grantcarthew/deno-cuid	https://github.com/grantcarthew/deno-cuid	1	0	1	0	false	Collision-resistant ids optimized for horizontal scaling and performance.
-deno-chunked	aynik/deno-chunked	https://github.com/aynik/deno-chunked	1	0	1	0	false	A set of functions to read `ArrayBuffer` chunk by chunk or buffered until eof.
-chacha20-poly1305	chiefbiiko/chacha20-poly1305	https://github.com/chiefbiiko/chacha20-poly1305	1	0	1	0	false	Authenticated Encryption with Associated Data
-base64	chiefbiiko/base64	https://github.com/chiefbiiko/base64	1	0	1	0	false	base64 strings from/to Uint8Arrays
-xchacha20-poly1305	chiefbiiko/xchacha20-poly1305	https://github.com/chiefbiiko/xchacha20-poly1305	0	0	0	1	false	XChaCha20-Poly1305
-xchacha20	chiefbiiko/xchacha20	https://github.com/chiefbiiko/xchacha20	0	0	0	1	false	XChaCha20
-win_taskkill	rjoydip/win_taskkill	https://github.com/rjoydip/win_taskkill	0	0	0	1	false	Wrapper for the Windows `taskkill` command. Ends one or more tasks or processes.
-wasm-imports	AliBasicCoder/wasm-imports	https://github.com/AliBasicCoder/wasm-imports	0	0	0	1	false	
-vary	ako-deno/vary	https://github.com/ako-deno/vary	0	0	0	1	false	Manipulate the HTTP Vary header for Deno
-valideno	Caesar2011/valideno	https://github.com/Caesar2011/valideno	0	0	0	1	false	Validate your values and schemes with this extendable validator
-url_validator	r-kgy/url_validator	https://github.com/r-kgy/url_validator	0	0	0	1	false	simple url validator for deno
-url-parse	roonie007/url-parse	https://github.com/roonie007/url-parse	0	0	0	1	false	A simple url builder based on the URL object for Deno with typescript
-url-join	roonie007/url-join	https://github.com/roonie007/url-join	0	0	0	1	false	A simple port of the NodeJS module url-join to Deno with typescript
-deno-unrar	fuxingZhang/deno-unrar	https://github.com/fuxingZhang/deno-unrar	0	0	0	1	false	uncompress rar file for deno
-uapi	shynome/uapi	https://github.com/shynome/uapi	0	0	0	1	false	your api serverless framework with deno
-typed_numeric_deno	glatan/typed_numeric_deno	https://github.com/glatan/typed_numeric_deno	0	0	0	1	false	Typed numeric for Deno.
-twitter	iosamuel/twitter	https://github.com/iosamuel/twitter	0	0	0	1	false	Twitter's library in Deno
-troodon	shandysiswandi/troodon	https://github.com/shandysiswandi/troodon	0	0	0	1	false	🦖 Troodon is a Library for Deno to Handle Algorithms
-toolbelt	gokayokyay/toolbelt	https://github.com/gokayokyay/toolbelt	0	0	0	1	false	Toolbelt for Deno
-deno-title	satyarohith/deno-title	https://github.com/satyarohith/deno-title	0	0	0	1	false	Capitalize your titles as per The Chicago Manual of Style.
-deno-timezone	wrzonki/deno-timezone	https://github.com/wrzonki/deno-timezone	0	0	0	1	false	
-deno_run_tests_on_localhost	KSXGitHub/deno_run_tests_on_localhost	https://github.com/KSXGitHub/deno_run_tests_on_localhost	0	0	0	1	false	Create a localhost server and run tests
-deno-term-color	jahzielv/deno-term-color	https://github.com/jahzielv/deno-term-color	0	0	0	1	false	Terminal colorizer for TS and Deno
-tcr	AlexVagrant/tcr	https://github.com/AlexVagrant/tcr	0	0	0	1	false	tcr will complie and run with deno when typescript file change, you can direct run typescript file
-tckimlik	serkanalgur/tckimlik	https://github.com/serkanalgur/tckimlik	0	0	0	1	false	A tool for validate Turkish Identification Number. Deno version
-ejs-deno	femiruby/ejs-deno	https://github.com/femiruby/ejs-deno	0	0	0	1	false	EJS in Deno
-web-name	letskhabar/web-name	https://github.com/letskhabar/web-name	1	0	1	0	false	
-DenoVerbalExpressions	evosland/DenoVerbalExpressions	https://github.com/evosland/DenoVerbalExpressions	1	0	1	0	false	
 zap	deno-nonstd/zap	https://github.com/deno-nonstd/zap	0	0	0	0	false	Adds a config file to make it easier to use complex Deno shell commands.
 xrange	parzh/xrange	https://github.com/parzh/xrange	0	0	0	0	false	Python-esque iterator for number ranges
 win_tasklist	rjoydip/win_tasklist	https://github.com/rjoydip/win_tasklist	0	0	0	0	false	Wrapper for the Windows tasklist command.

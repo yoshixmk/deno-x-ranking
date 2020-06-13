@@ -15,7 +15,7 @@ if (Deno.args.length < 2) {
 const username = Deno.args[0];
 const password = Deno.args[1];
 type Format = "file" | "table";
-const format: Format | undefined = Deno.args[1] as Format;
+const format: Format | undefined = Deno.args[2] as Format;
 
 const databaseUrl =
   "https://raw.githubusercontent.com/denoland/deno_website2/master/database.json";
@@ -56,23 +56,35 @@ for (const key of Object.keys(entries)) {
   result.push(json as Repository);
 
   // For Manual Testing
-  // if (result.length > 2) {
+  // if (result.length > 20) {
   //   break;
   // }
 }
 
-result.sort(
-  (a, b) =>
-    a.stargazers_count < b.stargazers_count ||
-    a.forks < b.forks ||
-    a.watchers < b.watchers ||
-    a.subscribers_count < b.subscribers_count
-      ? 1
-      : -1,
+const sortedResult = result.sort(
+  (a, b) => {
+    if (a.stargazers_count < b.stargazers_count) return 1;
+    else if (
+      a.forks < b.forks && a.stargazers_count == b.stargazers_count
+    ) {
+      return 1;
+    } else if (
+      a.watchers < b.watchers && a.forks == b.forks &&
+      a.stargazers_count == b.stargazers_count
+    ) {
+      return 1;
+    } else if (
+      a.subscribers_count < b.subscribers_count && a.watchers == b.watchers &&
+      a.forks == b.forks && a.stargazers_count == b.stargazers_count
+    ) {
+      return 1;
+    }
+    return -1;
+  },
 );
 
 if (format == "table") {
-  console.table(result, [
+  console.table(sortedResult, [
     "name",
     "full_name",
     "html_url",
@@ -85,7 +97,7 @@ if (format == "table") {
   ]);
 } else {
   const encoder = new TextEncoder();
-  const data = result.map((r) =>
+  const data = sortedResult.map((r) =>
     [
       r.name,
       r.full_name,

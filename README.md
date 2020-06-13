@@ -3,18 +3,19 @@
 
 ## Usage
 ### File output
-```Typescript
-deno run --allow-net --allow-write mod.ts <github username> <github password>
+```Shell
+$ deno run --allow-net --allow-write https://raw.githubusercontent.com/yoshixmk/deno-x-ranking/master/mod.ts <github username> <github password> file
 ```
 
 ### Console output
-```Typescript
-deno run --allow-net mod.ts <github username> <github password>
+```Shell
+$ deno run --allow-net https://raw.githubusercontent.com/yoshixmk/deno-x-ranking/master/mod.ts <github username> <github password> table
 ```
 
 ## Logic
-Sorted by stargazers count.  
-If same count, rank using stargazers count forks, watchers, subscribers count.
+Ranking GitHub Star count.  
+And sorted by GitHub Star.  
+If same GitHub Star count, rank using forks count, watchers count, subscribers count.
 
 ## Sample
 [./ranking_result.tsv](./ranking_result.tsv)

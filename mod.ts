@@ -6,13 +6,15 @@ if (Deno.args.length < 2) {
   console.info(
     "Please input your github account. Limit 5000 req per hour by GitHub.",
   );
-  console.info("ex: deno run --allow-net --allow-write <username> <password> <file|table (default is file)>");
+  console.info(
+    "ex: deno run --allow-net --allow-write <username> <password> <file|table (default is file)>",
+  );
   Deno.exit(1);
 }
 
 const username = Deno.args[0];
 const password = Deno.args[1];
-type Format = 'file' | 'table'
+type Format = "file" | "table";
 const format: Format | undefined = Deno.args[1] as Format;
 
 const databaseUrl =
@@ -60,14 +62,16 @@ for (const key of Object.keys(entries)) {
 }
 
 result.sort(
-    (a, b) =>
+  (a, b) =>
     a.stargazers_count < b.stargazers_count ||
     a.forks < b.forks ||
     a.watchers < b.watchers ||
-    a.subscribers_count < b.subscribers_count ? 1 : -1
-)
+    a.subscribers_count < b.subscribers_count
+      ? 1
+      : -1,
+);
 
-if (format == 'table') {
+if (format == "table") {
   console.table(result, [
     "name",
     "full_name",
@@ -76,21 +80,23 @@ if (format == 'table') {
     "forks",
     "watchers",
     "subscribers_count",
-    "archived"
+    "archived",
     // ignore description is too long
   ]);
 } else {
   const encoder = new TextEncoder();
-  const data = result.map(r =>
-    [r.name,
-    r.full_name,
-    r.html_url,
-    r.stargazers_count,
-    r.forks,
-    r.watchers,
-    r.subscribers_count,
-    r.archived,
-    r.description].join('\t')
-  ).join('\n');
+  const data = result.map((r) =>
+    [
+      r.name,
+      r.full_name,
+      r.html_url,
+      r.stargazers_count,
+      r.forks,
+      r.watchers,
+      r.subscribers_count,
+      r.archived,
+      r.description,
+    ].join("\t")
+  ).join("\n");
   await Deno.writeFile("ranking_result.tsv", encoder.encode(data));
 }

@@ -1,15 +1,16 @@
 # deno-x-ranking
-🦕 Deno Third Party Modules Ranking 👑
+🦕 Deno Third Party Modules Ranking 👑  
+https://deno.land/x/ranking
 
 ## Usage
 ### File output
 ```Shell
-$ deno run --allow-net --allow-write https://raw.githubusercontent.com/yoshixmk/deno-x-ranking/master/mod.ts <github username> <github password> file
+$ deno run --allow-net --allow-write https://deno.land/x/ranking/mod.ts <github username> <github password> file
 ```
 
 ### Console output
 ```Shell
-$ deno run --allow-net https://raw.githubusercontent.com/yoshixmk/deno-x-ranking/master/mod.ts <github username> <github password> table
+$ deno run --allow-net https://deno.land/x/ranking/mod.ts <github username> <github password> table
 ```
 
 ## Logic

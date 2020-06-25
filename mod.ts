@@ -1,4 +1,7 @@
 import { GithubDatabaseEntry, encode } from "./deps.ts";
+import { consoleTable } from "./consoleTable.ts";
+import { generateTsvFile } from "./generateTsvFile.ts";
+import { generateMarkdownFile } from "./generateMarkdownFile.ts";
 
 if (Deno.args.length < 2) {
   console.log(Deno.args);
@@ -13,7 +16,10 @@ if (Deno.args.length < 2) {
 
 const username = Deno.args[0];
 const password = Deno.args[1];
-type Format = "file" | "table";
+const File = "file";
+const Table = "table";
+const MarkdownFile = "markdown";
+type Format = typeof File | typeof Table | typeof MarkdownFile;
 const format: Format | undefined = Deno.args[2] as Format;
 
 const databaseUrl =
@@ -23,7 +29,7 @@ const res = await fetch(databaseUrl);
 const entries: Readonly<Record<string, GithubDatabaseEntry>> = await res.json();
 
 // 表示させたいリポジトリ情報
-type Repository = {
+export type Repository = {
   name: string;
   full_name: string; // owner name +  repository name
   html_url: string;
@@ -55,12 +61,12 @@ for (const key of Object.keys(entries)) {
   result.push(json as Repository);
 
   // For Manual Testing
-  // if (result.length > 20) {
+  // if (result.length > 3) {
   //   break;
   // }
 }
 
-const sortedResult = result.sort(
+export const sortedResult = result.sort(
   (a, b) => {
     if (a.stargazers_count < b.stargazers_count) return 1;
     else if (
@@ -82,32 +88,14 @@ const sortedResult = result.sort(
   },
 );
 
-if (format == "table") {
-  console.table(sortedResult, [
-    "name",
-    "full_name",
-    "html_url",
-    "stargazers_count",
-    "forks",
-    "watchers",
-    "subscribers_count",
-    "archived",
-    // ignore description is too long
-  ]);
-} else {
-  const encoder = new TextEncoder();
-  const data = sortedResult.map((r) =>
-    [
-      r.name,
-      r.full_name,
-      r.html_url,
-      r.stargazers_count,
-      r.forks,
-      r.watchers,
-      r.subscribers_count,
-      r.archived,
-      r.description,
-    ].join("\t")
-  ).join("\n");
-  await Deno.writeFile("ranking_result.tsv", encoder.encode(data));
+switch (format) {
+  case Table:
+    consoleTable(sortedResult);
+    break;
+  case File:
+    await generateTsvFile(sortedResult);
+    break;
+  case MarkdownFile:
+    await generateMarkdownFile(sortedResult);
+    break;
 }

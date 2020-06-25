@@ -1,5 +1,4 @@
-import { GithubDatabaseEntry } from "./github.ts";
-import { encode } from "https://deno.land/std/encoding/base64.ts";
+import { GithubDatabaseEntry, encode } from "./deps.ts";
 
 if (Deno.args.length < 2) {
   console.log(Deno.args);

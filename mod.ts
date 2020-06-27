@@ -43,7 +43,8 @@ export type Repository = {
 
 type RepositoryKey = keyof Repository;
 
-const result: Repository[] = [];
+const repositoryPromises: Promise<Repository>[] = []
+
 for (const key of Object.keys(entries)) {
   //console.dir(entries[key]);
 
@@ -51,22 +52,28 @@ for (const key of Object.keys(entries)) {
     entries[key].repo
   }`;
 
-  const json = await fetch(fetchUrl, {
-    method: "GET",
-    headers: {
-      "Authorization": `Basic ${encode(username + ":" + password)}`,
-    },
-  }).then((r) => r.json());
+  repositoryPromises.push(
+    fetch(fetchUrl, {
+      method: "GET",
+      headers: {
+        "Authorization": `Basic ${encode(username + ":" + password)}`,
+      },
+    }).then((r) => r.json())
+  );
 
-  const repository = (json as Repository);
+  // For Manual Testing
+  // if (repositoryPromises.length > 3) {
+  //   break;
+  // }
+}
+
+const repositories: Repository[]  = await Promise.all(repositoryPromises);
+
+const result: Repository[] = [];
+for (const repository of repositories) {
   if (repository !== undefined && repository.name !== undefined) {
     result.push(repository);
   }
-
-  // For Manual Testing
-  // if (result.length > 3) {
-  //   break;
-  // }
 }
 
 export const sortedResult = result.sort(

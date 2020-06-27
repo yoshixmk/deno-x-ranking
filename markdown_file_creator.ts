@@ -4,30 +4,30 @@ import { Repository } from "./mod.ts";
 export function generateMarkdownFile(result: Repository[]) {
   const headers = [
     "👑",
-    "name",
+    // "name",
     "full_name",
     "html_url",
     "stargazers_count",
     "forks",
-    "watchers",
-    "subscribers_count",
-    "archived",
+    // "watchers",
+    // "subscribers_count",
+    // "archived",
     "description",
   ];
-  const tableArray = Array<Array<string>>();
-  tableArray.push(headers);
+  const tableContent = Array<Array<string>>();
+  tableContent.push(headers);
   result.forEach((r: Repository, index: number) => {
-    tableArray.push(
+    tableContent.push(
       [
         (index + 1).toString(),
-        r.name,
+        // r.name,
         r.full_name,
         r.html_url,
         r.stargazers_count?.toString(),
         r.forks?.toString(),
-        r.watchers?.toString(),
-        r.subscribers_count?.toString(),
-        r.archived?.toString(),
+        // r.watchers?.toString(),
+        // r.subscribers_count?.toString(),
+        // r.archived?.toString(),
         r.description,
       ],
     );
@@ -35,7 +35,7 @@ export function generateMarkdownFile(result: Repository[]) {
 
   new Markdown()
     .table(
-      tableArray,
+      tableContent,
     )
     .write("./examples/", "README");
 }

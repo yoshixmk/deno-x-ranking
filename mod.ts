@@ -1,7 +1,7 @@
 import { GithubDatabaseEntry, encode } from "./deps.ts";
-import { consoleTable } from "./consoleTable.ts";
-import { generateTsvFile } from "./generateTsvFile.ts";
-import { generateMarkdownFile } from "./generateMarkdownFile.ts";
+import { consoleTable } from "./console_table.ts";
+import { generateTsvFile } from "./tsv_file_creator.ts";
+import { generateMarkdownFile } from "./markdown_file_creator.ts";
 
 if (Deno.args.length < 2) {
   console.log(Deno.args);

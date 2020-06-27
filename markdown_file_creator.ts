@@ -3,6 +3,7 @@ import { Repository } from "./mod.ts";
 
 export function generateMarkdownFile(result: Repository[]) {
   const headers = [
+    "👑",
     "name",
     "full_name",
     "html_url",
@@ -15,9 +16,10 @@ export function generateMarkdownFile(result: Repository[]) {
   ];
   const tableArray = Array<Array<string>>();
   tableArray.push(headers);
-  result.forEach((r: Repository) => {
+  result.forEach((r: Repository, index: number) => {
     tableArray.push(
       [
+        (index + 1).toString(),
         r.name,
         r.full_name,
         r.html_url,

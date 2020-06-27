@@ -58,7 +58,10 @@ for (const key of Object.keys(entries)) {
     },
   }).then((r) => r.json());
 
-  result.push(json as Repository);
+  const repository = (json as Repository);
+  if (repository !== undefined && repository.name !== undefined) {
+    result.push(repository);
+  }
 
   // For Manual Testing
   // if (result.length > 3) {

@@ -24,4 +24,9 @@ And sorted by GitHub Star.
 If same GitHub Star count, rank using forks count, watchers count, subscribers count.
 
 ## Sample
-[./ranking_result.tsv](./ranking_result.tsv)
+[./examples/ranking_result.tsv](./examples/ranking_result.tsv)
+
+## Plan
+[x] `"type": "github"` support  
+[ ] `"type": "npm"` support  
+[ ] `"type": "deno_std"` support  

@@ -43,7 +43,7 @@ export type Repository = {
 
 type RepositoryKey = keyof Repository;
 
-const repositoryPromises: Promise<Repository>[] = []
+const repositoryPromises: Promise<Repository>[] = [];
 
 for (const key of Object.keys(entries)) {
   //console.dir(entries[key]);
@@ -58,7 +58,7 @@ for (const key of Object.keys(entries)) {
       headers: {
         "Authorization": `Basic ${encode(username + ":" + password)}`,
       },
-    }).then((r) => r.json())
+    }).then((r) => r.json()),
   );
 
   // For Manual Testing
@@ -67,7 +67,7 @@ for (const key of Object.keys(entries)) {
   // }
 }
 
-const repositories: Repository[]  = await Promise.all(repositoryPromises);
+const repositories: Repository[] = await Promise.all(repositoryPromises);
 
 const result: Repository[] = [];
 for (const repository of repositories) {

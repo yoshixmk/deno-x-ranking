@@ -15,11 +15,11 @@ export default {
     },
     {
       text: "Profile",
-      link: "https://yoshixmk.github.io/profile",
+      link: "https://yoshixmk.github.io/profile/",
     },
     {
       text: "Github",
-      link: "https://github.com/yoshixmk",
+      link: "https://github.com/yoshixmk/deno-x-ranking",
     },
     {
       text: "Twitter",

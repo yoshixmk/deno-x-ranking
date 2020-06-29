@@ -2,6 +2,9 @@
 🦕 Deno Third Party Modules Ranking 👑  
 https://deno.land/x/ranking
 
+## Ranking Page
+https://yoshixmk.github.io/deno-x-ranking
+
 ## Usage
 ### File output
 ```Shell
@@ -30,3 +33,4 @@ If same GitHub Star count, rank using forks count, watchers count, subscribers c
 - [x] `"type": "github"` support  
 - [ ] `"type": "npm"` support  
 - [ ] `"type": "deno_std"` support  
+- [ ] real-time ranking page update

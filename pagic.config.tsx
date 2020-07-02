@@ -1,13 +1,16 @@
+// @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
+import React from 'https://dev.jspm.io/react@16.13.1';
+
 export default {
   base: "/deno-x-ranking/",
   srcDir: "./examples",
-  ignore: [/\/public\//, /\/\./, /\/LICENSE/],
   theme: "docs",
-  plugins: ["sidebar", "script", "ga"],
+  plugins: ["ga"],
   title: "Deno X ranking",
-  sidebar: [
-    "README.md",
-  ],
+  github: 'https://github.com/yoshixmk/deno-x-ranking',
+  head: <>
+    <link rel="stylesheet" href="/deno-x-ranking/custom.css" />
+  </>,
   nav: [
     {
       text: "Tegebu",
@@ -18,10 +21,6 @@ export default {
       link: "https://yoshixmk.github.io/profile/",
     },
     {
-      text: "Github",
-      link: "https://github.com/yoshixmk/deno-x-ranking",
-    },
-    {
       text: "Twitter",
       link: "https://twitter.com/yoshixmk",
     },
@@ -30,6 +29,9 @@ export default {
       link: "https://qiita.com/yoshixmk",
     },
   ],
+  tools: {
+    backToTop: true
+  },
   ga: {
     id: "UA-149348992-3",
   },

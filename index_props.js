@@ -1,6 +1,7 @@
-import projectConfig from '/deno-x-ranking/pagic.config.js';
 import Ga from '/deno-x-ranking/_ga.js';
+import projectConfig from '/deno-x-ranking/pagic.config.js';
 export default {
+    'ga': React.createElement(Ga, { id: "UA-149348992-3" }),
     config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
     'pagePath': "README.md",
     'layoutPath': "_layout.tsx",
@@ -12,14 +13,6 @@ export default {
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/deno-x-ranking/main.js", type: "module" })),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"></nav>'
-        } }),
-    'sidebar': [
-        {
-            "link": "index.html"
-        }
-    ],
-    'ga': React.createElement(Ga, { id: "UA-149348992-3" })
+        React.createElement("script", { src: "/deno-x-ranking/index.js", type: "module" })),
+    'toc': null
 };

@@ -7,6 +7,7 @@ article tr th:nth-child(2),
 article tr td:nth-child(2) {
     width: 12rem;
     max-width: 12rem;
+    min-width: 8rem;
     word-break: break-word;
 }
 

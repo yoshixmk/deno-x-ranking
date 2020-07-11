@@ -1,5 +1,5 @@
 // @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
-import React from 'https://dev.jspm.io/react@16.13.1';
+import React from "https://dev.jspm.io/react@16.13.1";
 
 export default {
   base: "/deno-x-ranking/",
@@ -7,7 +7,7 @@ export default {
   theme: "docs",
   plugins: ["ga"],
   title: "Deno X ranking",
-  github: 'https://github.com/yoshixmk/deno-x-ranking',
+  github: "https://github.com/yoshixmk/deno-x-ranking",
   head: <>
     <link rel="stylesheet" href="/deno-x-ranking/custom.css" />
   </>,
@@ -30,7 +30,7 @@ export default {
     },
   ],
   tools: {
-    backToTop: true
+    backToTop: true,
   },
   ga: {
     id: "UA-149348992-3",

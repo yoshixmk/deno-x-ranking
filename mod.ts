@@ -5,6 +5,7 @@ import { generateMarkdownFile } from "./markdown_file_creator.ts";
 import { sortOrderByAsc } from "./src/sort.ts";
 import { unique } from "./src/unique.ts";
 import { Repository } from "./src/Repository.ts";
+import { concurrentPromise } from "./src/concurrentPromise.ts";
 
 if (Deno.args.length < 2) {
   console.log(Deno.args);
@@ -33,20 +34,20 @@ const entries: Readonly<Record<string, GithubDatabaseEntry>> = await res.json();
 
 type RepositoryKey = keyof Repository;
 
-const repositoryPromises: Promise<Repository>[] = [];
+const repositoryPromises: (() => Promise<Repository>)[] = [];
 
 for (const key of Object.keys(entries)) {
   const fetchUrl = `https://api.github.com/repos/${entries[key].owner}/${
     entries[key].repo
   }`;
 
-  repositoryPromises.push(
+  repositoryPromises.push(() =>
     fetch(fetchUrl, {
       method: "GET",
       headers: {
         "Authorization": `Basic ${encode(username + ":" + password)}`,
       },
-    }).then((r) => r.json()),
+    }).then((r) => r.json())
   );
 
   // For Manual Testing
@@ -55,7 +56,11 @@ for (const key of Object.keys(entries)) {
   // }
 }
 
-const repositories: Repository[] = await Promise.all(repositoryPromises);
+// const repositories: Repository[] = await Promise.all(repositoryPromises);
+const repositories: Repository[] = await concurrentPromise<Repository>(
+  repositoryPromises,
+  200,
+);
 
 // validation
 const validRepositories: Repository[] = [];

@@ -5,8 +5,7 @@ on:
     branches:
       - master
   schedule:
-    # JST PM 15:10 daily.
-    - cron: 10 15 * * *
+    - cron: '*/5 * * * *'
 
 jobs:
   build-and-deploy:

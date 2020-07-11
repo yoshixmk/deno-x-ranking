@@ -26,6 +26,8 @@ const MarkdownFile = "markdown";
 type Format = typeof File | typeof Table | typeof MarkdownFile;
 const format: Format | undefined = Deno.args[2] as Format;
 
+console.debug(`Started. format = ${format}`);
+
 const databaseUrl =
   "https://raw.githubusercontent.com/denoland/deno_website2/master/database.json";
 const res = await fetch(databaseUrl);
@@ -87,3 +89,5 @@ switch (format) {
     await generateMarkdownFile(uniquedRepositories);
     break;
 }
+
+console.debug(`End. format = ${format}`);

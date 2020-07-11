@@ -1,5 +1,5 @@
 import { Markdown, link } from "./deps.ts";
-import { Repository } from "./mod.ts";
+import { Repository } from "./src/Repository.ts";
 
 export function generateMarkdownFile(result: Repository[]) {
   const headers = [

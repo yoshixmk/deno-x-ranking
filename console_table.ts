@@ -1,4 +1,4 @@
-import { Repository } from "./mod.ts";
+import { Repository } from "./src/Repository.ts";
 
 export function consoleTable(result: Repository[]) {
   console.table(result, [

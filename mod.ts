@@ -2,6 +2,9 @@ import { GithubDatabaseEntry, encode } from "./deps.ts";
 import { consoleTable } from "./console_table.ts";
 import { generateTsvFile } from "./tsv_file_creator.ts";
 import { generateMarkdownFile } from "./markdown_file_creator.ts";
+import { sortOrderByAsc } from "./src/sort.ts";
+import { unique } from "./src/unique.ts";
+import { Repository } from "./src/Repository.ts";
 
 if (Deno.args.length < 2) {
   console.log(Deno.args);
@@ -28,26 +31,11 @@ const res = await fetch(databaseUrl);
 
 const entries: Readonly<Record<string, GithubDatabaseEntry>> = await res.json();
 
-// 表示させたいリポジトリ情報
-export type Repository = {
-  name: string;
-  full_name: string; // owner name +  repository name
-  html_url: string;
-  stargazers_count: number;
-  forks: number;
-  watchers: number;
-  subscribers_count: number;
-  archived: boolean;
-  description: string;
-};
-
 type RepositoryKey = keyof Repository;
 
 const repositoryPromises: Promise<Repository>[] = [];
 
 for (const key of Object.keys(entries)) {
-  //console.dir(entries[key]);
-
   const fetchUrl = `https://api.github.com/repos/${entries[key].owner}/${
     entries[key].repo
   }`;
@@ -69,43 +57,28 @@ for (const key of Object.keys(entries)) {
 
 const repositories: Repository[] = await Promise.all(repositoryPromises);
 
-const result: Repository[] = [];
+// validation
+const validRepositories: Repository[] = [];
 for (const repository of repositories) {
   if (repository !== undefined && repository.name !== undefined) {
-    result.push(repository);
+    validRepositories.push(repository);
   }
 }
 
-export const sortedResult = result.sort(
-  (a, b) => {
-    if (a.stargazers_count < b.stargazers_count) return 1;
-    else if (
-      a.forks < b.forks && a.stargazers_count == b.stargazers_count
-    ) {
-      return 1;
-    } else if (
-      a.watchers < b.watchers && a.forks == b.forks &&
-      a.stargazers_count == b.stargazers_count
-    ) {
-      return 1;
-    } else if (
-      a.subscribers_count < b.subscribers_count && a.watchers == b.watchers &&
-      a.forks == b.forks && a.stargazers_count == b.stargazers_count
-    ) {
-      return 1;
-    }
-    return -1;
-  },
-);
+// sort
+const sortedResult = sortOrderByAsc(validRepositories);
+
+// unique
+const uniquedRepositories = unique(sortedResult);
 
 switch (format) {
   case Table:
-    consoleTable(sortedResult);
+    consoleTable(uniquedRepositories);
     break;
   case File:
-    await generateTsvFile(sortedResult);
+    await generateTsvFile(uniquedRepositories);
     break;
   case MarkdownFile:
-    await generateMarkdownFile(sortedResult);
+    await generateMarkdownFile(uniquedRepositories);
     break;
 }

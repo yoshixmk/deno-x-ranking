@@ -29,7 +29,8 @@ const format: Format | undefined = Deno.args[2] as Format;
 
 console.debug(`Started. format = ${format}`);
 
-const entries: Readonly<Record<string, GithubDatabaseEntry>> = await resoinseDenoWebsiteGithub.json();
+const entries: Readonly<Record<string, GithubDatabaseEntry>> =
+  await resoinseDenoWebsiteGithub.json();
 
 const repositoryPromises: (() => Promise<Repository>)[] = [];
 

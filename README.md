@@ -33,4 +33,4 @@ If same GitHub Star count, rank using forks count, watchers count, subscribers c
 - [x] `"type": "github"` support  
 - [ ] `"type": "npm"` support  
 - [ ] `"type": "deno_std"` support  
-- [ ] real-time ranking page update
+- [x] real-time ranking page update

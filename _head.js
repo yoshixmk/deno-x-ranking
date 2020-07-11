@@ -1,5 +1,3 @@
-
-
 import ReactHelmet from 'https://dev.jspm.io/react-helmet@6.1.0';
 const { Helmet } = ReactHelmet;
 const Head = ({ config, title, ga, outputPath, isDark }) => {

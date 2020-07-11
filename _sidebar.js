@@ -1,5 +1,3 @@
-
-
 import { classnames } from './_utils.js';
 const Sidebar = (props) => {
     if (!props.sidebar) {

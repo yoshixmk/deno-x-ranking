@@ -1,5 +1,3 @@
-
-
 import throttle from 'https://dev.jspm.io/lodash@4.17.15/throttle';
 import Loading from './_loading.js';
 const Main = (props) => {

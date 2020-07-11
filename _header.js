@@ -1,5 +1,3 @@
-
-
 import Popover from './_popover.js';
 const Header = ({ config, isDark, setIsDark }) => (React.createElement("header", null,
     React.createElement("h1", null,

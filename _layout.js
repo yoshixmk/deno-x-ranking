@@ -1,5 +1,3 @@
-
-
 import Head from './_head.js';
 import Header from './_header.js';
 import Sidebar from './_sidebar.js';

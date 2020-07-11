@@ -1,5 +1,3 @@
-
-
 export default {
     base: "/deno-x-ranking/",
     srcDir: "./examples",

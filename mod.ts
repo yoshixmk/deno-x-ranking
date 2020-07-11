@@ -6,6 +6,7 @@ import { sortOrderByAsc } from "./src/sort.ts";
 import { unique } from "./src/unique.ts";
 import { Repository } from "./src/Repository.ts";
 import { concurrentPromise } from "./src/concurrentPromise.ts";
+import { resoinseDenoWebsiteGithub } from "./github.ts";
 
 if (Deno.args.length < 2) {
   console.log(Deno.args);
@@ -28,13 +29,7 @@ const format: Format | undefined = Deno.args[2] as Format;
 
 console.debug(`Started. format = ${format}`);
 
-const databaseUrl =
-  "https://raw.githubusercontent.com/denoland/deno_website2/master/database.json";
-const res = await fetch(databaseUrl);
-
-const entries: Readonly<Record<string, GithubDatabaseEntry>> = await res.json();
-
-type RepositoryKey = keyof Repository;
+const entries: Readonly<Record<string, GithubDatabaseEntry>> = await resoinseDenoWebsiteGithub.json();
 
 const repositoryPromises: (() => Promise<Repository>)[] = [];
 
@@ -61,7 +56,7 @@ for (const key of Object.keys(entries)) {
 // const repositories: Repository[] = await Promise.all(repositoryPromises);
 const repositories: Repository[] = await concurrentPromise<Repository>(
   repositoryPromises,
-  200,
+  100,
 );
 
 // validation

@@ -6,7 +6,7 @@ export default {
     theme: "docs",
     plugins: ["ga"],
     title: "Deno X ranking",
-    github: 'https://github.com/yoshixmk/deno-x-ranking',
+    github: "https://github.com/yoshixmk/deno-x-ranking",
     head: React.createElement(React.Fragment, null,
         React.createElement("link", { rel: "stylesheet", href: "/deno-x-ranking/custom.css" })),
     nav: [
@@ -28,7 +28,7 @@ export default {
         },
     ],
     tools: {
-        backToTop: true
+        backToTop: true,
     },
     ga: {
         id: "UA-149348992-3",

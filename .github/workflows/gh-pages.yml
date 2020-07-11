@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  schedule:
+    # JST PM 15:10 daily.
+    - cron: 10 15 * * *
 
 jobs:
   build-and-deploy:
@@ -17,8 +20,12 @@ jobs:
           export DENO_INSTALL="/home/runner/.deno"
           export PATH="$DENO_INSTALL/bin:$PATH"
           deno --version
+          deno run --allow-net --allow-write --allow-read https://deno.land/x/ranking/mod.ts $USERNAME $PASSWORD markdown
           deno install --unstable --allow-read --allow-write --allow-net -n pagic https://deno.land/x/pagic@0.7.28/mod.ts
           pagic build
+        env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

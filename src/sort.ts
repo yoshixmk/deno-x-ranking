@@ -1,6 +1,6 @@
 import { Repository } from "./Repository.ts";
 
-export function sortOrderByAsc(repositories: Repository[]): Repository[] {
+export function sortOrderByDesc(repositories: Repository[]): Repository[] {
   return repositories.sort(
     (a, b) => {
       if (a.stargazers_count < b.stargazers_count) {

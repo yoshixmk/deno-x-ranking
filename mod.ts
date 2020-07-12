@@ -2,7 +2,7 @@ import { GithubDatabaseEntry, encode } from "./deps.ts";
 import { consoleTable } from "./console_table.ts";
 import { generateTsvFile } from "./tsv_file_creator.ts";
 import { generateMarkdownFile } from "./markdown_file_creator.ts";
-import { sortOrderByAsc } from "./src/sort.ts";
+import { sortOrderByDesc as sortOrderByDesc } from "./src/sort.ts";
 import { unique } from "./src/unique.ts";
 import { Repository } from "./src/Repository.ts";
 import { concurrentPromise } from "./src/concurrentPromise.ts";
@@ -70,7 +70,7 @@ for (const repository of repositories) {
 }
 
 // sort
-const sortedResult = sortOrderByAsc(validRepositories);
+const sortedResult = sortOrderByDesc(validRepositories);
 
 // unique
 const uniquedRepositories = unique(sortedResult);

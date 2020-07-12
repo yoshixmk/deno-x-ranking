@@ -7,6 +7,7 @@ import { unique } from "./src/unique.ts";
 import { Repository } from "./src/Repository.ts";
 import { concurrentPromise } from "./src/concurrentPromise.ts";
 import { resoinseDenoWebsiteGithub } from "./github.ts";
+import { green } from "./deps.ts";
 
 if (Deno.args.length < 2) {
   console.log(Deno.args);
@@ -27,7 +28,7 @@ const MarkdownFile = "markdown";
 type Format = typeof File | typeof Table | typeof MarkdownFile;
 const format: Format | undefined = Deno.args[2] as Format;
 
-console.debug(`Started. format = ${format}`);
+console.debug(green(`Started. format = ${format}`));
 
 const entries: Readonly<Record<string, GithubDatabaseEntry>> =
   await resoinseDenoWebsiteGithub.json();
@@ -86,4 +87,4 @@ switch (format) {
     break;
 }
 
-console.debug(`End. format = ${format}`);
+console.debug(green(`End. format = ${format}`));

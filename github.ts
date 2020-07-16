@@ -12,4 +12,4 @@ export interface GithubDatabaseEntry extends DatabaseEntry {
 
 const databaseUrl =
   "https://raw.githubusercontent.com/denoland/deno_website2/master/database.json";
-export const resoinseDenoWebsiteGithub = await fetch(databaseUrl);
+export const resoinseDenoWebsiteGithub = () => fetch(databaseUrl);

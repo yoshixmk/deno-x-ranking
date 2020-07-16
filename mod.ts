@@ -46,10 +46,10 @@ const parser = args
     }),
   )
   .with(
-    Option("password", {
+    Option("token", {
       type: Text,
       describe: "Github account password. required username",
-      alias: ["p"],
+      alias: ["t"],
     }),
   )
   .with(
@@ -86,9 +86,9 @@ if (res.tag === PARSE_FAILURE) {
   Deno.exit(1);
 }
 
-const { username, password, format, sampling } = res.value;
+const { username, token, format, sampling } = res.value;
 
-if (username === undefined || password === undefined) {
+if (username === undefined || token === undefined) {
   console.log(red("Needs to input both username and password."));
   Deno.exit(1);
 }
@@ -99,8 +99,9 @@ if (format === undefined) {
 
 console.debug(green(`Started. format = ${format}`));
 
+const githubDatabaseResource = await resoinseDenoWebsiteGithub();
 const entries: Readonly<Record<string, GithubDatabaseEntry>> =
-  await resoinseDenoWebsiteGithub.json();
+await githubDatabaseResource.json()
 
 const repositoryPromises: (() => Promise<Repository>)[] = [];
 
@@ -113,14 +114,14 @@ for (const key of Object.keys(entries)) {
     fetch(fetchUrl, {
       method: "GET",
       headers: {
-        "Authorization": `Basic ${encode(username + ":" + password)}`,
+        "Authorization": `Basic ${encode(username + ":" + token)}`,
       },
     }).then((r) => r.json())
   );
 
   // For Manual Testing
   if (sampling && repositoryPromises.length > 3) {
-    console.debug(green(`Sampling Success. sampling = ${sampling}`));
+    console.debug(green(`Success: Sampling fetch repository info. sampling = ${sampling}`));
     break;
   }
 }

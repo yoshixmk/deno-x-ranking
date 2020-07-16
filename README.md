@@ -12,7 +12,7 @@ https://yoshixmk.github.io/deno-x-ranking
 ## Usage
 ### File output
 ```Shell
-$ deno run --allow-net --allow-write https://deno.land/x/ranking/mod.ts <github username> <github password> file
+$ deno run --allow-net --allow-write https://deno.land/x/ranking/mod.ts <github username> <github password> tsv
 ```
 
 ### Console output

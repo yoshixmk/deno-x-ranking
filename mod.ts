@@ -1,4 +1,15 @@
-import { GithubDatabaseEntry, encode } from "./deps.ts";
+import {
+  GithubDatabaseEntry,
+  encode,
+  args,
+  EarlyExitFlag,
+  Option,
+  FiniteNumber,
+  Choice,
+  PARSE_FAILURE,
+  red,
+  BinaryFlag,
+} from "./deps.ts";
 import { consoleTable } from "./console_table.ts";
 import { generateTsvFile } from "./tsv_file_creator.ts";
 import { generateMarkdownFile } from "./markdown_file_creator.ts";
@@ -8,25 +19,83 @@ import { Repository } from "./src/Repository.ts";
 import { concurrentPromise } from "./src/concurrentPromise.ts";
 import { resoinseDenoWebsiteGithub } from "./github.ts";
 import { green } from "./deps.ts";
+import { Text } from "https://deno.land/x/args@2.0.2/value-types.ts";
 
-if (Deno.args.length < 2) {
-  console.log(Deno.args);
-  console.info(
-    "Please input your github account. Limit 5000 req per hour by GitHub.",
+const Tsv = "tsv";
+const Table = "table";
+const MarkdownFile = "markdown";
+type Format = typeof Tsv | typeof Table | typeof MarkdownFile;
+
+const parser = args
+  .describe("Add or subtract two numbers")
+  .with(
+    EarlyExitFlag("help", {
+      describe: "Show help",
+      alias: ["h"],
+      exit() {
+        console.log(parser.help());
+        return Deno.exit();
+      },
+    }),
+  )
+  .with(
+    Option("username", {
+      type: Text,
+      describe: "Github account username without '@'. required password",
+      alias: ["u"],
+    }),
+  )
+  .with(
+    Option("password", {
+      type: Text,
+      describe: "Github account password. required username",
+      alias: ["p"],
+    }),
+  )
+  .with(
+    Option("format", {
+      type: Choice<Format>(
+        {
+          value: Tsv,
+          describe: "Output tsv file",
+        },
+        {
+          value: Table,
+          describe: "Output console table",
+        },
+        {
+          value: MarkdownFile,
+          describe: "Output markdown file",
+        },
+      ),
+      alias: ["f"],
+      describe: "Choice output format",
+    }),
+  ).with(
+    BinaryFlag("sampling", {
+      describe: "For testing, fetch a little sample from API",
+      alias: ["s", "test"],
+    }),
   );
-  console.info(
-    "ex: deno run --allow-net --allow-write <username> <password> <file|table (default is file)>",
-  );
+
+const res = parser.parse(Deno.args);
+
+if (res.tag === PARSE_FAILURE) {
+  console.error("Failed to parse CLI arguments");
+  console.error(res.error.toString());
   Deno.exit(1);
 }
 
-const username = Deno.args[0];
-const password = Deno.args[1];
-const File = "file";
-const Table = "table";
-const MarkdownFile = "markdown";
-type Format = typeof File | typeof Table | typeof MarkdownFile;
-const format: Format | undefined = Deno.args[2] as Format;
+const { username, password, format, sampling } = res.value;
+
+if (username === undefined || password === undefined) {
+  console.log(red("Needs to input both username and password."));
+  Deno.exit(1);
+}
+if (format === undefined) {
+  console.log(red("Needs to input output format."));
+  Deno.exit(1);
+}
 
 console.debug(green(`Started. format = ${format}`));
 
@@ -50,9 +119,10 @@ for (const key of Object.keys(entries)) {
   );
 
   // For Manual Testing
-  // if (repositoryPromises.length > 3) {
-  //   break;
-  // }
+  if (sampling && repositoryPromises.length > 3) {
+    console.debug(green(`Sampling Success. sampling = ${sampling}`));
+    break;
+  }
 }
 
 // const repositories: Repository[] = await Promise.all(repositoryPromises);
@@ -79,7 +149,7 @@ switch (format) {
   case Table:
     consoleTable(uniquedRepositories);
     break;
-  case File:
+  case Tsv:
     await generateTsvFile(uniquedRepositories);
     break;
   case MarkdownFile:

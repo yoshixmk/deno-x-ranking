@@ -41,14 +41,14 @@ const parser = args
   .with(
     Option("username", {
       type: Text,
-      describe: "Github account username without '@'. required password",
+      describe: "Github account username without '@'. required token",
       alias: ["u"],
     }),
   )
   .with(
     Option("token", {
       type: Text,
-      describe: "Github account password. required username",
+      describe: "Github account token. required username",
       alias: ["t"],
     }),
   )
@@ -89,7 +89,7 @@ if (res.tag === PARSE_FAILURE) {
 const { username, token, format, sampling } = res.value;
 
 if (username === undefined || token === undefined) {
-  console.log(red("Needs to input both username and password."));
+  console.log(red("Needs to input both username and token."));
   Deno.exit(1);
 }
 if (format === undefined) {

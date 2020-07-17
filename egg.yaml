@@ -1,12 +1,12 @@
 name: ranking
 description: Deno Third Party Modules Ranking
-version: 0.0.1
+version: 0.0.2
 stable: false
 entry: ./mod.ts
 unlisted: false
 fmt: true
 repository: https://github.com/yoshixmk/deno-x-ranking
 files:
-  - ./mod.ts
+  - ./*.ts
   - ./src/**/*.ts
   - README.md

@@ -15,6 +15,7 @@ export {
 export {
   FiniteNumber,
   Choice,
+  Text,
 } from "https://deno.land/x/args@2.0.2/value-types.ts";
 export {
   PARSE_FAILURE,

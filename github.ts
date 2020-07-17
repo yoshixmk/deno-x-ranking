@@ -1,6 +1,6 @@
 import {
   DatabaseEntry,
-} from "https://raw.githubusercontent.com/denoland/deno_website2/master/util/registries.ts";
+} from "https://denopkg.com/denoland/deno_website2@master/util/registries.ts";
 
 export interface GithubDatabaseEntry extends DatabaseEntry {
   type: "github";
@@ -11,5 +11,5 @@ export interface GithubDatabaseEntry extends DatabaseEntry {
 }
 
 const databaseUrl =
-  "https://raw.githubusercontent.com/denoland/deno_website2/master/database.json";
+  "https://denopkg.com/denoland/deno_website2@master/database.json";
 export const resoinseDenoWebsiteGithub = () => fetch(databaseUrl);

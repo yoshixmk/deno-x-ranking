@@ -18,8 +18,7 @@ import { unique } from "./src/unique.ts";
 import { Repository } from "./src/Repository.ts";
 import { concurrentPromise } from "./src/concurrentPromise.ts";
 import { resoinseDenoWebsiteGithub } from "./github.ts";
-import { green } from "./deps.ts";
-import { Text } from "https://deno.land/x/args@2.0.2/value-types.ts";
+import { green, Text } from "./deps.ts";
 
 const Tsv = "tsv";
 const Table = "table";
@@ -101,7 +100,7 @@ console.debug(green(`Started. format = ${format}`));
 
 const githubDatabaseResource = await resoinseDenoWebsiteGithub();
 const entries: Readonly<Record<string, GithubDatabaseEntry>> =
-await githubDatabaseResource.json()
+  await githubDatabaseResource.json();
 
 const repositoryPromises: (() => Promise<Repository>)[] = [];
 
@@ -121,7 +120,9 @@ for (const key of Object.keys(entries)) {
 
   // For Manual Testing
   if (sampling && repositoryPromises.length > 3) {
-    console.debug(green(`Success: Sampling fetch repository info. sampling = ${sampling}`));
+    console.debug(
+      green(`Success: Sampling fetch repository info. sampling = ${sampling}`),
+    );
     break;
   }
 }

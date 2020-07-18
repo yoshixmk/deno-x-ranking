@@ -45,7 +45,7 @@ After processing according to the ranking logic below, limit to only the necessa
 [./examples/ranking_result.tsv](./examples/ranking_result.tsv)
 
 ## Plan
-- [x] `"type": "github"` support  
-- [ ] `"type": "npm"` support  
-- [ ] `"type": "deno_std"` support  
+- [x] `"type": "github"` support
+- [x] `"type": "npm"` ~~support~~ not support. [deprecated] NPM backed deno.land/x entries are deprecated will be removed on August 1st 2020.
+- [x] `"type": "deno_std"` support. The repository that uses deno_std is already included in the ranking by Deno himself
 - [x] real-time ranking page update

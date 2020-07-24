@@ -1,7 +1,10 @@
 import { Markdown, link } from "./deps.ts";
 import { Repository } from "./src/Repository.ts";
 
-export function generateMarkdownFile(result: Repository[]) {
+export function generateMarkdownFile(
+  result: Repository[],
+  addSearchBox: Boolean = true,
+) {
   const headers = [
     "👑",
     "Repository",
@@ -24,6 +27,9 @@ export function generateMarkdownFile(result: Repository[]) {
   });
 
   new Markdown()
+    .paragraph(
+      '<input type="text" id="searchBox" onkeyup="search()" placeholder="Search for keywords...">',
+    )
     .table(
       tableContent,
     )

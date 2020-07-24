@@ -4,11 +4,10 @@ import {
   args,
   EarlyExitFlag,
   Option,
-  FiniteNumber,
   Choice,
   PARSE_FAILURE,
   red,
-  BinaryFlag,
+  PartialOption,
 } from "./deps.ts";
 import { consoleTable } from "./console_table.ts";
 import { generateTsvFile } from "./tsv_file_creator.ts";
@@ -71,9 +70,10 @@ const parser = args
       describe: "Choice output format",
     }),
   ).with(
-    BinaryFlag("sampling", {
-      describe: "For testing, fetch a little sample from API",
-      alias: ["s", "test"],
+    PartialOption("sampling", {
+      type: Text,
+      describe: "For testing, fetch a little sample from API. --sampling true",
+      default: "false",
     }),
   );
 
@@ -84,8 +84,8 @@ if (res.tag === PARSE_FAILURE) {
   console.error(res.error.toString());
   Deno.exit(1);
 }
-
-const { username, token, format, sampling } = res.value;
+console.dir(res.value);
+const { help, username, token, format, sampling } = res.value;
 
 if (username === undefined || token === undefined) {
   console.log(red("Needs to input both username and token."));
@@ -119,7 +119,7 @@ for (const key of Object.keys(entries)) {
   );
 
   // For Manual Testing
-  if (sampling && repositoryPromises.length > 3) {
+  if (sampling !== "true" && repositoryPromises.length > 3) {
     console.debug(
       green(`Success: Sampling fetch repository info. sampling = ${sampling}`),
     );

@@ -119,7 +119,7 @@ for (const key of Object.keys(entries)) {
   );
 
   // For Manual Testing
-  if (sampling !== "true" && repositoryPromises.length > 3) {
+  if (sampling === "true" && repositoryPromises.length > 3) {
     console.debug(
       green(`Success: Sampling fetch repository info. sampling = ${sampling}`),
     );

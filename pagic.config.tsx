@@ -10,6 +10,7 @@ export default {
   github: "https://github.com/yoshixmk/deno-x-ranking",
   head: <>
     <link rel="stylesheet" href="/deno-x-ranking/custom.css" />
+    <script async defer type="text/javascript" src="/deno-x-ranking/custom.js" ></script>
   </>,
   nav: [
     {

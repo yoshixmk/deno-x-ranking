@@ -6,7 +6,8 @@ export default {
     title: "Deno X ranking",
     github: "https://github.com/yoshixmk/deno-x-ranking",
     head: React.createElement(React.Fragment, null,
-        React.createElement("link", { rel: "stylesheet", href: "/deno-x-ranking/custom.css" })),
+        React.createElement("link", { rel: "stylesheet", href: "/deno-x-ranking/custom.css" }),
+        React.createElement("script", { async: true, defer: true, type: "text/javascript", src: "/deno-x-ranking/custom.js" })),
     nav: [
         {
             text: "Tegebu",

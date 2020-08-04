@@ -49,3 +49,4 @@ After processing according to the ranking logic below, limit to only the necessa
 - [x] `"type": "npm"` ~~support~~ not support. [deprecated] NPM backed deno.land/x entries are deprecated will be removed on August 1st 2020.
 - [x] `"type": "deno_std"` support. The repository that uses deno_std is already included in the ranking by Deno himself
 - [x] real-time ranking page update
+- [ ] Corresponds to the [registry2](https://deno.land/posts/registry2). Change to not use the `database.json`.

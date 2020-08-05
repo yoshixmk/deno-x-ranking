@@ -1,5 +1,4 @@
 import {
-  GithubDatabaseEntry,
   encode,
   args,
   EarlyExitFlag,
@@ -9,14 +8,14 @@ import {
   red,
   PartialOption,
 } from "./deps.ts";
-import { consoleTable } from "./console_table.ts";
-import { generateTsvFile } from "./tsv_file_creator.ts";
-import { generateMarkdownFile } from "./markdown_file_creator.ts";
-import { sortOrderByDesc as sortOrderByDesc } from "./src/sort.ts";
-import { unique } from "./src/unique.ts";
-import { Repository } from "./src/Repository.ts";
-import { concurrentPromise } from "./src/concurrentPromise.ts";
-import { resoinseDenoWebsiteGithub } from "./github.ts";
+import { consoleTable } from "./src/console_table.ts";
+import { generateTsvFile } from "./src/tsv_file_creator.ts";
+import { generateMarkdownFile } from "./src/markdown_file_creator.ts";
+import { sortOrderByDesc as sortOrderByDesc } from "./src/utils/sort.ts";
+import { unique } from "./src/utils/unique.ts";
+import { Repository } from "./src/domains/repository";
+import { concurrentPromise } from "./src/utils/concurrentPromise.ts";
+import { fetchAll } from "./src/repositories/resistory_repository.ts";
 import { green, Text } from "./deps.ts";
 
 const Tsv = "tsv";
@@ -97,6 +96,15 @@ if (format === undefined) {
 }
 
 console.debug(green(`Started. format = ${format}`));
+
+// resistory2
+fetchAll()
+
+// wip
+export interface GithubDatabaseEntry {
+  owner: string;
+  repo: string;
+}
 
 const githubDatabaseResource = await resoinseDenoWebsiteGithub();
 const entries: Readonly<Record<string, GithubDatabaseEntry>> =

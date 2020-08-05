@@ -5,7 +5,7 @@ import {
   assertArrayContains,
 } from "https://deno.land/std/testing/asserts.ts";
 import { unique } from "./unique.ts";
-import { Repository } from "./Repository.ts";
+import { Repository } from "../domains/repository.ts";
 
 const sampleCreater = (index: number): Repository => {
   return {

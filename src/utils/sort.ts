@@ -1,4 +1,4 @@
-import { Repository } from "./Repository.ts";
+import { Repository } from "../domains/repository.ts";
 
 export function sortOrderByDesc(repositories: Repository[]): Repository[] {
   return repositories.sort(

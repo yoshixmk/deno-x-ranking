@@ -1,6 +1,6 @@
 // 表示させたいリポジトリ情報
 
-export type Repository = {
+export interface Repository {
   name: string;
   full_name: string; // owner name +  repository name
   html_url: string;
@@ -11,3 +11,5 @@ export type Repository = {
   archived: boolean;
   description: string;
 };
+
+export type Repositories = Array<Repository>

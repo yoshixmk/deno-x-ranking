@@ -1,20 +1,18 @@
 // list modules from resistory2 API
 // @see https://github.com/denoland/deno_registry2/blob/main/API.md#get-modules
 
-import { denoResistory2 } from "./Config.ts";
-import { concurrentPromise } from "./concurrentPromise.ts";
+import { denoResistory2 } from "../config.ts";
+import { concurrentPromise } from "../utils/concurrentPromise.ts";
 
 type ModulesResponse = {
   "success": boolean;
   "data": {
     "total_count": number;
-    "results": Array<
-      {
-        "name": string;
-        "description": string;
-        "star_count": number;
-      }
-    >;
+    "results": Array<{
+      "name": string;
+      "description": string;
+      "star_count": number;
+    }>;
   };
 };
 

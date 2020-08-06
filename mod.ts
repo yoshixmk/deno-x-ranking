@@ -13,10 +13,10 @@ import { generateTsvFile } from "./src/tsv_file_creator.ts";
 import { generateMarkdownFile } from "./src/markdown_file_creator.ts";
 import { sortOrderByDesc as sortOrderByDesc } from "./src/utils/sort.ts";
 import { unique } from "./src/utils/unique.ts";
-import { Repository } from "./src/domains/repository";
+import { Repository } from "./src/domains/repository.ts";
 import { concurrentPromise } from "./src/utils/concurrentPromise.ts";
-import { fetchAll } from "./src/repositories/resistory_repository.ts";
 import { green, Text } from "./deps.ts";
+import ResistoryService from "./src/services/resistory_service.ts";
 
 const Tsv = "tsv";
 const Table = "table";
@@ -97,25 +97,12 @@ if (format === undefined) {
 
 console.debug(green(`Started. format = ${format}`));
 
-// resistory2
-fetchAll()
-
-// wip
-export interface GithubDatabaseEntry {
-  owner: string;
-  repo: string;
-}
-
-const githubDatabaseResource = await resoinseDenoWebsiteGithub();
-const entries: Readonly<Record<string, GithubDatabaseEntry>> =
-  await githubDatabaseResource.json();
+const githubEntries = await ResistoryService.getGithubEntries();
 
 const repositoryPromises: (() => Promise<Repository>)[] = [];
 
-for (const key of Object.keys(entries)) {
-  const fetchUrl = `https://api.github.com/repos/${entries[key].owner}/${
-    entries[key].repo
-  }`;
+for (const entry of githubEntries) {
+  const fetchUrl = `https://api.github.com/repos/${entry.repository}`;
 
   repositoryPromises.push(() =>
     fetch(fetchUrl, {

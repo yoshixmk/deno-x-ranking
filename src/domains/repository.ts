@@ -10,6 +10,6 @@ export interface Repository {
   subscribers_count: number;
   archived: boolean;
   description: string;
-};
+}
 
-export type Repositories = Array<Repository>
+export type Repositories = Array<Repository>;

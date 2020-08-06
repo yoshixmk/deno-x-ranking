@@ -1,4 +1,4 @@
-import { Repository } from "./repositories/repository.ts";
+import { Repository } from "./domains/repository.ts";
 
 export async function generateTsvFile(result: Repository[]) {
   const encoder = new TextEncoder();

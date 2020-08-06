@@ -1,9 +1,9 @@
-interface DatabaseEntry {
+interface Entry {
 }
 
-export interface GithubDatabaseEntry extends DatabaseEntry {
-  owner: string;
-  repo: string;
+export interface GithubEntry extends Entry {
+  repository: string; // Github repository
+  latestVersion: string;
 }
 
-export type GithubDatabaseEntries = Array<GithubDatabaseEntry>
+export type GithubEntries = Array<GithubEntry>;

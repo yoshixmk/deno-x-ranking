@@ -17,6 +17,7 @@ Deno.test("fetchAll hit count sum EQ fetchOne total count", async () => {
   const sum = modules.map((m) => m.data.results.length)
     .reduce(
       (accumulator, currentValue) => accumulator + currentValue,
-      0);
+      0,
+    );
   assertEquals(sum, module.data.total_count);
 });

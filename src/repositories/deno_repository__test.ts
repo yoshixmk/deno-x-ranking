@@ -14,7 +14,7 @@ Deno.test("fetchLatestMetaByName", async () => {
 Deno.test("fetchLatestMetaByName using promise all", async () => {
   const [ranking, std] = await Promise.all([
     fetchLatestMetaByModuleName("ranking"),
-    fetchLatestMetaByModuleName("std")
+    fetchLatestMetaByModuleName("std"),
   ]);
   assertEquals(ranking.upload_options.repository, "yoshixmk/deno-x-ranking");
   assertEquals(std.upload_options.repository, "denoland/deno");

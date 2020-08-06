@@ -23,7 +23,8 @@ class ResistoryService {
       () => fetchLatestMetaByModuleName(name)
     );
 
-    const metas: Meta[] = await concurrentPromise<Meta>(metaPromises, 100);
+    const metas: Meta[] = (await concurrentPromise(metaPromises, 100))
+      .filter((meta) => meta !== null) as any as Meta[];
 
     return metas.flatMap<GithubEntry>((meta) => {
       return {

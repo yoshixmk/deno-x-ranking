@@ -6,8 +6,9 @@ import { concurrentPromise } from "../utils/concurrentPromise.ts";
 type Version = string;
 type LatestVersion = Version;
 export interface Versions {
-  latest: LatestVersion;
+  latest: LatestVersion | null;
   versions: Version[];
+  isLegacy: boolean;
 }
 
 export interface Meta {
@@ -30,16 +31,19 @@ export interface UploadOptions {
 
 export const fetchLatestVersionByModuleName = (
   name: string,
-): Promise<LatestVersion> => {
-  return fetch(new URL(`/${name}/meta/versions.json`, denoCdn))
-    .then<Versions>(res => res.json())
-    .then(versions => versions.latest);
+): Promise<LatestVersion | null> => {
+  return fetch(
+    new URL(`/${name}/meta/versions.json`, denoCdn),
+  )
+    .then<Versions>((res) => res.json())
+    .then((versions) => versions.latest);
 };
 
 export const fetchLatestMetaByModuleName = async (
   name: string,
-): Promise<Meta> => {
+): Promise<Meta | null> => {
   const version = await fetchLatestVersionByModuleName(name);
+  if (version === null) return version;
   return fetch(
     new URL(`/${name}/versions/${version}/meta/meta.json`, denoCdn),
   ).then((res) => res.json());

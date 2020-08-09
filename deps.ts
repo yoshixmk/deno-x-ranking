@@ -1,3 +1,4 @@
+import coffee from "https://deno.land/x/coffee@1.0.0/mod.ts";
 export { encode } from "https://deno.land/std@0.61.0/encoding/base64.ts";
 export {
   Markdown,
@@ -19,5 +20,4 @@ export {
 export {
   PARSE_FAILURE,
 } from "https://deno.land/x/args@2.0.2/symbols.ts";
-import coffee from "https://deno.land/x/coffee@1.0.0/mod.ts";
 export { coffee };

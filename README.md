@@ -17,22 +17,27 @@ https://github.com/settings/tokens/new
 
 ### Tsv output
 ```Shell
-$ deno run --allow-net --allow-write https://deno.land/x/ranking/mod.ts -u <github username> -t <github token> -f tsv
+$ deno run --allow-net --allow-write --allow-env https://deno.land/x/ranking/mod.ts -u <github username> -t <github token> -f tsv
 ```
 
 ### Console output
 ```Shell
-$ deno run --allow-net https://deno.land/x/ranking/mod.ts -u <github username> -t <github token> -f table
+$ deno run --allow-net --allow-env https://deno.land/x/ranking/mod.ts -u <github username> -t <github token> -f table
 ```
 
 ### Markdown output
 ```Shell
-$ deno run --allow-net --allow-write --allow-read https://deno.land/x/ranking/mod.ts -u <github username> -t <github token> -f markdown
+$ deno run --allow-net --allow-write --allow-read --allow-env https://deno.land/x/ranking/mod.ts -u <github username> -t <github token> -f markdown
 ```
 
 ### Help
 ```Shell
 $ deno run https://deno.land/x/ranking/mod.ts -h
+```
+
+## Testing
+```Shell
+$ deno test --allow-read --allow-env --allow-net
 ```
 
 ## Ranking Logic

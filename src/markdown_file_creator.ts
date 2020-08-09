@@ -1,5 +1,5 @@
-import { Markdown, link } from "./deps.ts";
-import { Repository } from "./src/Repository.ts";
+import { Markdown, link } from "../deps.ts";
+import { Repository } from "./domains/repository.ts";
 
 export function generateMarkdownFile(
   result: Repository[],

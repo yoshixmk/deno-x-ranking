@@ -1,0 +1,7 @@
+{
+  "api": {
+    "deno_resistory2": "https://api.deno.land",
+    "deno_cdn": " https://cdn.deno.land",
+    "github": "https://api.github.com"
+  }
+}

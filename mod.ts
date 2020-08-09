@@ -1,5 +1,4 @@
 import {
-  GithubDatabaseEntry,
   encode,
   args,
   EarlyExitFlag,
@@ -9,15 +8,15 @@ import {
   red,
   PartialOption,
 } from "./deps.ts";
-import { consoleTable } from "./console_table.ts";
-import { generateTsvFile } from "./tsv_file_creator.ts";
-import { generateMarkdownFile } from "./markdown_file_creator.ts";
-import { sortOrderByDesc as sortOrderByDesc } from "./src/sort.ts";
-import { unique } from "./src/unique.ts";
-import { Repository } from "./src/Repository.ts";
-import { concurrentPromise } from "./src/concurrentPromise.ts";
-import { resoinseDenoWebsiteGithub } from "./github.ts";
+import { consoleTable } from "./src/console_table.ts";
+import { generateTsvFile } from "./src/tsv_file_creator.ts";
+import { generateMarkdownFile } from "./src/markdown_file_creator.ts";
+import { sortOrderByDesc as sortOrderByDesc } from "./src/utils/sort.ts";
+import { unique } from "./src/utils/unique.ts";
+import { Repository } from "./src/domains/repository.ts";
+import { concurrentPromise } from "./src/utils/concurrentPromise.ts";
 import { green, Text } from "./deps.ts";
+import { resistoryService } from "./src/services/resistory_service.ts";
 
 const Tsv = "tsv";
 const Table = "table";
@@ -98,16 +97,12 @@ if (format === undefined) {
 
 console.debug(green(`Started. format = ${format}`));
 
-const githubDatabaseResource = await resoinseDenoWebsiteGithub();
-const entries: Readonly<Record<string, GithubDatabaseEntry>> =
-  await githubDatabaseResource.json();
+const githubEntries = await resistoryService.getGithubEntries();
 
 const repositoryPromises: (() => Promise<Repository>)[] = [];
 
-for (const key of Object.keys(entries)) {
-  const fetchUrl = `https://api.github.com/repos/${entries[key].owner}/${
-    entries[key].repo
-  }`;
+for (const entry of githubEntries) {
+  const fetchUrl = `https://api.github.com/repos/${entry.repository}`;
 
   repositoryPromises.push(() =>
     fetch(fetchUrl, {

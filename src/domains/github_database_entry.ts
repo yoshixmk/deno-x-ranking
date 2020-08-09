@@ -1,7 +1,4 @@
-interface Entry {
-}
-
-export interface GithubEntry extends Entry {
+export interface GithubEntry {
   repository: string; // Github repository
   latestVersion: string;
 }

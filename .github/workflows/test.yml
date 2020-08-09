@@ -1,0 +1,52 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 10 * * *"
+
+jobs:
+  stable:
+    name: Deno Stable
+
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 60
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macOS-latest, windows-latest, ubuntu-latest]
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - name: Setup Deno
+        uses: denolib/setup-deno@v2
+
+      - name: Run tests
+        run: deno test --allow-read --allow-env --allow-net
+
+  nightly:
+    name: Deno Nightly
+
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 60
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macOS-latest, windows-latest, ubuntu-latest]
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - name: Setup Deno
+        uses: denolib/setup-deno@v2
+        with:
+          deno-version: nightly
+
+      - name: Run tests
+        run: deno test --allow-read --allow-env --allow-net

@@ -1,0 +1,36 @@
+name: Lint
+
+on: [push, pull_request]
+
+jobs:
+  fmt:
+    name: deno fmt
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - name: Setup Deno
+        uses: denolib/setup-deno@v2
+
+      - name: Check formatting
+        run: deno fmt --check
+
+  lint:
+    name: deno lint
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - name: Setup Deno
+        uses: denolib/setup-deno@v2
+
+      - name: Run linter
+        run: deno lint --unstable **/*.ts

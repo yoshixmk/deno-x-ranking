@@ -18,7 +18,7 @@ class RegistryService {
   }
 
   public async getGithubEntries(
-    sampling: string = "false",
+    sampling: string,
   ): Promise<GithubEntries> {
     const modules = await fetchAll();
     const moduleNames = modules

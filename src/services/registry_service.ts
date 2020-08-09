@@ -11,7 +11,7 @@ import {
   Versions,
 } from "../repositories/deno_repository.ts";
 import { fetchAll } from "../repositories/registry_repository.ts";
-import { concurrentPromise } from "../utils/concurrentPromise.ts";
+import { concurrentPromise } from "../utils/concurrent_promise.ts";
 
 class RegistryService {
   constructor() {

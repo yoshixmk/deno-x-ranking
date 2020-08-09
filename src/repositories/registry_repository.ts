@@ -2,7 +2,7 @@
 // @see https://github.com/denoland/deno_registry2/blob/main/API.md#get-modules
 
 import { denoRegistry2 } from "../config.ts";
-import { concurrentPromise } from "../utils/concurrentPromise.ts";
+import { concurrentPromise } from "../utils/concurrent_promise.ts";
 
 type ModulesResponse = {
   "success": boolean;

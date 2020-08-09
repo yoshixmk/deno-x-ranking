@@ -1,7 +1,7 @@
 import { encode } from "../../deps.ts";
 import { GithubEntries } from "../domains/github_database_entry.ts";
 import { Repositories, Repository } from "../domains/repository.ts";
-import { concurrentPromise } from "../utils/concurrentPromise.ts";
+import { concurrentPromise } from "../utils/concurrent_promise.ts";
 import { sortOrderByDesc } from "../utils/sort.ts";
 import { unique } from "../utils/unique.ts";
 

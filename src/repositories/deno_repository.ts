@@ -4,9 +4,8 @@ import { denoCdn } from "../config.ts";
 import { concurrentPromise } from "../utils/concurrentPromise.ts";
 
 type Version = string;
-type LatestVersion = Version;
 export interface Versions {
-  latest: LatestVersion | null;
+  latest: Version | null;
   versions: Version[];
   isLegacy?: boolean;
 }
@@ -45,7 +44,7 @@ export const fetchLatestVersionByModuleName = async (
 
 export const fetchLatestMetaByModuleName = async (
   name: string,
-  latest: LatestVersion,
+  latest: Version,
 ): Promise<Meta> => {
   const res = await fetch(
     new URL(`/${name}/versions/${latest}/meta/meta.json`, denoCdn),

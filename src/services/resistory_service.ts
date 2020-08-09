@@ -16,7 +16,9 @@ class ResistoryService {
   constructor() {
   }
 
-  public async getGithubEntries(): Promise<GithubEntries> {
+  public async getGithubEntries(
+    sampling: string = "false",
+  ): Promise<GithubEntries> {
     const modules = await fetchAll();
     const moduleNames = modules
       .flatMap((m) => m.data.results)
@@ -30,12 +32,16 @@ class ResistoryService {
 
     console.debug(green("Done. fetch metas"));
 
-    return metas.map<GithubEntry>((meta) => {
+    const githubEntries = metas.map<GithubEntry>((meta) => {
       return {
         "repository": meta.upload_options.repository,
         "latestVersion": meta.upload_options.ref,
       };
     });
+    if (sampling === "true") {
+      return githubEntries.splice(0, 10);
+    }
+    return githubEntries;
   }
 
   private async getVersions(

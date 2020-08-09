@@ -17,6 +17,7 @@ import { Repository } from "./src/domains/repository.ts";
 import { concurrentPromise } from "./src/utils/concurrentPromise.ts";
 import { green, Text } from "./deps.ts";
 import { resistoryService } from "./src/services/resistory_service.ts";
+import { githubService } from "./src/services/github_service.ts";
 
 const Tsv = "tsv";
 const Table = "table";
@@ -97,60 +98,24 @@ if (format === undefined) {
 
 console.debug(green(`Started. format = ${format}`));
 
-const githubEntries = await resistoryService.getGithubEntries();
+const githubEntries = await resistoryService.getGithubEntries(sampling);
 
-const repositoryPromises: (() => Promise<Repository>)[] = [];
-
-for (const entry of githubEntries) {
-  const fetchUrl = `https://api.github.com/repos/${entry.repository}`;
-
-  repositoryPromises.push(() =>
-    fetch(fetchUrl, {
-      method: "GET",
-      headers: {
-        "Authorization": `Basic ${encode(username + ":" + token)}`,
-      },
-    }).then((r) => r.json())
-  );
-
-  // For Manual Testing
-  if (sampling === "true" && repositoryPromises.length > 3) {
-    console.debug(
-      green(`Success: Sampling fetch repository info. sampling = ${sampling}`),
-    );
-    break;
-  }
-}
-
-// const repositories: Repository[] = await Promise.all(repositoryPromises);
-const repositories: Repository[] = await concurrentPromise<Repository>(
-  repositoryPromises,
-  100,
+const githubRepositories = githubService.getGithubRepositories(
+  githubEntries,
+  username,
+  token,
 );
 
-// validation
-const validRepositories: Repository[] = [];
-for (const repository of repositories) {
-  if (repository !== undefined && repository.name !== undefined) {
-    validRepositories.push(repository);
-  }
-}
-
-// sort
-const sortedResult = sortOrderByDesc(validRepositories);
-
-// unique
-const uniquedRepositories = unique(sortedResult);
-
+const rankingEntries = await githubRepositories;
 switch (format) {
   case Table:
-    consoleTable(uniquedRepositories);
+    consoleTable(rankingEntries);
     break;
   case Tsv:
-    await generateTsvFile(uniquedRepositories);
+    await generateTsvFile(rankingEntries);
     break;
   case MarkdownFile:
-    await generateMarkdownFile(uniquedRepositories);
+    await generateMarkdownFile(rankingEntries);
     break;
 }
 

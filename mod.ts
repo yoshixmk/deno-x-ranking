@@ -16,7 +16,7 @@ import { unique } from "./src/utils/unique.ts";
 import { Repository } from "./src/domains/repository.ts";
 import { concurrentPromise } from "./src/utils/concurrentPromise.ts";
 import { green, Text } from "./deps.ts";
-import ResistoryService from "./src/services/resistory_service.ts";
+import { resistoryService } from "./src/services/resistory_service.ts";
 
 const Tsv = "tsv";
 const Table = "table";
@@ -97,7 +97,7 @@ if (format === undefined) {
 
 console.debug(green(`Started. format = ${format}`));
 
-const githubEntries = await ResistoryService.getGithubEntries();
+const githubEntries = await resistoryService.getGithubEntries();
 
 const repositoryPromises: (() => Promise<Repository>)[] = [];
 

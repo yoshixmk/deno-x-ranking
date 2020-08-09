@@ -85,4 +85,4 @@ class ResistoryService {
 }
 
 // singleton
-export default new ResistoryService() as ResistoryService;
+export const resistoryService = new ResistoryService();

@@ -8,7 +8,7 @@ type LatestVersion = Version;
 export interface Versions {
   latest: LatestVersion | null;
   versions: Version[];
-  isLegacy: boolean;
+  isLegacy?: boolean;
 }
 
 export interface Meta {
@@ -29,22 +29,32 @@ export interface UploadOptions {
   ref: string;
 }
 
-export const fetchLatestVersionByModuleName = (
+export const fetchLatestVersionByModuleName = async (
   name: string,
-): Promise<LatestVersion | null> => {
-  return fetch(
+): Promise<Versions> => {
+  const res = await fetch(
     new URL(`/${name}/meta/versions.json`, denoCdn),
-  )
-    .then<Versions>((res) => res.json())
-    .then((versions) => versions.latest);
+  );
+  try {
+    return await res.json();
+  } catch (err) {
+    console.warn(`Module name is ${name} / Error status is ${res.statusText}`);
+    throw err;
+  }
 };
 
 export const fetchLatestMetaByModuleName = async (
   name: string,
-): Promise<Meta | null> => {
-  const version = await fetchLatestVersionByModuleName(name);
-  if (version === null) return version;
-  return fetch(
-    new URL(`/${name}/versions/${version}/meta/meta.json`, denoCdn),
-  ).then((res) => res.json());
+  latest: LatestVersion,
+): Promise<Meta> => {
+  const res = await fetch(
+    new URL(`/${name}/versions/${latest}/meta/meta.json`, denoCdn),
+  );
+  // return res.json();
+  try {
+    return await res.json();
+  } catch (err) {
+    console.warn(`Module name is ${name} / Error status is ${res.statusText}`);
+    throw err;
+  }
 };

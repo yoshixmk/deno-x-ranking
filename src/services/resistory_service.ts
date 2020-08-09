@@ -80,7 +80,9 @@ class ResistoryService {
           })
       );
     return (await concurrentPromise(metaPromises, 100))
-      .filter((meta) => meta !== null) as any as Meta[];
+      .filter<Meta>(
+        (meta: Meta | null): meta is Meta => meta !== null,
+      );
   }
 }
 

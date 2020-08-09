@@ -1,7 +1,6 @@
 // Deno Rest API across CDN
 
 import { denoCdn } from "../config.ts";
-import { concurrentPromise } from "../utils/concurrentPromise.ts";
 
 type Version = string;
 export interface Versions {

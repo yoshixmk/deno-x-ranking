@@ -1,9 +1,8 @@
-import { Markdown, link } from "../deps.ts";
+import { link, Markdown } from "../deps.ts";
 import { Repository } from "./domains/repository.ts";
 
 export function generateMarkdownFile(
   result: Repository[],
-  addSearchBox: Boolean = true,
 ) {
   const headers = [
     "👑",

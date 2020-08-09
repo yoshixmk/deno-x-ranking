@@ -1,16 +1,17 @@
+import { green } from "../../deps.ts";
 import {
-  GithubEntry,
   GithubEntries,
+  GithubEntry,
 } from "../domains/github_database_entry.ts";
 import {
-  Meta,
+  fetchLatestMetaByModuleName,
   fetchLatestVersionByModuleName,
+  Meta,
+
   Versions,
 } from "../repositories/deno_repository.ts";
 import { fetchAll } from "../repositories/resistory_repository.ts";
-import { fetchLatestMetaByModuleName } from "../repositories/deno_repository.ts";
 import { concurrentPromise } from "../utils/concurrentPromise.ts";
-import { green } from "../../deps.ts";
 
 class ResistoryService {
   constructor() {

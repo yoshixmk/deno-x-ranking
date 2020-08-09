@@ -1,9 +1,9 @@
-import { Repository, Repositories } from "../domains/repository.ts";
+import { encode } from "../../deps.ts";
+import { GithubEntries } from "../domains/github_database_entry.ts";
+import { Repositories, Repository } from "../domains/repository.ts";
+import { concurrentPromise } from "../utils/concurrentPromise.ts";
 import { sortOrderByDesc } from "../utils/sort.ts";
 import { unique } from "../utils/unique.ts";
-import { concurrentPromise } from "../utils/concurrentPromise.ts";
-import { encode, green } from "../../deps.ts";
-import { GithubEntries } from "../domains/github_database_entry.ts";
 
 class GithubService {
   constructor() {

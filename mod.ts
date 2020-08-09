@@ -1,5 +1,4 @@
 import {
-  encode,
   args,
   EarlyExitFlag,
   Option,
@@ -11,10 +10,6 @@ import {
 import { consoleTable } from "./src/console_table.ts";
 import { generateTsvFile } from "./src/tsv_file_creator.ts";
 import { generateMarkdownFile } from "./src/markdown_file_creator.ts";
-import { sortOrderByDesc as sortOrderByDesc } from "./src/utils/sort.ts";
-import { unique } from "./src/utils/unique.ts";
-import { Repository } from "./src/domains/repository.ts";
-import { concurrentPromise } from "./src/utils/concurrentPromise.ts";
 import { green, Text } from "./deps.ts";
 import { resistoryService } from "./src/services/resistory_service.ts";
 import { githubService } from "./src/services/github_service.ts";

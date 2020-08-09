@@ -1,8 +1,8 @@
-import { fetchOne, fetchAll } from "./resistory_repository.ts";
 import {
-  assertEquals,
   assert,
-} from "https://deno.land/std@0.63.0/testing/asserts.ts";
+  assertEquals,
+} from "https://deno.land/std@0.64.0/testing/asserts.ts";
+import { fetchAll, fetchOne } from "./resistory_repository.ts";
 
 Deno.test("fetchOne", async () => {
   const module = await fetchOne();

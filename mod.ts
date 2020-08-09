@@ -11,7 +11,7 @@ import { consoleTable } from "./src/console_table.ts";
 import { generateTsvFile } from "./src/tsv_file_creator.ts";
 import { generateMarkdownFile } from "./src/markdown_file_creator.ts";
 import { green, Text } from "./deps.ts";
-import { resistoryService } from "./src/services/resistory_service.ts";
+import { registryService } from "./src/services/registry_service.ts";
 import { githubService } from "./src/services/github_service.ts";
 
 const Tsv = "tsv";
@@ -93,7 +93,7 @@ if (format === undefined) {
 
 console.debug(green(`Started. format = ${format}`));
 
-const githubEntries = await resistoryService.getGithubEntries(sampling);
+const githubEntries = await registryService.getGithubEntries(sampling);
 
 const githubRepositories = githubService.getGithubRepositories(
   githubEntries,

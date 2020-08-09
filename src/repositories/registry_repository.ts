@@ -1,7 +1,7 @@
-// list modules from resistory2 API
+// list modules from registry2 API
 // @see https://github.com/denoland/deno_registry2/blob/main/API.md#get-modules
 
-import { denoResistory2 } from "../config.ts";
+import { denoRegistry2 } from "../config.ts";
 import { concurrentPromise } from "../utils/concurrentPromise.ts";
 
 type ModulesResponse = {
@@ -18,7 +18,7 @@ type ModulesResponse = {
 
 export const fetchOne = (): Promise<ModulesResponse> => {
   const moduleResponse: Promise<ModulesResponse> = fetch(
-    new URL("/modules", denoResistory2),
+    new URL("/modules", denoRegistry2),
   )
     .then((res) => res.json());
   return moduleResponse;
@@ -35,7 +35,7 @@ export const fetchAll = async (): Promise<Array<ModulesResponse>> => {
     const pageNumber = i + 1;
     promises.push(() =>
       fetch(
-        new URL(`/modules?limit=${perPage}&page=${pageNumber}`, denoResistory2),
+        new URL(`/modules?limit=${perPage}&page=${pageNumber}`, denoRegistry2),
       ).then((r) => r.json())
     );
   });

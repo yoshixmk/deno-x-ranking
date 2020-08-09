@@ -10,10 +10,10 @@ import {
 
   Versions,
 } from "../repositories/deno_repository.ts";
-import { fetchAll } from "../repositories/resistory_repository.ts";
+import { fetchAll } from "../repositories/registry_repository.ts";
 import { concurrentPromise } from "../utils/concurrentPromise.ts";
 
-class ResistoryService {
+class RegistryService {
   constructor() {
   }
 
@@ -94,4 +94,4 @@ class ResistoryService {
 }
 
 // singleton
-export const resistoryService = new ResistoryService();
+export const registryService = new RegistryService();

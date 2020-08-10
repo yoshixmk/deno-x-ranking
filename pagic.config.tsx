@@ -1,5 +1,5 @@
 // @deno-types="https://deno.land/x/pagic@v0.8.4/src/types/react/v16.13.1/react.d.ts"
-import React from 'https://dev.jspm.io/react@16.13.1';
+import React from "https://dev.jspm.io/react@16.13.1";
 
 export default {
   base: "/deno-x-ranking/",
@@ -10,7 +10,8 @@ export default {
   github: "https://github.com/yoshixmk/deno-x-ranking",
   head: <>
     <link rel="stylesheet" href="/deno-x-ranking/custom.css" />
-    <script async defer type="text/javascript" src="/deno-x-ranking/custom.js"></script>
+    <script async defer type="text/javascript" src="/deno-x-ranking/custom.js">
+    </script>
   </>,
   nav: [
     {

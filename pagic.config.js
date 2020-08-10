@@ -9,7 +9,7 @@ export default {
         React.createElement("link", { rel: "stylesheet", href: "/deno-x-ranking/custom.css" }),
         React.createElement("script", { async: true, defer: true, type: "text/javascript", src: "/deno-x-ranking/custom.js" }),
         React.createElement("link", { rel: "icon", type: "", href: "/deno-x-ranking/favicon.ico" }),
-        React.createElement("link", { rel: "apple-touch-icon", href: "/favicon-192.png" })),
+        React.createElement("link", { rel: "apple-touch-icon", href: "/deno-x-ranking/favicon-192.png" })),
     nav: [
         {
             text: "Tegebu",

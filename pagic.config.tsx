@@ -12,6 +12,8 @@ export default {
     <link rel="stylesheet" href="/deno-x-ranking/custom.css" />
     <script async defer type="text/javascript" src="/deno-x-ranking/custom.js">
     </script>
+    <link rel="icon" type="" href="/deno-x-ranking/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon-192.png"></link>
   </>,
   nav: [
     {

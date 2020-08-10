@@ -3,6 +3,8 @@
 ![gh-pages](https://github.com/yoshixmk/deno-x-ranking/workflows/gh-pages/badge.svg)
 [![nest badge](https://nest.land/badge.svg)](https://nest.land/package/ranking)  
 
+![Rating ranking Dinosaurus](./examples/favicon-192.png)
+
 🦕 Deno Third Party Modules Ranking 👑    
 https://deno.land/x/ranking
 

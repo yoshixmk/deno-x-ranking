@@ -2,7 +2,7 @@
 import React from "https://dev.jspm.io/react@16.13.1";
 
 export default {
-  base: "/deno-x-ranking/",
+  root: "/deno-x-ranking/",
   srcDir: "./examples",
   theme: "docs",
   plugins: ["ga"],

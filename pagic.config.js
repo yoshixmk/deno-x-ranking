@@ -1,5 +1,5 @@
 export default {
-    base: "/deno-x-ranking/",
+    root: "/deno-x-ranking/",
     srcDir: "./examples",
     theme: "docs",
     plugins: ["ga"],

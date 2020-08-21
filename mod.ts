@@ -1,76 +1,17 @@
 import {
-  args,
-  EarlyExitFlag,
-  Option,
-  Choice,
+  green,
   PARSE_FAILURE,
   red,
-  PartialOption,
 } from "./deps.ts";
 import { consoleTable } from "./src/console_table.ts";
-import { generateTsvFile } from "./src/tsv_file_creator.ts";
+import { Csv, MarkdownFile, Table, Tsv } from "./src/domains/Format.ts";
+import { SeparatedFileCreator } from "./src/file_creator.ts";
 import { generateMarkdownFile } from "./src/markdown_file_creator.ts";
-import { green, Text } from "./deps.ts";
-import { registryService } from "./src/services/registry_service.ts";
+import { parseArgs } from "./src/services/arg_service.ts";
 import { githubService } from "./src/services/github_service.ts";
+import { registryService } from "./src/services/registry_service.ts";
 
-const Tsv = "tsv";
-const Table = "table";
-const MarkdownFile = "markdown";
-type Format = typeof Tsv | typeof Table | typeof MarkdownFile;
-
-const parser = args
-  .describe("Add or subtract two numbers")
-  .with(
-    EarlyExitFlag("help", {
-      describe: "Show help",
-      alias: ["h"],
-      exit() {
-        console.log(parser.help());
-        return Deno.exit();
-      },
-    }),
-  )
-  .with(
-    Option("username", {
-      type: Text,
-      describe: "Github account username without '@'. required token",
-      alias: ["u"],
-    }),
-  )
-  .with(
-    Option("token", {
-      type: Text,
-      describe: "Github account token. required username",
-      alias: ["t"],
-    }),
-  )
-  .with(
-    Option("format", {
-      type: Choice<Format>(
-        {
-          value: Tsv,
-          describe: "Output tsv file",
-        },
-        {
-          value: Table,
-          describe: "Output console table",
-        },
-        {
-          value: MarkdownFile,
-          describe: "Output markdown file",
-        },
-      ),
-      alias: ["f"],
-      describe: "Choice output format",
-    }),
-  ).with(
-    PartialOption("sampling", {
-      type: Text,
-      describe: "For testing, fetch a little sample from API. --sampling true",
-      default: "false",
-    }),
-  );
+const parser = parseArgs();
 
 const res = parser.parse(Deno.args);
 
@@ -80,7 +21,7 @@ if (res.tag === PARSE_FAILURE) {
   Deno.exit(1);
 }
 console.dir(res.value);
-const { help, username, token, format, sampling } = res.value;
+const { help, username, token, format, outputFile, sampling } = res.value;
 
 if (username === undefined || token === undefined) {
   console.log(red("Needs to input both username and token."));
@@ -93,7 +34,8 @@ if (format === undefined) {
 
 console.debug(green(`Started. format = ${format}`));
 
-const githubEntries = await registryService.getGithubEntries(sampling);
+const isSampling = sampling !== "false";
+const githubEntries = await registryService.getGithubEntries(isSampling);
 
 const githubRepositories = githubService.getGithubRepositories(
   githubEntries,
@@ -107,11 +49,14 @@ switch (format) {
     consoleTable(rankingEntries);
     break;
   case Tsv:
-    await generateTsvFile(rankingEntries);
+  case Csv:
+    await new SeparatedFileCreator(format, outputFile).generateFile(rankingEntries);
     break;
   case MarkdownFile:
     await generateMarkdownFile(rankingEntries);
     break;
+  default:
+    throw Error(`Cannot use the format, ${format}`);
 }
 
 console.debug(green(`End. format = ${format}`));

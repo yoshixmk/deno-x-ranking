@@ -18,7 +18,7 @@ class RegistryService {
   }
 
   public async getGithubEntries(
-    sampling: string,
+    isSampling: boolean,
   ): Promise<GithubEntries> {
     const modules = await fetchAll();
     const moduleNames = modules
@@ -39,7 +39,7 @@ class RegistryService {
         "latestVersion": meta.upload_options.ref,
       };
     });
-    if (sampling === "true") {
+    if (isSampling) {
       return githubEntries.splice(0, 10);
     }
     return githubEntries;

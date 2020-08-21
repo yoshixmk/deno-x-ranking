@@ -9,7 +9,7 @@ export interface Repository {
   watchers: number;
   subscribers_count: number;
   archived: boolean;
-  description: string;
+  description?: string;
 }
 
 export type Repositories = Array<Repository>;

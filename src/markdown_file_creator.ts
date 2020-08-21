@@ -20,7 +20,7 @@ export function generateMarkdownFile(
         link(r.full_name, r.html_url),
         r.stargazers_count?.toString(),
         r.forks?.toString(),
-        r.description,
+        r.description ??  "",
       ],
     );
   });

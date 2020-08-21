@@ -17,9 +17,9 @@ https://yoshixmk.github.io/deno-x-ranking
 Prepare an access token for Github public access permission only from the following URL. When public access setting permissions, you can leave all check boxes cleared.  
 https://github.com/settings/tokens/new
 
-### Tsv output
+### Tsv / Csv output
 ```Shell
-$ deno run --allow-net --allow-write --allow-env https://deno.land/x/ranking/mod.ts -u <github username> -t <github token> -f tsv
+$ deno run --allow-net --allow-write --allow-env https://deno.land/x/ranking/mod.ts -u <github username> -t <github token> -f <tsv | csv>
 ```
 
 ### Console output

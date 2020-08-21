@@ -16,7 +16,7 @@ export class SeparatedFileCreator {
         this.separator = '"\t"';
         break;
       case Csv:
-        this.separator = ', ';
+        this.separator = ", ";
         break;
       default:
         throw Error(`Cannot use the format, ${format}`);

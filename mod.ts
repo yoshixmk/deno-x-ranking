@@ -50,7 +50,9 @@ switch (format) {
     break;
   case Tsv:
   case Csv:
-    await new SeparatedFileCreator(format, outputFile).generateFile(rankingEntries);
+    await new SeparatedFileCreator(format, outputFile).generateFile(
+      rankingEntries,
+    );
     break;
   case MarkdownFile:
     await generateMarkdownFile(rankingEntries);

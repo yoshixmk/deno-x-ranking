@@ -61,8 +61,7 @@ export const parseArgs = () => {
     ).with(
       PartialOption("outputFile", {
         type: Text,
-        describe:
-          "Output file path. Only file like tsv and csv.",
+        describe: "Output file path. Only file like tsv and csv.",
         alias: ["o"],
         default: "",
       }),

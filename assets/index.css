@@ -105,6 +105,13 @@ header li a:hover {
   color: var(--color-primary);
   text-decoration: none;
 }
+header select {
+  background: transparent;
+  color: var(--color-text);
+  font-size: var(--font-size);
+  border: 0;
+  height: 2rem;
+}
 
 .toggle_dark {
   cursor: pointer;
@@ -215,6 +222,7 @@ header li a:hover {
   padding: 0 1rem;
   width: 44rem;
   max-width: 44rem;
+  word-wrap: break-word;
 }
 article.loading {
   min-height: calc(100vh - var(--height-header));
@@ -246,9 +254,7 @@ h6:hover .anchor {
 .prev_next {
   display: flex;
   align-items: stretch;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--color-border);
+  margin-top: 3rem;
 }
 .prev_next a {
   width: calc(50% - 1rem);
@@ -318,7 +324,7 @@ footer {
   text-align: center;
   color: var(--color-text-muted);
   font-size: var(--font-size-small);
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 /* #endregion */
 
@@ -455,6 +461,10 @@ footer {
   pre[class*='language-'] {
     margin-left: -1rem !important;
     margin-right: -1rem !important;
+  }
+  li pre[class*='language-'],
+  blockquote pre[class*='language-'] {
+    margin-left: 0 !important;
   }
 }
 /* #endregion */

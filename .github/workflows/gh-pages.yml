@@ -22,7 +22,7 @@ jobs:
           export PATH="$DENO_INSTALL/bin:$PATH"
           deno --version
           deno run --allow-net --allow-write --allow-read --allow-env ./mod.ts -u $USERNAME -t $TOKEN -f markdown
-          deno install --unstable --allow-read --allow-write --allow-net -n pagic https://denopkg.com/xcatliu/pagic@v0.8.4/mod.ts
+          deno install --unstable --allow-read --allow-write --allow-net -n pagic https://deno.land/x/pagic@v0.9.1/mod.ts
           pagic build
         env:
           USERNAME: ${{ secrets.USERNAME }}

@@ -49,7 +49,13 @@ After processing according to the ranking logic below, limit to only the necessa
 1. If same GitHub Star count, continue to check rank using forks count, watchers count, subscribers count.
 
 ## Sample
-[./examples/ranking_result.tsv](./examples/ranking_result.tsv)
+- [./examples/ranking_result.tsv](./examples/ranking_result.tsv)
+- [./examples/README.md](./examples/README.md)
+
+## Hosting using Markdown format
+``` Shell
+$ deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/pagic@v0.9.1/mod.ts build --serve --watch
+```
 
 ## Plan
 - [x] `"type": "github"` support

@@ -18,7 +18,7 @@ jobs:
       - name: Setup deno
         uses: denolib/setup-deno@v2
         with:
-          deno-version: v1.3.3
+          deno-version: v1.4.0
 
       - name: Build
         run: |
@@ -26,8 +26,7 @@ jobs:
           export PATH="$DENO_INSTALL/bin:$PATH"
           deno --version
           deno run --allow-net --allow-write --allow-read --allow-env ./mod.ts -u $USERNAME -t $TOKEN -f markdown
-          deno install --unstable --allow-read --allow-write --allow-net -n pagic https://deno.land/x/pagic@v0.9.1/mod.ts
-          pagic build
+          deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/gagic@0.9.2/mod.ts build
         env:
           USERNAME: ${{ secrets.USERNAME }}
           TOKEN: ${{ secrets.TOKEN }}

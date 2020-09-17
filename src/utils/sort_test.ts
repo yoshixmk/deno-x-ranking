@@ -1,5 +1,5 @@
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { Repository } from "../domains/repository.ts";
+import { assertEquals } from "https://deno.land/std@0.69.0/testing/asserts.ts";
+import type { Repository } from "../domains/repository.ts";
 import { sortOrderByDesc } from "./sort.ts";
 
 const sampleCreater = (index: number): Repository => {

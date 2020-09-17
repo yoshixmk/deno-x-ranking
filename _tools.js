@@ -7,6 +7,8 @@ const Tools = ({ config, pagePath }) => {
         config.tools.backToTop && (React.createElement("a", { className: "czs-angle-up-l button", href: "#", onClick: (e) => {
                 e.preventDefault();
                 window.scrollTo(0, 0);
-            }, style: { backgroundImage: `url("${config.root}assets/czs-angle-up-l.svg")` } }))));
+            }, style: {
+                backgroundImage: `url("${config.root}assets/czs-angle-up-l.svg")`,
+            } }))));
 };
 export default Tools;

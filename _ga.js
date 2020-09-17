@@ -1,9 +1,9 @@
 const Ga = ({ id }) => {
     React.useEffect(() => {
-        window.addEventListener('rerender', () => {
+        window.addEventListener("rerender", () => {
             // @ts-ignore
-            window.ga('set', 'page', location.pathname);
-            window.ga('send', 'pageview');
+            window.ga("set", "page", location.pathname);
+            window.ga("send", "pageview");
         });
     }, []);
     return (React.createElement(React.Fragment, null,
@@ -13,7 +13,7 @@ const Ga = ({ id }) => {
             window.GoogleAnalyticsObject="ga";(window.ga=window.ga||function(){(window.ga.q=window.ga.q||[]).push(arguments);}),(window.ga.l=1*new Date());
 
             ga('create', '${id}', 'auto');
-            ga('send', 'pageview');`
+            ga('send', 'pageview');`,
             } })));
 };
 export default Ga;

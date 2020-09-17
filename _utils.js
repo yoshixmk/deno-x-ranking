@@ -4,12 +4,12 @@ export function unique(arr) {
 export function classnames(...args) {
     let classList = [];
     for (const arg of args) {
-        if (typeof arg === 'string') {
+        if (typeof arg === "string") {
             classList.push(arg);
         }
-        else if (typeof arg !== 'undefined') {
+        else if (typeof arg !== "undefined") {
             classList = [...classList, ...Object.keys(arg).filter((key) => arg[key])];
         }
     }
-    return unique(classList).join(' ');
+    return unique(classList).join(" ");
 }

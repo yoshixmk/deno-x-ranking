@@ -1,4 +1,4 @@
-import { classnames } from './_utils.js';
+import { classnames } from "./_utils.js";
 const Sidebar = ({ config, outputPath, sidebar }) => {
     if (!sidebar) {
         return null;
@@ -28,7 +28,7 @@ const FoldableItem = ({ config, outputPath, sidebarItem: { text, link, children 
             olRef.current.style.height = `${olHeight}px`;
             setFold(fold);
             setTimeout(() => {
-                olRef.current.style.height = 'auto';
+                olRef.current.style.height = "auto";
             }, 300);
         }
     };
@@ -37,10 +37,10 @@ const FoldableItem = ({ config, outputPath, sidebarItem: { text, link, children 
         e.stopPropagation();
         foldOl(!fold);
     };
-    return (React.createElement("li", { className: children ? (fold ? 'fold' : 'unfold') : '' },
-        React.createElement("a", { href: link ? `${config.root}${link}` : '#', className: classnames('nav_link', {
+    return (React.createElement("li", { className: children ? (fold ? "fold" : "unfold") : "" },
+        React.createElement("a", { href: link ? `${config.root}${link}` : "#", className: classnames("nav_link", {
                 active: isActive,
-                no_link: !link
+                no_link: !link,
             }), onClick: (e) => {
                 if (link) {
                     if (children) {
@@ -49,7 +49,7 @@ const FoldableItem = ({ config, outputPath, sidebarItem: { text, link, children 
                         }
                         else {
                             // @ts-ignore
-                            document.documentElement.classList.remove('show_sidebar');
+                            document.documentElement.classList.remove("show_sidebar");
                             if (fold) {
                                 foldOl(false);
                             }
@@ -57,7 +57,7 @@ const FoldableItem = ({ config, outputPath, sidebarItem: { text, link, children 
                     }
                     else {
                         // @ts-ignore
-                        document.documentElement.classList.remove('show_sidebar');
+                        document.documentElement.classList.remove("show_sidebar");
                     }
                 }
                 else {
@@ -66,8 +66,12 @@ const FoldableItem = ({ config, outputPath, sidebarItem: { text, link, children 
             } },
             text,
             children && (React.createElement(React.Fragment, null,
-                React.createElement("span", { className: "czs-angle-up-l", style: { backgroundImage: `url("${config.root}assets/czs-angle-up-l.svg")` }, onClick: toggleFold }),
-                React.createElement("span", { className: "czs-angle-down-l", style: { backgroundImage: `url("${config.root}assets/czs-angle-down-l.svg")` }, onClick: toggleFold })))),
+                React.createElement("span", { className: "czs-angle-up-l", style: {
+                        backgroundImage: `url("${config.root}assets/czs-angle-up-l.svg")`,
+                    }, onClick: toggleFold }),
+                React.createElement("span", { className: "czs-angle-down-l", style: {
+                        backgroundImage: `url("${config.root}assets/czs-angle-down-l.svg")`,
+                    }, onClick: toggleFold })))),
         children && (React.createElement("ol", { ref: olRef }, children.map((sidebarItem, index) => (React.createElement(FoldableItem, { key: index, config: config, outputPath: outputPath, sidebarItem: sidebarItem })))))));
 };
 export default Sidebar;

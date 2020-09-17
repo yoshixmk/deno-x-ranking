@@ -1,20 +1,26 @@
-import { classnames } from './_utils.js';
+import { classnames } from "./_utils.js";
 let hoverMap = {};
-export const Popover = ({ content, placement = 'top', className, style, children, onClick }) => {
+export const Popover = ({ content, placement = "top", className, style, children, onClick, }) => {
     const [hover, setHover] = React.useState(false);
-    const popoverRootId = 'popover-root-' + React.useMemo(() => Math.random().toString().slice(2), []);
+    const popoverRootId = "popover-root-" +
+        React.useMemo(() => Math.random().toString().slice(2), []);
     const [topLeft, setTopLeft] = React.useState({
         top: 0,
-        left: 0
+        left: 0,
     });
     // https://reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node
     const measuredRef = React.useCallback((node) => {
         if (node !== null) {
             const { top, left, right, bottom } = node.getBoundingClientRect();
             setTopLeft({
-                top: window.pageYOffset + (placement.startsWith('top') ? top : bottom),
+                top: window.pageYOffset +
+                    (placement.startsWith("top") ? top : bottom),
                 left: window.pageXOffset +
-                    (placement.endsWith('start') ? left : placement.endsWith('end') ? right : (left + right) / 2)
+                    (placement.endsWith("start")
+                        ? left
+                        : placement.endsWith("end")
+                            ? right
+                            : (left + right) / 2),
             });
         }
     }, [hover]);
@@ -37,7 +43,7 @@ export const Popover = ({ content, placement = 'top', className, style, children
         ref: measuredRef,
         onMouseEnter,
         onMouseLeave,
-        onClick
+        onClick,
     };
     if (React.isValidElement(children)) {
         validChildren = React.cloneElement(children, props);
@@ -47,14 +53,14 @@ export const Popover = ({ content, placement = 'top', className, style, children
     }
     return (React.createElement(React.Fragment, null,
         content && (React.createElement(PopoverProtal, { popoverRootId: popoverRootId, content: content, placement: placement, style: {
-                display: hover ? 'block' : 'none',
+                display: hover ? "block" : "none",
                 top: topLeft.top,
                 left: topLeft.left,
-                ...style
+                ...style,
             }, className: className, onMouseEnter: onMouseEnter, onMouseLeave: onMouseLeave })),
         validChildren));
 };
-const PopoverProtal = ({ popoverRootId, content, placement = 'top', className, style, onMouseEnter, onMouseLeave }) => {
+const PopoverProtal = ({ popoverRootId, content, placement = "top", className, style, onMouseEnter, onMouseLeave, }) => {
     if (window.Deno) {
         return null;
     }
@@ -62,14 +68,18 @@ const PopoverProtal = ({ popoverRootId, content, placement = 'top', className, s
     let popoverRoot = document.getElementById(popoverRootId);
     if (!popoverRoot) {
         // @ts-ignore
-        popoverRoot = document.createElement('div');
+        popoverRoot = document.createElement("div");
         popoverRoot.id = popoverRootId;
         // @ts-ignore
         document.body.appendChild(popoverRoot);
     }
-    return ReactDOM.createPortal(React.createElement("div", { className: classnames(className, 'popover'), style: {
-            transform: `translate(${placement.endsWith('start') ? '0' : placement.endsWith('end') ? '-100%' : '-50%'}, ${placement.startsWith('top') ? '-100%' : '0%'})`,
-            ...style
+    return ReactDOM.createPortal(React.createElement("div", { className: classnames(className, "popover"), style: {
+            transform: `translate(${placement.endsWith("start")
+                ? "0"
+                : placement.endsWith("end")
+                    ? "-100%"
+                    : "-50%"}, ${placement.startsWith("top") ? "-100%" : "0%"})`,
+            ...style,
         }, onMouseEnter: onMouseEnter, onMouseLeave: onMouseLeave }, content), popoverRoot);
 };
 export default Popover;

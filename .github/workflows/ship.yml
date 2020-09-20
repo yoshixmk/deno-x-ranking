@@ -21,4 +21,4 @@ jobs:
       - name: Publish module
         run: |
           deno run -A --unstable https://x.nest.land/eggs@0.2.2/mod.ts link ${{ secrets.NESTAPIKEY }}
-          deno run -A --unstable https://x.nest.land/eggs@0.2.2/mod.ts publish --version ${{ github.event.inputs.version }}
+          deno run -A --unstable https://x.nest.land/eggs@0.2.2/mod.ts publish --no-check-all --version ${{ github.event.inputs.version }}

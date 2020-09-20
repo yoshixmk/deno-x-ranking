@@ -1,7 +1,7 @@
 import {
   assert,
   assertEquals,
-} from "https://deno.land/std@0.69.0/testing/asserts.ts";
+} from "../../deps.ts";
 import type { Repository } from "../domains/repository.ts";
 import { unique } from "./unique.ts";
 

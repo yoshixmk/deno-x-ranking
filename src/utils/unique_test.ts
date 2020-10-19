@@ -1,7 +1,4 @@
-import {
-  assert,
-  assertEquals,
-} from "../../deps.ts";
+import { assert, assertEquals } from "../../deps.ts";
 import type { Repository } from "../domains/repository.ts";
 import { unique } from "./unique.ts";
 

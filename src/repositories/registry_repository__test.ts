@@ -1,7 +1,4 @@
-import {
-  assert,
-  assertEquals,
-} from "../../deps.ts";
+import { assert, assertEquals } from "../../deps.ts";
 import { fetchAll, fetchOne } from "./registry_repository.ts";
 
 Deno.test("fetchOne", async () => {

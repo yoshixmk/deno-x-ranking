@@ -1,8 +1,4 @@
-import {
-  green,
-  PARSE_FAILURE,
-  red,
-} from "./deps.ts";
+import { green, PARSE_FAILURE, red } from "./deps.ts";
 import { consoleTable } from "./src/console_table.ts";
 import { Csv, MarkdownFile, Table, Tsv } from "./src/domains/Format.ts";
 import { SeparatedFileCreator } from "./src/file_creator.ts";

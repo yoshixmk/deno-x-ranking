@@ -1,5 +1,5 @@
 import { Repository } from "./domains/repository.ts";
-import { FileFormat, Tsv, Csv } from "./domains/Format.ts";
+import { Csv, FileFormat, Tsv } from "./domains/Format.ts";
 
 export class SeparatedFileCreator {
   private format: FileFormat;

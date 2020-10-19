@@ -1,12 +1,12 @@
 import {
   args,
+  Choice,
   EarlyExitFlag,
   Option,
-  Choice,
   PartialOption,
 } from "../../deps.ts";
 import { Text } from "../../deps.ts";
-import { Format, Tsv, Table, MarkdownFile, Csv } from "../domains/Format.ts";
+import { Csv, Format, MarkdownFile, Table, Tsv } from "../domains/Format.ts";
 
 export const parseArgs = () => {
   const parser = args

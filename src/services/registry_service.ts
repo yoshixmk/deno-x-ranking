@@ -7,7 +7,6 @@ import {
   fetchLatestMetaByModuleName,
   fetchLatestVersionByModuleName,
   Meta,
-
   Versions,
 } from "../repositories/deno_repository.ts";
 import { fetchAll } from "../repositories/registry_repository.ts";

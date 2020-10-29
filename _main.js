@@ -1,4 +1,4 @@
-import throttle from "https://dev.jspm.io/lodash@4.17.15/throttle";
+import throttle from "https://dev.jspm.io/lodash@4.17.20/throttle";
 import Loading from "./_loading.js";
 const Main = (props) => {
     const { config, content, loading, toc, prev, next, gitalk } = props;

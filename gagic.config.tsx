@@ -1,4 +1,4 @@
-// @deno-types="https://deno.land/x/gagic@0.9.6/src/types/react/v16.14.0/react.d.ts"
+// @deno-types="https://deno.land/x/gagic@0.9.7/src/types/react/v16.14.0/react.d.ts"
 import React from "https://dev.jspm.io/react@16.14.0";
 
 export default {

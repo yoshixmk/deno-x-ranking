@@ -54,7 +54,7 @@ After processing according to the ranking logic below, limit to only the necessa
 
 ## Hosting using Markdown format
 ``` Shell
-$ deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/gagic@0.9.6/mod.ts build --serve --watch
+$ deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/gagic@0.9.7/mod.ts build --serve --watch
 ```
 
 ## Plan

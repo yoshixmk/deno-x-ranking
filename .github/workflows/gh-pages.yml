@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - develop
   release:
     types: [published]
   schedule:
@@ -26,6 +27,7 @@ jobs:
           export PATH="$DENO_INSTALL/bin:$PATH"
           deno --version
           deno run --allow-net --allow-write --allow-read --allow-env ./mod.ts -u $USERNAME -t $TOKEN -f markdown
+          sleep 3m
           deno install --unstable --allow-read --allow-write --allow-net -n gagic https://deno.land/x/gagic@0.9.10/mod.ts
           gagic build
         env:

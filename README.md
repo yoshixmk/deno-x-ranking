@@ -57,6 +57,10 @@ After processing according to the ranking logic below, limit to only the necessa
 $ deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/gagic@0.9.10/mod.ts build --serve --watch
 ```
 
+## 429 Too Many Requests ??
+This module sends many requests to [deno registry2 API](https://github.com/denoland/deno_registry2) and [Github API](https://docs.github.com/en/free-pro-team@latest/rest).  
+Please be careful about continuous use.
+
 ## Plan
 - [x] `"type": "github"` support
 - [x] `"type": "npm"` ~~support~~ not support. [deprecated] NPM backed deno.land/x entries are deprecated will be removed on August 1st 2020.

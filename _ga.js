@@ -1,9 +1,9 @@
 const Ga = ({ id }) => {
     React.useEffect(() => {
-        window.addEventListener("rerender", () => {
+        window.addEventListener('rerender', () => {
             // @ts-ignore
-            window.ga("set", "page", location.pathname);
-            window.ga("send", "pageview");
+            window.ga('set', 'page', location.pathname);
+            window.ga('send', 'pageview');
         });
     }, []);
     return (React.createElement(React.Fragment, null,

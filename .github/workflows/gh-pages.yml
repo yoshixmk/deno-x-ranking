@@ -28,7 +28,7 @@ jobs:
           deno --version
           deno run --allow-net --allow-write --allow-read --allow-env ./mod.ts -u $USERNAME -t $TOKEN -f markdown
           sleep 3m
-          deno install --unstable --allow-read --allow-write --allow-net -n pagic https://deno.land/x/pagic@v1.1.1/mod.ts
+          deno install --unstable --allow-read --allow-write --allow-net --allow-run -n pagic https://deno.land/x/pagic@v1.1.1/mod.ts
           pagic build
         env:
           USERNAME: ${{ secrets.USERNAME }}

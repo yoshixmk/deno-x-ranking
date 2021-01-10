@@ -39,3 +39,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          username: gh-action-for-pages
+          useremail: gh-action@run.com

@@ -1,12 +1,8 @@
 name: Ship
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: "Version"
-        required: true
-
+  create:
+    ref_type: "tag"
 
 jobs:
   release:
@@ -17,8 +13,11 @@ jobs:
 
       - name: Setup Deno
         uses: denolib/setup-deno@v2
+        with:
+          deno-version: v1.6.x
 
       - name: Publish module
         run: |
-          deno run -A --unstable https://x.nest.land/eggs@0.2.2/mod.ts link ${{ secrets.NESTAPIKEY }}
-          deno run -A --unstable https://x.nest.land/eggs@0.2.2/mod.ts publish --no-check-all --version ${{ github.event.inputs.version }}
+          deno install -A --unstable https://x.nest.land/eggs@0.3.4/eggs.ts
+          eggs link ${{ secrets.NESTAPIKEY }}
+          eggs publish --yes --no-check-all --version $(git describe --tags $(git rev-list --tags --max-count=1))

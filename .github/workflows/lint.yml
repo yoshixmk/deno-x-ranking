@@ -17,7 +17,7 @@ jobs:
         uses: denolib/setup-deno@v2
 
       - name: Check formatting
-        run: deno fmt --check
+        run: deno fmt --check --ext js ts jsx tsx
 
   lint:
     name: deno lint

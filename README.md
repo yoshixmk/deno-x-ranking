@@ -54,7 +54,7 @@ After processing according to the ranking logic below, limit to only the necessa
 
 ## Hosting using Markdown format
 ``` Shell
-$ deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/pagic@v1.1.1/mod.ts build --serve --watch
+$ deno run --unstable --allow-read --allow-write --allow-net https://raw.githubusercontent.com/xcatliu/pagic/v1.2.0/mod.ts build --serve --watch
 ```
 
 ## 429 Too Many Requests ??

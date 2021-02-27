@@ -1,5 +1,5 @@
 # deno-x-ranking
-[![(Deno)](https://img.shields.io/badge/deno-^1.6.0-green.svg?style=flat-square&logo=deno)](https://deno.land)
+[![(Deno)](https://img.shields.io/badge/deno-^1.7.0-green.svg?style=flat-square&logo=deno)](https://deno.land)
 ![gh-pages](https://github.com/yoshixmk/deno-x-ranking/workflows/gh-pages/badge.svg)
 [![nest badge](https://nest.land/badge.svg)](https://nest.land/package/ranking)  
 

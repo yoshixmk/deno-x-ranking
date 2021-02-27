@@ -16,7 +16,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macOS-latest, windows-latest, ubuntu-latest]
+        os: [windows-latest, ubuntu-latest]
+        # macOS-latest
 
     steps:
       - name: Setup repo
@@ -28,25 +29,25 @@ jobs:
       - name: Run tests
         run: deno test --allow-read --allow-env --allow-net
 
-  nightly:
-    name: Deno Nightly
+  # nightly:
+  #   name: Deno Nightly
 
-    runs-on: ${{ matrix.os }}
-    timeout-minutes: 60
+  #   runs-on: ${{ matrix.os }}
+  #   timeout-minutes: 60
 
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [macOS-latest, windows-latest, ubuntu-latest]
+  #   strategy:
+  #     fail-fast: false
+  #     matrix:
+  #       os: [macOS-latest, windows-latest, ubuntu-latest]
 
-    steps:
-      - name: Setup repo
-        uses: actions/checkout@v2
+  #   steps:
+  #     - name: Setup repo
+  #       uses: actions/checkout@v2
 
-      - name: Setup Deno
-        uses: denolib/setup-deno@v2
-        with:
-          deno-version: nightly
+  #     - name: Setup Deno
+  #       uses: denolib/setup-deno@v2
+  #       with:
+  #         deno-version: nightly
 
-      - name: Run tests
-        run: deno test --allow-read --allow-env --allow-net
+  #     - name: Run tests
+  #       run: deno test --allow-read --allow-env --allow-net

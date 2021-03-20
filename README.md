@@ -34,7 +34,7 @@ $ deno run --allow-net --allow-write --allow-read --allow-env https://deno.land/
 
 ### Help
 ```Shell
-$ deno run https://deno.land/x/ranking/mod.ts -h
+$ deno run --allow-net --allow-write --allow-read --allow-env ./mod.ts --help
 ```
 
 ## Testing

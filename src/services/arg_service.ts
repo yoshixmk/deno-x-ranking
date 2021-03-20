@@ -102,6 +102,6 @@ export const parsedValue = (args: Args) => {
     token: token.valueIfExists(args),
     format: format.valueIfExists(args),
     outputFile: outputFile.valueIfExists(args),
-    sampling: sampling.valueIfExists(args)
-  }
+    sampling: sampling.valueIfExists(args),
+  };
 };

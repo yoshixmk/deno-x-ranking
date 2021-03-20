@@ -8,5 +8,5 @@ Deno.test("fetchLatestMetaByName using promise all", async () => {
     fetchMetaByModuleName("std", "0.89.0"),
   ]);
   assertEquals(ranking.upload_options.repository, "yoshixmk/deno-x-ranking");
-  assertEquals(std.upload_options.repository, "denoland/deno");
+  assertEquals(std.upload_options.repository, "denoland/deno_std");
 });

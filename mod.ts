@@ -39,9 +39,10 @@ switch (format) {
     break;
   case Tsv:
   case Csv:
-    await new SeparatedFileCreator(format, outputFile ?? "ranking_result.csv").generateFile(
-      rankingEntries,
-    );
+    await new SeparatedFileCreator(format, outputFile ?? "ranking_result.csv")
+      .generateFile(
+        rankingEntries,
+      );
     break;
   case MarkdownFile:
     await generateMarkdownFile(rankingEntries);

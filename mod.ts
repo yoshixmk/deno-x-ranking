@@ -23,7 +23,8 @@ if (format === undefined) {
 
 console.debug(green(`Started. format = ${format}`));
 
-const isSampling = sampling !== "false";
+const isSampling = sampling !== undefined;
+
 const githubEntries = await registryService.getGithubEntries(isSampling);
 
 const githubRepositories = githubService.getGithubRepositories(

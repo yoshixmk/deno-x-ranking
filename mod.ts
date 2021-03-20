@@ -1,23 +1,16 @@
-import { green, PARSE_FAILURE, red } from "./deps.ts";
+import { green, red } from "./deps.ts";
 import { consoleTable } from "./src/console_table.ts";
 import { Csv, MarkdownFile, Table, Tsv } from "./src/domains/Format.ts";
 import { SeparatedFileCreator } from "./src/file_creator.ts";
 import { generateMarkdownFile } from "./src/markdown_file_creator.ts";
-import { parseArgs } from "./src/services/arg_service.ts";
+import { parsedValue } from "./src/services/arg_service.ts";
 import { githubService } from "./src/services/github_service.ts";
 import { registryService } from "./src/services/registry_service.ts";
+import { parse } from "./deps.ts";
 
-const parser = parseArgs();
+const res = parsedValue(parse(Deno.args));
 
-const res = parser.parse(Deno.args);
-
-if (res.tag === PARSE_FAILURE) {
-  console.error("Failed to parse CLI arguments");
-  console.error(res.error.toString());
-  Deno.exit(1);
-}
-console.dir(res.value);
-const { help, username, token, format, outputFile, sampling } = res.value;
+const { username, token, format, outputFile, sampling } = res;
 
 if (username === undefined || token === undefined) {
   console.log(red("Needs to input both username and token."));
@@ -46,9 +39,10 @@ switch (format) {
     break;
   case Tsv:
   case Csv:
-    await new SeparatedFileCreator(format, outputFile).generateFile(
-      rankingEntries,
-    );
+    await new SeparatedFileCreator(format, outputFile ?? "ranking_result.csv")
+      .generateFile(
+        rankingEntries,
+      );
     break;
   case MarkdownFile:
     await generateMarkdownFile(rankingEntries);

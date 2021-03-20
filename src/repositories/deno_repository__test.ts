@@ -5,8 +5,8 @@ import { fetchLatestMetaByModuleName as fetchMetaByModuleName } from "./deno_rep
 Deno.test("fetchLatestMetaByName using promise all", async () => {
   const [ranking, std] = await Promise.all([
     fetchMetaByModuleName("ranking", "0.1.1"),
-    fetchMetaByModuleName("std", "0.84.0"),
+    fetchMetaByModuleName("std", "0.89.0"),
   ]);
   assertEquals(ranking.upload_options.repository, "yoshixmk/deno-x-ranking");
-  assertEquals(std.upload_options.repository, "denoland/deno");
+  assertEquals(std.upload_options.repository, "denoland/deno_std");
 });

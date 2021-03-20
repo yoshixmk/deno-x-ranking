@@ -9,52 +9,45 @@ import { registryService } from "./src/services/registry_service.ts";
 import { parse } from "./deps.ts";
 
 const res = parsedValue(parse(Deno.args));
-Deno.exit(0);
 
-// if (res.tag === PARSE_FAILURE) {
-//   console.error("Failed to parse CLI arguments");
-//   console.error(res.error.toString());
-//   Deno.exit(1);
-// }
-// console.dir(res.value);
-// const { help, username, token, format, outputFile, sampling } = res.value;
+const { username, token, format, outputFile, sampling } = res;
 
-// if (username === undefined || token === undefined) {
-//   console.log(red("Needs to input both username and token."));
-//   Deno.exit(1);
-// }
-// if (format === undefined) {
-//   console.log(red("Needs to input output format."));
-//   Deno.exit(1);
-// }
+if (username === undefined || token === undefined) {
+  console.log(red("Needs to input both username and token."));
+  Deno.exit(1);
+}
+if (format === undefined) {
+  console.log(red("Needs to input output format."));
+  Deno.exit(1);
+}
 
-// console.debug(green(`Started. format = ${format}`));
+console.debug(green(`Started. format = ${format}`));
 
-// const isSampling = sampling !== "false";
-// const githubEntries = await registryService.getGithubEntries(isSampling);
+const isSampling = sampling !== "false";
+const githubEntries = await registryService.getGithubEntries(isSampling);
 
-// const githubRepositories = githubService.getGithubRepositories(
-//   githubEntries,
-//   username,
-//   token,
-// );
+const githubRepositories = githubService.getGithubRepositories(
+  githubEntries,
+  username,
+  token,
+);
 
-// const rankingEntries = await githubRepositories;
-// switch (format) {
-//   case Table:
-//     consoleTable(rankingEntries);
-//     break;
-//   case Tsv:
-//   case Csv:
-//     await new SeparatedFileCreator(format, outputFile).generateFile(
-//       rankingEntries,
-//     );
-//     break;
-//   case MarkdownFile:
-//     await generateMarkdownFile(rankingEntries);
-//     break;
-//   default:
-//     throw Error(`Cannot use the format, ${format}`);
-// }
+const rankingEntries = await githubRepositories;
+switch (format) {
+  case Table:
+    consoleTable(rankingEntries);
+    break;
+  case Tsv:
+  case Csv:
+    await new SeparatedFileCreator(format, outputFile ?? "ranking_result.csv").generateFile(
+      rankingEntries,
+    );
+    break;
+  case MarkdownFile:
+    await generateMarkdownFile(rankingEntries);
+    break;
+  default:
+    throw Error(`Cannot use the format, ${format}`);
+}
 
-// console.debug(green(`End. format = ${format}`));
+console.debug(green(`End. format = ${format}`));

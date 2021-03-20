@@ -35,6 +35,15 @@ class Flag {
     return args[this.alias ?? this.name] !== undefined ||
       args[this.name] !== undefined;
   }
+  valueIfExists(args: Args): string | undefined {
+    if (args[this.alias ?? this.name] !== undefined) {
+      return args[this.alias ?? this.name];
+    }
+    if (args[this.name] !== undefined) {
+      return args[this.name];
+    }
+    return;
+  }
   toString(): String {
     return `--${this.name} (-${this.alias ?? ""}):\t${this.describe}`;
   }
@@ -83,9 +92,16 @@ const allFlags: Array<Flag> = [
 ];
 
 export const parsedValue = (args: Args) => {
-  console.dir(args);
-
   if (help.exists(args)) {
     allFlags.forEach((flag: Flag) => console.log(flag.toString()));
+    Deno.exit(0);
+  }
+
+  return {
+    username: username.valueIfExists(args),
+    token: token.valueIfExists(args),
+    format: format.valueIfExists(args),
+    outputFile: outputFile.valueIfExists(args),
+    sampling: sampling.valueIfExists(args)
   }
 };

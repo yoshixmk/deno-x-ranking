@@ -1,7 +1,7 @@
 import projectConfig from '/deno-x-ranking/pagic.config.js';
 import Ga from '/deno-x-ranking/_ga.js';
 export default {
-    config: { "root": "/", ...projectConfig, branch: 'develop' },
+    config: { "root": "/", ...projectConfig, branch: 'master' },
     'pagePath': "README.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "index.html",
@@ -29,7 +29,7 @@ export default {
     'contributors': [
         "yoshixmk"
     ],
-    'date': "2021-03-20T14:35:25.000Z",
+    'date': "2021-03-20T14:48:24.000Z",
     'updated': null,
     'excerpt': "👑 Repository Stars Forks Description 1 lodash/lodash 48625 5610 A modern JavaScript utility library delivering modularity, performance, & extras. 2 iamkun/dayjs 34186 1627 ⏰ Day.js 2KB immutable date-time l...",
     'cover': undefined

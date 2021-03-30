@@ -27,7 +27,6 @@ jobs:
           export PATH="$DENO_INSTALL/bin:$PATH"
           deno --version
           deno run --allow-net --allow-write --allow-read --allow-env ./mod.ts -u $USERNAME -t $TOKEN -f markdown
-          sleep 3m
           deno install --unstable --allow-read --allow-write --allow-net --allow-run -n pagic https://raw.githubusercontent.com/xcatliu/pagic/v1.2.0/mod.ts
           pagic build
         env:

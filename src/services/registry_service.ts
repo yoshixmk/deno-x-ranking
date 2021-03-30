@@ -10,7 +10,7 @@ import {
   Versions,
 } from "../repositories/deno_repository.ts";
 import { fetchAll } from "../repositories/registry_repository.ts";
-import { concurrentPromise } from "../utils/concurrent_promise.ts";
+import { concurrentPromiseWithWait } from "../utils/concurrent_promise.ts";
 
 class RegistryService {
   constructor() {
@@ -61,7 +61,7 @@ class RegistryService {
         )
     );
     const versions = new Map<string, Versions>(
-      await concurrentPromise(versionPromises, 100),
+      await concurrentPromiseWithWait(versionPromises, 100),
     );
     versions.delete("Fail");
     return versions;
@@ -85,7 +85,7 @@ class RegistryService {
             return null; // TODO Error Object
           })
       );
-    return (await concurrentPromise(metaPromises, 100))
+    return (await concurrentPromiseWithWait(metaPromises, 100))
       .filter<Meta>(
         (meta: Meta | null): meta is Meta => meta !== null,
       );

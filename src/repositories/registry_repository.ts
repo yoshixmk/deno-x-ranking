@@ -2,7 +2,7 @@
 // @see https://github.com/denoland/deno_registry2/blob/main/API.md#get-modules
 
 import { denoRegistry2 } from "../config.ts";
-import { concurrentPromise } from "../utils/concurrent_promise.ts";
+import { concurrentPromiseWithWait } from "../utils/concurrent_promise.ts";
 
 type ModulesResponse = {
   "success": boolean;
@@ -40,5 +40,5 @@ export const fetchAll = async (): Promise<Array<ModulesResponse>> => {
     );
   });
 
-  return concurrentPromise<ModulesResponse>(promises, 100);
+  return concurrentPromiseWithWait<ModulesResponse>(promises, 100);
 };

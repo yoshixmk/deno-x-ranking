@@ -28,7 +28,8 @@ jobs:
           deno --version
           deno run --allow-net --allow-write --allow-read --allow-env ./mod.ts -u $USERNAME -t $TOKEN -f markdown
           deno install --unstable --allow-read --allow-write --allow-net --allow-run -n pagic https://raw.githubusercontent.com/xcatliu/pagic/v1.4.0/mod.ts
-          pagic build
+          echo 'pagic build'
+          ./run-ci.sh
         env:
           USERNAME: ${{ secrets.USERNAME }}
           TOKEN: ${{ secrets.TOKEN }}

@@ -18,7 +18,7 @@ export default {
   port: 8000,
   title: "Deno X ranking",
   github: "https://github.com/yoshixmk/deno-x-ranking",
-  head:
+  head: (
     <>
       <link rel="stylesheet" href="/deno-x-ranking/custom.css" />
       <script
@@ -32,7 +32,7 @@ export default {
       <link rel="apple-touch-icon" href="/deno-x-ranking/favicon-192.png">
       </link>
     </>
-  ,
+  ),
   nav: [
     {
       text: "Tegebu",

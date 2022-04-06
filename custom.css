@@ -1,0 +1,31 @@
+html .main_article {
+    width: 66rem;
+    max-width: 66rem;
+}
+
+article tr th:nth-child(2),
+article tr td:nth-child(2) {
+    width: 12rem;
+    max-width: 12rem;
+    min-width: 8rem;
+    word-break: break-word;
+}
+
+article tr th:nth-child(3),
+article tr td:nth-child(3),
+article tr th:nth-child(4),
+article tr td:nth-child(4) {
+    text-align: right;
+}
+
+#searchBox {
+    background-image: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
